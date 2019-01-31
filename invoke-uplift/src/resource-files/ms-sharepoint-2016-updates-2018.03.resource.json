@@ -1,0 +1,28 @@
+{
+  "resources": [
+
+    {
+      "id": "ms-sharepoint2016-update-2018.03.13-KB4018293",
+      "uri": "https://download.microsoft.com/download/6/4/3/643C13E2-7D2E-450F-B611-AC0EC45C872E/sts2016-kb4018293-fullfile-x64-glb.exe",
+
+      "checksum": "70ADF0E03440D3AD74485DFA6046D912066A98AFF95DCD99880707EEA533F2BF",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Enterprise Server 2016: March 13, 2018",
+        "help_link": "https://support.microsoft.com/en-us/help/4018293"
+      }
+    },
+    {
+      "id": "ms-sharepoint2016-update-2018.03.13-KB4011687",
+      "uri": "https://download.microsoft.com/download/A/4/7/A47A4446-D028-436C-9764-700C655F7D69/wssloc2016-kb4011687-fullfile-x64-glb.exe",
+
+      "checksum": "D4D826324B1D18126C098A0351862D59FCCCC01A8C37095DA138FBAB9D22F36D",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "March 13, 2018, update for SharePoint Enterprise Server 2016 (KB4011687)",
+        "help_link": "https://support.microsoft.com/en-us/help/4011687"
+      }
+    }
+    
+  ]
+}

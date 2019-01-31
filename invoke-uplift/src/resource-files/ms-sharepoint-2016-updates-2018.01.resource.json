@@ -1,0 +1,29 @@
+{
+  "resources": [
+
+    {
+      "id": "ms-sharepoint2016-update-2018.01.09-KB4011642",
+      "uri": "https://download.microsoft.com/download/A/8/6/A8676455-B2DC-4E01-B853-2D12F754747F/sts2016-kb4011642-fullfile-x64-glb.exe",
+
+      "checksum": "5DBE3416D9AC19D00427B869D794BAD6BF8BE8F0400B84BB0B8D59D389B26046",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Enterprise Server 2016: January 9, 2018",
+        "help_link": "https://support.microsoft.com/en-us/help/4011642"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-update-2018.01.09-KB4011645",
+      "uri": "https://download.microsoft.com/download/2/2/4/224F4887-5A9C-449B-A1CD-2F27297E3F5E/wssloc2016-kb4011645-fullfile-x64-glb.exe",
+
+      "checksum": "41465591457973B5745D71A5AC3B18DDD87314E3D776DD34A2FAD3E147CD77A7",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "January 9, 2018, update for SharePoint Enterprise Server 2016 (KB4011645)",
+        "help_link": "https://support.microsoft.com/en-us/help/4011645"
+      }
+    }
+    
+  ]
+}

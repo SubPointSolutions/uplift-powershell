@@ -1,0 +1,17 @@
+{
+  "resources": [
+
+    {
+      "id": "ms-sharepoint2016-update-2018.09.11-KB4092459",
+      "uri": "https://download.microsoft.com/download/B/A/0/BA07CD33-9A5D-4C06-ADF3-BF604D6B9716/sts2016-kb4092459-fullfile-x64-glb.exe",
+
+      "checksum": "3B0E897016BD417E92828CFE0CCE8DE929350B33A09CB6728E8BC7799584DD56",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Enterprise Server 2016: September 11, 2018",
+        "help_link": "https://support.microsoft.com/en-us/help/4092459"
+      }
+    }
+    
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "resources": [
+
+    {
+      "id": "ms-sharepoint2016-update-2018.05.08-KB4018381",
+      "uri": "https://download.microsoft.com/download/7/7/0/77007B0A-D0F4-4215-A8CC-BE9C3A79DF3A/sts2016-kb4018381-fullfile-x64-glb.exe",
+
+      "checksum": "A85BC9DAB848D1923B179EF11595404189C0712F2BB9214C56B6F6AB3776978E",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Server 2016: May 8, 2018",
+        "help_link": "https://support.microsoft.com/en-us/help/4018381"
+      }
+    },
+    {
+      "id": "ms-sharepoint2016-update-2018.05.08-KB4018386",
+      "uri": "https://download.microsoft.com/download/1/2/C/12CFD45C-2217-41B1-9B55-9CED742A4A42/wssloc2016-kb4018386-fullfile-x64-glb.exe",
+
+      "checksum": "52AB04E54F8F71FF0717B921A751073958EE3F31BF955FFC7E0D62C626E642F4",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "May 8, 2018, update for SharePoint Enterprise Server 2016 (KB4018386)",
+        "help_link": "https://support.microsoft.com/en-us/help/4018386"
+      }
+    }
+    
+  ]
+}

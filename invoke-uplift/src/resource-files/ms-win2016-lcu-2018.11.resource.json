@@ -1,0 +1,29 @@
+{
+    "resources": [
+        {
+            "id": "ms-win2016-lcu-2018.11.27-KB4467684",
+            "uri": "http://download.windowsupdate.com/d/msdownload/update/software/updt/2018/11/windows10.0-kb4467684-x64_14ee0bda136c7be4d8e51689c3c11d3896819f33.msu",
+
+            "checksum": "95DAC6B8CCA3C3295A28EAE821A76602E3EC1C705B16777D4198150149C43885",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "November 27, 2018—KB4467684 (OS Build 14393.2639)",
+                "help_link": "https://support.microsoft.com/en-au/help/4467684/windows-10-update-kb4467684"
+            }
+        },
+
+        {
+            "id": "ms-win2016-lcu-2018.11.13-KB4467691",
+            "uri": "http://download.windowsupdate.com/d/msdownload/update/software/secu/2018/10/windows10.0-kb4467691-x64_c1884b8c61fd7837b4a59a3aa7b87707474a8c12.msu",
+
+            "checksum": "463FFFC64F460146D9E6ADF1A8B1E24214566B45D2646F8F47BE7B063A6344E7",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "November 13, 2018—KB4467691 (OS Build 14393.2608)",
+                "help_link": "https://support.microsoft.com/en-au/help/4467691/windows-10-update-kb4467691"
+            }
+        }
+    ]
+}

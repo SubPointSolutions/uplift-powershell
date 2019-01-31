@@ -1,0 +1,47 @@
+{
+    "resources": [
+      {
+        "id": "hashicorp-packer-1.3.3-win",
+        "uri": "https://releases.hashicorp.com/packer/1.3.3/packer_1.3.3_windows_amd64.zip",
+  
+        "checksum": "02E35D7EC6DBD009C117F9731C42B8BA67FD6D53EC05F57849445F316AE8F817",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.vagrantup.com/downloads.html"
+        }
+      },
+
+      {
+        "id": "hashicorp-packer-1.3.3-darwin",
+        "uri": "https://releases.hashicorp.com/packer/1.3.3/packer_1.3.3_darwin_amd64.zip",
+  
+        "checksum": "6FFBB13BEE76E02F7B065955307D454B14773FEEE9FCFC3B5DD96ED154B931C4",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.vagrantup.com/downloads.html"
+        }
+      },
+
+      {
+        "id": "hashicorp-packer-1.3.2-win",
+        "uri": "https://releases.hashicorp.com/packer/1.3.2/packer_1.3.2_windows_amd64.zip",
+  
+        "checksum": "b0fa064bc29820f330669b3bc790e61eb1c8a873ae8d5134e580b3b16ef50e60",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.vagrantup.com/downloads.html"
+        }
+      },
+
+      {
+        "id": "hashicorp-packer-1.3.2-darwin",
+        "uri": "https://releases.hashicorp.com/packer/1.3.2/packer_1.3.2_darwin_amd64.zip",
+  
+        "checksum": "1c2433239d801b017def8e66bbff4be3e7700b70248261b0abff2cd9c980bf5b",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.vagrantup.com/downloads.html"
+        }
+      }
+    ]
+  }

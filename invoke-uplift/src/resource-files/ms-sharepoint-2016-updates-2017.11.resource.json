@@ -1,0 +1,28 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2016-update-2017.11.14-KB4011244",
+      "uri": "https://download.microsoft.com/download/1/7/F/17FC4E96-01D9-4995-9816-8B600F7BAA77/sts2016-kb4011244-fullfile-x64-glb.exe",
+
+      "checksum": "129F1AE875CD844BA4447FF37F942860329A83E90EF1505FA031E3CD29FEC4A7",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Server 2016: November 14, 2017",
+        "help_link": "https://support.microsoft.com/en-us/help/4011244"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-update-2017.11.14-KB4011243",
+      "uri": "https://download.microsoft.com/download/E/9/F/E9F76AFA-FE76-4D39-BA64-1C7AEB097726/wssloc2016-kb4011243-fullfile-x64-glb.exe",
+
+      "checksum": "0E961F1B64166FFEF3560E4C4721073B591ECCC60D1BB242EC29B74FFD46EC7A",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "November 14, 2017, update for SharePoint Enterprise Server 2016 (KB4011243)",
+        "help_link": "https://support.microsoft.com/en-us/help/4011243"
+      }
+    }
+    
+  ]
+}

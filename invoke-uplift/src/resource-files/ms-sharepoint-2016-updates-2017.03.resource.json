@@ -1,0 +1,28 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2016-update-2017.03.14-KB3178672",
+      "uri": "https://download.microsoft.com/download/A/8/7/A87F28F5-8677-4760-8801-B82F38083DD3/sts2016-kb3178672-fullfile-x64-glb.exe",
+
+      "checksum": "26875AE2F3EA53779DD711AFD55180611A432A53F7D53425BEAF934661D24ADA",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "March 14, 2017, update for SharePoint Server 2016 (KB3178672)",
+        "help_link": "https://support.microsoft.com/en-us/help/3178672"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-update-2017.03.14-KB3178675",
+      "uri": "https://download.microsoft.com/download/A/F/8/AF817268-9A98-41E1-8905-BF612C95779A/wssloc2016-kb3178675-fullfile-x64-glb.exe",
+
+      "checksum": "287CE511560E2C854460C0815A6A02EC5340BCDDDEC17688A20901B9BCFCFE45",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "March 14, 2017, update for SharePoint Server 2016 (KB3178675)",
+        "help_link": "https://support.microsoft.com/en-us/help/3178675"
+      }
+    }
+    
+  ]
+}

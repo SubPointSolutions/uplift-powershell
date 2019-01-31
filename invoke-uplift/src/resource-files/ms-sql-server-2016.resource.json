@@ -1,0 +1,19 @@
+{
+  "resources": [
+    {
+      "id": "ms-sql-server2016-rtm",
+      "uri": "https://download.microsoft.com/download/F/E/9/FE9397FA-BFAB-4ADD-8B97-91234BC774B2/SQLServer2016-x64-ENU.iso",
+
+      "checksum": "99222C188DFBB1E9FC10BE7500A9C4C0DE3AADC5CB3B41E37853B4FA817CE9A6",
+      "checksum_type": "sha256"
+    },
+    {
+      "id": "ms-sql-server-management-studio-17.04",
+      "uri": "https://go.microsoft.com/fwlink/?linkid=864329",
+      "file_name": "ssms-setup-enu.exe",
+
+      "checksum": "CD174C1C01FCDE5A992A6ACB12A5B21B44F88D595EFE646644E9A4797C52F1C4",
+      "checksum_type": "sha256"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "resources": [
+
+    {
+      "id": "ms-visualstudio-2017.ent-installer",
+      "uri": "https://download.visualstudio.microsoft.com/download/pr/12221250/52257ee3e96d6e07313e41ad155b155a/vs_enterprise.exe",
+      "file_name": "vs_enterprise.exe",
+
+      "checksum": "2931CB735697EEA0A6675E6EC11CCA22A4F90D44A396A3995D9D7B436706F27C",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "comment": "Implements - Create a network installation of Visual Studio 2017",
+        "help_link": "https://docs.microsoft.com/en-us/visualstudio/install/create-a-network-installation-of-visual-studio?view=vs-2017"
+      }
+    },
+
+    {
+      "id": "ms-visualstudio-2017.ent-dist-office-dev",
+      "uri": "https://download.visualstudio.microsoft.com/download/pr/12221250/52257ee3e96d6e07313e41ad155b155a/vs_enterprise.exe",
+      "file_name": "vs_enterprise.exe",
+      
+      "checksum": "2931CB735697EEA0A6675E6EC11CCA22A4F90D44A396A3995D9D7B436706F27C",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "comment": "Implements - Create a network installation of Visual Studio 2017",
+        "help_link": "https://docs.microsoft.com/en-us/visualstudio/install/create-a-network-installation-of-visual-studio?view=vs-2017"
+      },
+
+      "type": "uplift/ms-visualstudio-2017-dist",
+      "vs17_file_name": "vs17-ent-dist-office-dev.zip",
+      
+      "vs17_options": [
+        "--includeRecommended",
+
+        "--lang en-US",
+        "--quiet",
+        "--wait",
+        "--norestart",
+
+        "--add Microsoft.VisualStudio.Workload.Office",
+        "--add Microsoft.VisualStudio.Workload.ManagedDesktop",
+        "--add Microsoft.VisualStudio.Workload.NetCoreTools",
+        "--add Microsoft.VisualStudio.Workload.NetWeb",
+        "--add Microsoft.VisualStudio.Workload.Node",
+        "--add Microsoft.VisualStudio.Workload.VisualStudioExtension"
+      ]
+    }
+  ]
+}

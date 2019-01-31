@@ -1,0 +1,56 @@
+{
+    "resources": [
+        {
+            "id": "ms-win2016-lcu-2018.07.30-KB4346877",
+            "uri": "http://download.windowsupdate.com/d/msdownload/update/software/updt/2018/07/windows10.0-kb4346877-x64_374c04ab4fce5134b8c95faab72be4e527c86824.msu",
+
+            "checksum": "1E7EA0D99DFEE511E2BFF07D757368EAB22294298427E076AFDC630FBF075EBE",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "July 30, 2018 - KB4346877 (OS Build 14393.2396)",
+                "help_link": "https://support.microsoft.com/en-au/help/4346877"
+            }
+        },
+
+        {
+            "id": "ms-win2016-lcu-2018.07.24-KB4338822",
+            "uri": "http://download.windowsupdate.com/d/msdownload/update/software/updt/2018/07/windows10.0-kb4338822-x64_2db60cf228eca5137700178e0e7b2d6d3d19f78b.msu",
+
+            "checksum": "EFC963E7B6C39C6579540BEBD8D67FC0907172CB6F96393D558E7F98768A4D3E",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "July 24, 2018—KB4338822 (OS Build 14393.2395)",
+                "help_link": "https://support.microsoft.com/en-au/help/4338822"
+            }
+        },
+
+        {
+            "id": "ms-win2016-lcu-2018.07.16-KB4345418",
+            "uri": "http://download.windowsupdate.com/c/msdownload/update/software/updt/2018/07/windows10.0-kb4345418-x64_a636a1048a2601d9218463107bc5fde558a1055e.msu",
+
+            "checksum": "E2ECF48D1724BC62FEFDAD8BD1FC2031275C62CDBDAE6107376502376C326702",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "July 16, 2018—KB4345418 (OS Build 14393.2368)",
+                "help_link": "https://support.microsoft.com/en-au/help/4345418"
+            }
+        },
+
+        {
+            "id": "ms-win2016-lcu-2018.07.16-KB4338814",
+            "uri": "http://download.windowsupdate.com/d/msdownload/update/software/secu/2018/06/windows10.0-kb4338814-x64_f4a1df3470cc06192c5157c3f574ffdc4edadabd.msu",
+
+            "checksum": "D30D252B840D23687EA403E642344C2EC22F615E00ECD0FFA1387564DB720F18",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "July 10, 2018—KB4338814 (OS Build 14393.2363)",
+                "help_link": "https://support.microsoft.com/en-au/help/4338814"
+            }
+        }
+
+    ]
+}

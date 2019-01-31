@@ -1,0 +1,16 @@
+{
+  "resources": [
+    {
+      "id": "ms-win-2016-iso-x64-eval",
+      "uri": "https://download.microsoft.com/download/1/6/F/16FA20E6-4662-482A-920B-1A45CF5AAE3C/14393.0.160715-1616.RS1_RELEASE_SERVER_EVAL_X64FRE_EN-US.ISO",
+
+      "checksum": "E634269EF78F1181859F88708C6D03C12A250F4B66D8CBD3DE2E3C18DA1F96FF",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "comment": "Evaliation ISO for Windows Server 2016 Datacenter and Standard editions",
+        "help_link": "https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016"
+      }
+    }
+  ]
+}

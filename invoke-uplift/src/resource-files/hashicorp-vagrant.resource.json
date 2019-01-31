@@ -1,0 +1,66 @@
+{
+    "resources": [
+      {
+        "id": "hashicorp-vagrant-2.2.3-win",
+        "uri": "https://releases.hashicorp.com/vagrant/2.2.3/vagrant_2.2.3_x86_64.msi",
+  
+        "checksum": "4AC00CD17E9DE3294E3D9BBEC68404B9BD09C20B91F78CBB73745F0B8F01B793",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.vagrantup.com/downloads.html"
+        }
+      },
+      {
+        "id": "hashicorp-vagrant-2.2.3-osx",
+        "uri": "https://releases.hashicorp.com/vagrant/2.2.3/vagrant_2.2.3_x86_64.dmg",
+  
+        "checksum": "D6F68ED8D69D6465E13AB668542BACC9A1752CF60F47464FA46604C147C81BE4",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.vagrantup.com/downloads.html"
+        }
+      },
+
+      {
+        "id": "hashicorp-vagrant-2.2.2-win",
+        "uri": "https://releases.hashicorp.com/vagrant/2.2.2/vagrant_2.2.2_x86_64.msi",
+  
+        "checksum": "6b3f76e3a8c63a53e89981f556863c3508635785a8b04e6b04eaea8efe8aefa5",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.vagrantup.com/downloads.html"
+        }
+      },
+      {
+        "id": "hashicorp-vagrant-2.2.2-osx",
+        "uri": "https://releases.hashicorp.com/vagrant/2.2.2/vagrant_2.2.2_x86_64.dmg",
+  
+        "checksum": "c3b637e3d648c755b9b30197e820ca64a7062e40b3240bc08c4bfdd98925978b",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.vagrantup.com/downloads.html"
+        }
+      },
+
+      {
+        "id": "hashicorp-vagrant-2.1.0-win",
+        "uri": "https://releases.hashicorp.com/vagrant/2.1.0/vagrant_2.1.0_x86_64.msi",
+  
+        "checksum": "de88772fc38b7dec8afb7b3f319cdc6d91fc58bc3a3fc7ee6f1bef4b294d39e5",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.vagrantup.com/downloads.html"
+        }
+      },
+      {
+        "id": "hashicorp-vagrant-2.1.0-osx",
+        "uri": "https://releases.hashicorp.com/vagrant/2.1.0/vagrant_2.1.0_x86_64.dmg",
+  
+        "checksum": "fbbec9a335ab69b1a2b5535bca59b49034bb38c592c05f0f70fc120e25f71a4d",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.vagrantup.com/downloads.html"
+        }
+      }
+    ]
+  }

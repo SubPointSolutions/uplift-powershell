@@ -1,0 +1,11 @@
+{
+  "resources": [
+    {
+      "id": "ms-sql-server2012-sp2",
+      "uri": "https://download.microsoft.com/download/4/C/7/4C7D40B9-BCF8-4F8A-9E76-06E9B92FE5AE/ENU/SQLFULL_ENU.iso",
+
+      "checksum": "3F535E679D3FBF9B923C8D6F91B3A8431843AF19336FC91D88B699894D7145E4",
+      "checksum_type": "sha256"
+    }
+  ]
+}

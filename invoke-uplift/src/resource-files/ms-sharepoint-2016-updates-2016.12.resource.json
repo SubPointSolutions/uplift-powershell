@@ -1,0 +1,28 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2016-update-2016.12.13-KB3128014",
+      "uri": "https://download.microsoft.com/download/D/0/4/D04FD356-E140-433E-94F6-472CF45FD591/sts2016-kb3128014-fullfile-x64-glb.exe",
+
+      "checksum": "446F102AF4C75692D1A33478EED11A9888C9C9533514F241A19BFFC976632DF9",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "December 13, 2016, update for SharePoint Server 2016 (KB3128014)",
+        "help_link": "https://support.microsoft.com/en-us/help/3128014"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-update-2016.12.13-KB3128017",
+      "uri": "https://download.microsoft.com/download/6/5/B/65B840E6-A1C3-4C15-8E1A-988D491EB9AA/wssloc2016-kb3128017-fullfile-x64-glb.exe",
+
+      "checksum": "B807C475472E286080C4CCBBD4DA5BAD94B706D268521F336E10A53EB38BD0F9",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "December 13, 2016, update for SharePoint Server 2016 (KB3128017)",
+        "help_link": "https://support.microsoft.com/en-us/help/3128017"
+      }
+    }
+    
+  ]
+}

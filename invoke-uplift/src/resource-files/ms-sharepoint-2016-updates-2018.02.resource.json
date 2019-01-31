@@ -1,0 +1,17 @@
+{
+  "resources": [
+
+    {
+      "id": "ms-sharepoint2016-update-2018.02.13-KB4011680",
+      "uri": "https://download.microsoft.com/download/C/5/0/C5031891-92C2-48DF-8A95-FF6CEF6F66E5/sts2016-kb4011680-fullfile-x64-glb.exe",
+
+      "checksum": "B1624DCD955C3EE03060FC7E4D8C9844FE8F5086477693B8EB71456724AD0F9A",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "B1624DCD955C3EE03060FC7E4D8C9844FE8F5086477693B8EB71456724AD0F9A",
+        "help_link": "https://support.microsoft.com/en-us/help/4011680"
+      }
+    }
+    
+  ]
+}

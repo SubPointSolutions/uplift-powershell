@@ -1,0 +1,29 @@
+{
+    "resources": [
+        {
+            "id": "ms-win2016-lcu-2018.06.21-KB4284833",
+            "uri": "http://download.windowsupdate.com/d/msdownload/update/software/updt/2018/06/windows10.0-kb4284833-x64_eb8d1b6306fe77caefec2109844be73ffc7587f6.msu",
+
+            "checksum": "D46A67E908D8AB52A637424E21B2EA1895DC99601DF77B8C442F93DE00FC1AAA",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "June 21, 2018—KB4284833 (OS Build 14393.2339)",
+                "help_link": "https://support.microsoft.com/en-au/help/4284833"
+            }
+        },
+
+        {
+            "id": "ms-win2016-lcu-2018.06.12-KB4284880",
+            "uri": "http://download.windowsupdate.com/d/msdownload/update/software/secu/2018/06/windows10.0-kb4284880-x64_34d88e02608fa8c7db3dda395434d93ba109169c.msu",
+
+            "checksum": "4EABD50F8A092FC2DFEA5C8460A91CB762D969526EEBB23B0F96945ADC928AEE",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "June 12, 2018—KB4284880 (OS Build 14393.2312)",
+                "help_link": "https://support.microsoft.com/en-au/help/4284880"
+            }
+        }
+    ]
+}

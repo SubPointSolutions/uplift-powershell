@@ -1,0 +1,29 @@
+{
+    "resources": [
+        {
+            "id": "ms-win2016-lcu-2018.09.20-KB4457127",
+            "uri": "http://download.windowsupdate.com/d/msdownload/update/software/updt/2018/09/windows10.0-kb4457127-x64_53e4351d1e0233b3e55ed7fd70b6dca54b0ab878.msu",
+
+            "checksum": "50F2C46D1A37D4901D6B8E195AFFF0AF74AEB56AD8EB73952BD8A649EF9C23BD",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "September 20, 2018—KB4457127 (OS Build 14393.2515)",
+                "help_link": "https://support.microsoft.com/en-au/help/4457127"
+            }
+        },
+
+        {
+            "id": "ms-win2016-lcu-2018.09.11-KB4457131",
+            "uri": "http://download.windowsupdate.com/d/msdownload/update/software/secu/2018/09/windows10.0-kb4457131-x64_a4b53b04e7398bd10fbfbb54df4ae6e10b877d22.msu",
+
+            "checksum": "F60FC546E1BB45DE4D8150812E9CE07E951337173D80B3279D5A36F1C14D80F2",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "September 11, 2018—KB4457131 (OS Build 14393.2485)",
+                "help_link": "https://support.microsoft.com/en-au/help/4457131"
+            }
+        }
+    ]
+}

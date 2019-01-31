@@ -1,0 +1,29 @@
+{
+    "resources": [
+        {
+            "id": "ms-win2016-lcu-2018.10.18-KB4462928",
+            "uri": "http://download.windowsupdate.com/c/msdownload/update/software/updt/2018/10/windows10.0-kb4462928-x64_c3c3bd7c809ed0a53afab205ccbc229556f384c7.msu",
+
+            "checksum": "71F1409DF4040F7DEF78898CE4103695575CD49B9978B0A63FBC927148F6171E",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "October 18, 2018—KB4462928 (OS Build 14393.2580)",
+                "help_link": "https://support.microsoft.com/en-au/help/4462928"
+            }
+        },
+
+        {
+            "id": "ms-win2016-lcu-2018.10.09-KB4462917",
+            "uri": "http://download.windowsupdate.com/c/msdownload/update/software/secu/2018/10/windows10.0-kb4462917-x64_fde25fc4573e57f693bcab5096eafa778ff7b31c.msu",
+
+            "checksum": "187DC6B7671EF099EC6E3C4553731930B583A52F49075B2CF30FDA2D4D8586ED",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "October 9, 2018—KB4462917 (OS Build 14393.2551)",
+                "help_link": "https://support.microsoft.com/en-au/help/4462917"
+            }
+        }
+    ]
+}

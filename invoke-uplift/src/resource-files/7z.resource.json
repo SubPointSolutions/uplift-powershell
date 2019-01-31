@@ -1,0 +1,24 @@
+{
+  "resources": [
+    {
+      "id": "7z-1805-x64",
+      "uri": "https://www.7-zip.org/a/7z1805-x64.exe",
+
+      "checksum": "C1E42D8B76A86EA1890AD080E69A04C75A5F2C0484BDCD838DC8FA908DD4A84C",
+      "checksum_type": "SHA256",
+      "metadata": {
+        "help_link": "https://www.7-zip.org/download.html"
+      }
+    },
+    {
+      "id": "7z-1805-x86",
+      "uri": "https://www.7-zip.org/a/7z1805.exe",
+
+      "checksum": "647A9A621162CD7A5008934A08E23FF7C1135D6F1261689FD954AA17D50F9729",
+      "checksum_type": "SHA256",
+      "metadata": {
+        "help_link": "https://www.7-zip.org/download.html"
+      }
+    }
+  ]
+}

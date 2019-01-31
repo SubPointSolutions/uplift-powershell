@@ -1,0 +1,28 @@
+{
+  "resources": [
+
+    {
+      "id": "ms-sharepoint2016-update-2018.06.12-KB4022173",
+      "uri": "https://download.microsoft.com/download/B/2/7/B27FA473-F0E4-4514-9522-F9E19D84C7B9/sts2016-kb4022173-fullfile-x64-glb.exe",
+
+      "checksum": "0E8A810AAE25F9B5C6A218D388B8581FF11E5E73F996F63B4D74A7B9D5D123C3",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Enterprise Server 2016: June 12, 2018",
+        "help_link": "https://support.microsoft.com/en-us/help/4022173"
+      }
+    },
+    {
+      "id": "ms-sharepoint2016-update-2018.06.12-KB4022178",
+      "uri": "https://download.microsoft.com/download/9/8/2/982D4441-2963-4668-800D-250AD598D48E/wssloc2016-kb4022178-fullfile-x64-glb.exe",
+
+      "checksum": "AE2CC5BAE856802CBF9AC8CA9D5555F14245373E0A89D33A3B751EAAC96FB543",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "June 12, 2018, update for SharePoint Enterprise Server 2016 (KB4022178)",
+        "help_link": "https://support.microsoft.com/en-us/help/4022178"
+      }
+    }
+    
+  ]
+}

@@ -1,0 +1,55 @@
+platforms:
+  - name: win-2016
+    driver:
+      name: vagrant
+      box:  <%= ENV['VAGRANT_WIN16_BOX_NAME'] || 'mwrock/Windows2016'  %>
+      gui: false
+      box_check_update: false
+      vm_hostname: win16
+      platform: windows
+      linked_clone: true
+      customize:
+        memory: 1024
+        clipboard: 'bidirectional'
+      synced_folders:
+        - [ "./scripts" , "c:/app/" ]
+      vagrantfiles:
+          - vagrant/win16.vagrant.rb
+    transport:
+      name: winrm
+
+  - name: win-2012r2
+    driver:
+      name: vagrant
+      box:  <%= ENV['VAGRANT_WIN16_BOX_NAME'] || 'mwrock/Windows2012R2'  %>
+      gui: false
+      box_check_update: false
+      vm_hostname: win-2012r2
+      platform: windows
+      linked_clone: true
+      customize:
+        memory: 1024
+        clipboard: 'bidirectional'
+      synced_folders:
+       - [ "./scripts" , "c:/app/" ]
+      vagrantfiles:
+          - vagrant/win12r2.vagrant.rb
+
+# a bit lazy to fix up this on win2012, feels like WMF 5.1 is needed
+# 'Install-Module' is not recognized
+
+# suites:
+#   - name: win-2012r2
+#     provisioner:
+#       name: shell
+#       script: win-test.ps1
+#     includes:
+#       - win-2012r2
+
+suites:
+  - name: win-2016
+    provisioner:
+      name: shell
+      script: scripts/win-test.ps1
+    includes:
+      - win-2016

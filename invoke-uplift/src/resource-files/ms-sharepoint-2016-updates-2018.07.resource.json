@@ -1,0 +1,17 @@
+{
+  "resources": [
+
+    {
+      "id": "ms-sharepoint2016-update-2018.07.10-KB4022228",
+      "uri": "https://download.microsoft.com/download/2/6/5/2655418E-09E8-434D-8D07-5BA36D6FABF5/sts2016-kb4022228-fullfile-x64-glb.exe",
+
+      "checksum": "EC7C6D23E34328B6543D8D28CF2BFB6B8266FC5F332206B0A2A54B3F10C017B7",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Server 2016: July 10, 2018",
+        "help_link": "https://support.microsoft.com/en-us/help/4022228"
+      }
+    }
+    
+  ]
+}

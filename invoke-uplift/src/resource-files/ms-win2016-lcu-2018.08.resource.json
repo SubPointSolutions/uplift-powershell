@@ -1,0 +1,29 @@
+{
+    "resources": [
+        {
+            "id": "ms-win2016-lcu-2018.08.30-KB4343884",
+            "uri": "http://download.windowsupdate.com/c/msdownload/update/software/updt/2018/08/windows10.0-kb4343884-x64_40f94224802dd1bd46039df81209d89b64526e78.msu",
+
+            "checksum": "CB80C312B671A8A1890116240DCF71A0894E9954440FC8997EC56FBBB8F90D95",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "August 30, 2018—KB4343884 (OS Build 14393.2457)",
+                "help_link": "https://support.microsoft.com/en-au/help/4343884"
+            }
+        },
+
+        {
+            "id": "ms-win2016-lcu-2018.08.14-KB4343887",
+            "uri": "http://download.windowsupdate.com/d/msdownload/update/software/secu/2018/08/windows10.0-kb4343887-x64_b271ddc543d9dced2baef6af558e94726a549df3.msu",
+
+            "checksum": "2B68EA8EA517CD9528A14E23FCCB897C992E87FE8672F97B4525D6C4E4AB38DC",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "August 14, 2018—KB4343887 (OS Build 14393.2430)",
+                "help_link": "https://support.microsoft.com/en-au/help/4343887"
+            }
+        }
+    ]
+}

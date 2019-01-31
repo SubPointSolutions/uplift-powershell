@@ -1,0 +1,28 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2016-update-2016.11.08-KB3127940",
+      "uri": "https://download.microsoft.com/download/9/0/F/90F0F093-8B7B-44F8-986D-5E9971CBED8B/sts2016-kb3127940-fullfile-x64-glb.exe",
+
+      "checksum": "E8DAA900BA0B5BC3700B1F705C250FBF83F2745EC0172D76A4651709D8E50D47",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "November 8, 2016, update for SharePoint Server 2016 (KB3127940)",
+        "help_link": "https://support.microsoft.com/en-us/help/3127940"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-update-2016.11.08-KB3127942",
+      "uri": "https://download.microsoft.com/download/4/F/6/4F675DC1-3F45-4C3B-8261-84F3CFE9BDF4/wssloc2016-kb3127942-fullfile-x64-glb.exe",
+
+      "checksum": "E3BA3AF8C63C2234D0C1B26249859FD6B452CDF48F3F427C074B0B0125F96F9E",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "November 8, 2016, update for SharePoint Server 2016 (KB3127942)",
+        "help_link": "https://support.microsoft.com/en-us/help/3127942"
+      }
+    }
+    
+  ]
+}

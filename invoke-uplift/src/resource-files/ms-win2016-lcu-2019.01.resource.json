@@ -1,0 +1,29 @@
+{
+    "resources": [
+        {
+            "id": "ms-win2016-lcu-2019.01.17-KB4480977",
+            "uri": "http://download.windowsupdate.com/c/msdownload/update/software/updt/2019/01/windows10.0-kb4480977-x64_4630376d446938345665e2ce8379d96bb63a84c8.msu",
+
+            "checksum": "25BCAE6FDA4FA7348BA440D18335305080A16772DABB1DB9442C58332DBEDD32",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "January 17, 2019—KB4480977 (OS Build 14393.2759)",
+                "help_link": "https://support.microsoft.com/en-au/help/4480977"
+            }
+        },
+
+        {
+            "id": "ms-win2016-lcu-2019.01.08-KB4480961",
+            "uri": "http://download.windowsupdate.com/d/msdownload/update/software/secu/2019/01/windows10.0-kb4480961-x64_ada63f8d66b2c9994e03c3f5bffe56aff77edeb6.msu",
+
+            "checksum": "D214A6D04E389CBFBC4D4E306CF5544437631FC12D033F8D1385DE86EB76B7A0",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "January 8, 2019—KB4480961 (OS Build 14393.2724)",
+                "help_link": "https://support.microsoft.com/en-au/help/4480961"
+            }
+        }
+    ]
+}

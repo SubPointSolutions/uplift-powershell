@@ -1,0 +1,24 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint-designer-x32",
+      "uri": "https://download.microsoft.com/download/3/E/3/3E383BC4-C6EC-4DEA-A86A-C0E99F0F3BD9/sharepointdesigner_32bit.exe",
+
+      "checksum": "D64D9F6A318E3AF62F70B36481E08412AD8961B9E986A16FA3E6B12A902D2B5C",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-au/download/details.aspx?id=35491"
+      }
+    },
+    {
+      "id": "ms-sharepoint-designer-x64",
+      "uri": "https://download.microsoft.com/download/3/E/3/3E383BC4-C6EC-4DEA-A86A-C0E99F0F3BD9/sharepointdesigner_64bit.exe",
+
+      "checksum": "F10424CB40B62A2F4150BE354BAB6C1FF518439AA7A7C81CF6CFD519B64928FD",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-au/download/details.aspx?id=35491"
+      }
+    }
+  ]
+}

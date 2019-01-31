@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "id": "ms-win2012r2-kb-dotnet46-KB3045557",
+      "uri": "http://download.microsoft.com/download/C/3/A/C3A5200B-D33C-47E9-9D70-2F7C65DAAD94/NDP46-KB3045557-x86-x64-AllOS-ENU.exe",
+
+      "checksum": "B21D33135E67E3486B154B11F7961D8E1CFD7A603267FB60FEBB4A6FEAB5CF87",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "comment": "Microsoft .NET Framework 4.6 (Offline Installer) for Windows",
+        "help_link": "https://support.microsoft.com/en-au/help/3045557/microsoft-net-framework-4-6-offline-installer-for-windows"
+      }
+      
+    }
+  ]
+}

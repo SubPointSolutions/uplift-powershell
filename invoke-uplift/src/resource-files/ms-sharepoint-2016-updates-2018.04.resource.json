@@ -1,0 +1,28 @@
+{
+  "resources": [
+
+    {
+      "id": "ms-sharepoint2016-update-2018.04.10-KB4018336",
+      "uri": "https://download.microsoft.com/download/9/F/6/9F60F822-3A02-4F55-88D7-0B7850226452/sts2016-kb4018336-fullfile-x64-glb.exe",
+
+      "checksum": "A91C69D0852B6F900C9A39E1B00A09F7DC542065628D30C3305F922C1C23A4EE",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Enterprise Server 2016: April 10, 2018",
+        "help_link": "https://support.microsoft.com/en-us/help/4018336"
+      }
+    },
+    {
+      "id": "ms-sharepoint2016-update-2018.04.10-KB4018340",
+      "uri": "https://download.microsoft.com/download/0/2/0/02023021-4AE6-4B45-A3D7-45135C5ED71F/wssloc2016-kb4018340-fullfile-x64-glb.exe",
+
+      "checksum": "8301F8C4E59D67247F3F71F8FB6B7A7C8AB98ACE1C4B1796F570A927B1E473E3",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "April 10, 2018, update for SharePoint Enterprise Server 2016 (KB4018340)",
+        "help_link": "https://support.microsoft.com/en-us/help/4018340"
+      }
+    }
+    
+  ]
+}

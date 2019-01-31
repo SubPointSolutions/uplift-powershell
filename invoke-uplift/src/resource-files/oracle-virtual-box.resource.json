@@ -1,0 +1,24 @@
+{
+  "resources": [
+    {
+      "id": "oracle-virtual-box-5.2.18-win",
+      "uri": "https://download.virtualbox.org/virtualbox/5.2.18/VirtualBox-5.2.18-124319-Win.exe",
+
+      "checksum": "2607F510BCB5DCA11A189CA769BBD28E0FF3FF1D082762C03F062B406C8763F3",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.virtualbox.org/wiki/Downloads"
+      }
+    },
+    {
+      "id": "oracle-virtual-box-5.2.18-osx",
+      "uri": "https://download.virtualbox.org/virtualbox/5.2.18/VirtualBox-5.2.18-124319-OSX.dmg",
+
+      "checksum": "89AF567AB76006409DAE3652FC1D49EBE4867AC0EE3784BFD283C16695478377",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.virtualbox.org/wiki/Downloads"
+      }
+    }
+  ]
+}

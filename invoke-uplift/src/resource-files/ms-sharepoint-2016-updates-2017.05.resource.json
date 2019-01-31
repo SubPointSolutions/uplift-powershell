@@ -1,0 +1,28 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2016-update-2017.05.09-KB3191880",
+      "uri": "https://download.microsoft.com/download/B/D/3/BD3DAAF6-72E5-4D60-858A-F5F84D5830A9/sts2016-kb3191880-fullfile-x64-glb.exe",
+
+      "checksum": "340459F54B2CCCBB263A240C5C77C44D6141438A3859BE9B98C5FDE4A0A6CCFA",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Server 2016: May 9, 2017",
+        "help_link": "https://support.microsoft.com/en-us/help/3191880"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-update-2017.05.09-KB3191884",
+      "uri": "https://download.microsoft.com/download/0/6/A/06AE142B-F60D-4B06-8242-03D1C2A2A885/wssloc2016-kb3191884-fullfile-x64-glb.exe",
+
+      "checksum": "4F6DB29D461EF84CC43662186EE4F1200B468E2669479ADF7DAECD52DB5D7029",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "May 9, 2017, update for SharePoint Server 2016 (KB3191884)",
+        "help_link": "https://support.microsoft.com/en-us/help/3191884"
+      }
+    }
+    
+  ]
+}

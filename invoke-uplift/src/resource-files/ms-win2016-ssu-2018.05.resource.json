@@ -1,0 +1,16 @@
+{
+  "resources": [
+    {
+      "id": "ms-win2016-ssu-2018.05.17-KB4132216",
+      "uri": "http://download.windowsupdate.com/c/msdownload/update/software/crup/2018/05/windows10.0-kb4132216-x64_9cbeb1024166bdeceff90cd564714e1dcd01296e.msu",
+
+      "checksum": "BCC580FB381FEC4C7238F23A730C7A2E2DB011F9B690143B1A12ED4D53DA1F68",
+      "checksum_type": "sha256",
+      
+      "metadata": {
+        "comment": "Servicing stack update for Windows 10 Version 1607: May 17, 2018",
+        "help_link": "https://support.microsoft.com/is-is/help/4132216/servicing-stack-update-for-windows-10-1607-may-17-2018"
+      }
+    }
+  ]
+}

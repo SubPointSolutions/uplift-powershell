@@ -1,0 +1,35 @@
+{
+  "resources": [
+
+    {
+      "id": "ms-visualstudio-2015.3.ent",
+      "uri": "https://download.microsoft.com/download/8/4/3/843ec655-1b67-46c3-a7a4-10a1159cfa84/vs2015.3.ent_enu.iso",
+      "file_name": "vs2015.3.ent_enu.iso",
+
+      "checksum": "A491A7C9CDFC5C800A277D5895941AE1F642973F21960055E45A2ED9AAF13B88",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "comment": "Expand the following link with http://www.getlinkinfo.com/",
+        "help_link": "https://go.microsoft.com/fwlink/?LinkId=615436&clcid=0x409",
+        "release_link": "https://docs.microsoft.com/en-us/visualstudio/releasenotes/vs2015-version-history"
+      }
+    },
+
+    {
+      "id": "ms-visualstudio-2015.2.ent",
+      "uri": "http://download.microsoft.com/download/1/2/1/1211d9dd-b504-47f2-90f2-20cb8b44e096/vs2015.2.ent_enu.iso",
+      "file_name": "vs2015.2.ent_enu.iso",
+
+      "checksum": "122952E29995C0DA0A51584E402ED089BCD82F5D926F6157236EE1897243F073",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "comment": "Expand the following link with http://www.getlinkinfo.com/",
+        "help_link": "https://go.microsoft.com/fwlink/?LinkId=615436&clcid=0x409",
+        "release_link": "https://docs.microsoft.com/en-us/visualstudio/releasenotes/vs2015-version-history"
+      }
+    }
+    
+  ]
+}

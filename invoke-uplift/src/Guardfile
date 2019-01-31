@@ -1,0 +1,22 @@
+# More info at https://github.com/guard/guard#readme
+
+guard :yield do
+
+    def run_tests 
+        target_cmd = [
+            "pwsh -c invoke-build -Task UnitTest"
+        ].join(" && ")
+
+        puts "Running: #{target_cmd}"
+        system(target_cmd)
+    end
+
+    watch("Invoke-Uplift.ps1") { |m|
+        run_tests
+    }
+
+    watch("Invoke-Uplift.Tests.ps1") { |m|
+        run_tests
+    }
+
+end 

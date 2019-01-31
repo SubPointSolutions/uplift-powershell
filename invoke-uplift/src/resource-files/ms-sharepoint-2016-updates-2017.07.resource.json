@@ -1,0 +1,28 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2016-update-2017.07.11-KB3213544",
+      "uri": "https://download.microsoft.com/download/0/A/1/0A142E69-2B5D-4E49-90D3-8A6E7CD2F2B5/sts2016-kb3213544-fullfile-x64-glb.exe",
+
+      "checksum": "230D4BE7705C08D6640DDCDA8628C20E5C468D6C780187B81FC3AA4D101578C9",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Server 2016: July 11, 2017",
+        "help_link": "https://support.microsoft.com/en-us/help/3213544"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-update-2017.07.11-KB3213543",
+      "uri": "https://download.microsoft.com/download/2/A/E/2AED8CD5-193F-4526-BD30-D43EF77A729B/wssloc2016-kb3213543-fullfile-x64-glb.exe",
+
+      "checksum": "1854291EBCE7CA842132197DB76B2F326A3B82DBF618DC9AB7D6039BE083255B",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "July 11, 2017, update for SharePoint Server 2016 (KB3213543)",
+        "help_link": "https://support.microsoft.com/en-us/help/3213543"
+      }
+    }
+    
+  ]
+}

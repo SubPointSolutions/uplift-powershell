@@ -1,0 +1,15 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2016-update-2019.01.08-KB4461598",
+      "uri": "https://download.microsoft.com/download/2/C/F/2CF697F9-E26F-4D35-864F-831CC5950FAB/sts2016-kb4461598-fullfile-x64-glb.exe",
+
+      "checksum": "4E43F80D9F74C1A71575BA59DF99686CB09C2DAAAD3DF4036B5ECDA4A1567839",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Enterprise Server 2016: January 8, 2019",
+        "help_link": "https://support.microsoft.com/en-us/help/4461598/"
+      }
+    }
+  ]
+}

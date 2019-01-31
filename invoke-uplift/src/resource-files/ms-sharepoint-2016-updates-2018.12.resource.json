@@ -1,0 +1,16 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2016-update-2018.12.11-KB4461541",
+      "uri": "https://download.microsoft.com/download/E/8/8/E883B2B2-FD2E-4BFB-AF56-8A9B24A20CF4/sts2016-kb4461541-fullfile-x64-glb.exe",
+
+      "checksum": "979D1674EDCCED396819B225F453D86D7456D50A7567140CD2CCA614BA3B38B1",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Enterprise Server 2016: December 11, 2018",
+        "help_link": "https://support.microsoft.com/en-us/help/4461541"
+      }
+    }
+    
+  ]
+}

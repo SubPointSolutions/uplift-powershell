@@ -1,0 +1,28 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2016-update-2017.04.11-KB3178718",
+      "uri": "https://download.microsoft.com/download/A/5/E/A5E25221-6919-490A-B2C4-45D2DCAF349C/sts2016-kb3178718-fullfile-x64-glb.exe",
+
+      "checksum": "2B6493581C6A09CB3BA2800450F06063C0F2ADC62B2AE96E32CA414CE27C58FA",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "April 11, 2017, update for SharePoint Server 2016 (KB3178718)",
+        "help_link": "https://support.microsoft.com/en-us/help/3178718"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-update-2017.04.11-KB3178721",
+      "uri": "https://download.microsoft.com/download/B/D/8/BD8DA0BE-015C-445D-AC40-1F4494EF1703/wssloc2016-kb3178721-fullfile-x64-glb.exe",
+
+      "checksum": "D6B6AF52BAF3E0FC2F7F3C9CADD9FBD975B66097CE57CAA42409228239F64D7A",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "April 11, 2017, update for SharePoint Server 2016 (KB3178721)",
+        "help_link": "https://support.microsoft.com/en-us/help/3178721"
+      }
+    }
+    
+  ]
+}

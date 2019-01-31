@@ -1,0 +1,24 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2016-fp2",
+      "uri": "https://download.microsoft.com/download/1/D/4/1D47CBEE-9B6E-467D-9090-E99CC3B5954F/sts2016-kb4011127-fullfile-x64-glb.exe",
+
+      "checksum": "12739D0B8BE3A26AAF2B08F6304B93D7FCBF6258B7780A4880CD8470F6D2BF1D",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://docs.microsoft.com/en-us/officeupdates/sharepoint-updates"
+      }
+    },
+    {
+      "id": "ms-sharepoint2016-rtm",
+      "uri": "http://download.microsoft.com/download/0/0/4/004EE264-7043-45BF-99E3-3F74ECAE13E5/officeserver.img",
+
+      "checksum": "480802AD1373687EC80881B8CFA9F9174D60F63982E4854860D8C4085768F372",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/evalcenter/evaluate-office-servers"
+      }
+    }
+  ]
+}

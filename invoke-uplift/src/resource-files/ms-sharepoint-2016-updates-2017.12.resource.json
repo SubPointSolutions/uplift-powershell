@@ -1,0 +1,28 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2016-update-2017.12.12-KB4011576",
+      "uri": "https://download.microsoft.com/download/6/3/E/63E94C0D-9D70-4213-B1D8-1F2FF70477B6/sts2016-kb4011576-fullfile-x64-glb.exe",
+
+      "checksum": "99700E2C70182DA73387B5BA64E4E097DC387579A572B4C6F1456F57766D9D8A",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Server 2016: December 12, 2017",
+        "help_link": "https://support.microsoft.com/en-us/help/4011576"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-update-2017.12.12-KB4011578",
+      "uri": "https://download.microsoft.com/download/7/4/A/74A1E48F-0B66-4383-AD6E-0BC6DBD38DD5/wssloc2016-kb4011578-fullfile-x64-glb.exe",
+
+      "checksum": "C5C605BCDE21D3EC397C5D8D8BA9491F70F33305DDB3A35BB14A0BF17E23F70B",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "December 12, 2017, update for SharePoint Enterprise Server 2016 (KB4011578)",
+        "help_link": "https://support.microsoft.com/en-us/help/4011578"
+      }
+    }
+    
+  ]
+}

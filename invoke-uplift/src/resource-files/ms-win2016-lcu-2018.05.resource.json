@@ -1,0 +1,16 @@
+{
+    "resources": [
+        {
+            "id": "ms-win2016-lcu-2018.05.17-KB4103720",
+            "uri": "http://download.windowsupdate.com/d/msdownload/update/software/updt/2018/05/windows10.0-kb4103720-x64_c1fb7676d38fffae5c28b9216220c1f033ce26ac.msu",
+
+            "checksum": "723D84130478A3D9E772169BB0642DFA4070C9EFF2F809E7498A00602C10B000",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "May 17, 2018—KB4103720 (OS Build 14393.2273)",
+                "help_link": "https://support.microsoft.com/en-au/help/4103720"
+            }
+        }
+    ]
+}

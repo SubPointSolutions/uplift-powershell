@@ -1,0 +1,11 @@
+{
+  "resources": [
+    {
+      "id": "ms-sql-server2014-sp2",
+      "uri": "http://download.microsoft.com/download/6/D/9/6D90C751-6FA3-4A78-A78E-D11E1C254700/SQLServer2014SP2-FullSlipstream-x64-ENU.iso",
+
+      "checksum": "630E37EE371CEB7ADCC92D88F6D09B7E51FE420E0AAC9AD50E07219D91A3A961",
+      "checksum_type": "sha256"
+    }
+  ]
+}

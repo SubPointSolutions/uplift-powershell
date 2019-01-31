@@ -1,0 +1,28 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2016-update-2017.09.12-KB4011127",
+      "uri": "https://download.microsoft.com/download/1/D/4/1D47CBEE-9B6E-467D-9090-E99CC3B5954F/sts2016-kb4011127-fullfile-x64-glb.exe",
+
+      "checksum": "12739D0B8BE3A26AAF2B08F6304B93D7FCBF6258B7780A4880CD8470F6D2BF1D",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Server 2016: September 12, 2017",
+        "help_link": "https://support.microsoft.com/en-us/help/4011127"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-update-2017.09.12-KB4011112",
+      "uri": "https://download.microsoft.com/download/8/7/D/87D35F42-B3FB-4A54-A708-8A825010D809/wssloc2016-kb4011112-fullfile-x64-glb.exe",
+
+      "checksum": "419D7CA78C80457A9ED71DBB14DFD9DCFDF5E1FE9254BB9752219057CFB48C59",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "October 10, 2017, update for SharePoint Enterprise Server 2016 (KB4011112)",
+        "help_link": "https://support.microsoft.com/en-us/help/4011112"
+      }
+    }
+    
+  ]
+}

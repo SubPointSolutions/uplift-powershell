@@ -1,0 +1,16 @@
+{
+  "resources": [
+    {
+      "id": "ms-win2012r2-kb-2014.04-KB2919355",
+      "uri": "https://download.microsoft.com/download/2/5/6/256CCCFB-5341-4A8D-A277-8A81B21A1E35/Windows8.1-KB2919355-x64.msu",
+
+      "checksum": "B0C9ADA530F5EE90BB962AFA9ED26218C582362315E13B1BA97E59767CB7825D",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "comment": "Windows RT 8.1, Windows 8.1, and Windows Server 2012 R2 update: April 2014",
+        "help_link": "https://support.microsoft.com/en-au/help/2919355/windows-rt-8-1-windows-8-1-and-windows-server-2012-r2-update-april-201"
+      }
+    }
+  ]
+}

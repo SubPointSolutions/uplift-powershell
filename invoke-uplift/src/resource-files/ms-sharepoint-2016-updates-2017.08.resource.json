@@ -1,0 +1,28 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2016-update-2017.08.08-KB4011049",
+      "uri": "https://download.microsoft.com/download/5/A/D/5AD38E0C-641A-44BA-AFFC-8E65D69A2C93/sts2016-kb4011049-fullfile-x64-glb.exe",
+
+      "checksum": "DB68D5EEADDE10B86CA03F707B868D5803865D9D8E6239A9FC87D4E4D81072AE",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Server 2016: September 12, 2017",
+        "help_link": "https://support.microsoft.com/en-us/help/4011049"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-update-2017.08.08-KB4011053",
+      "uri": "https://download.microsoft.com/download/2/C/0/2C0D85B0-158F-459B-8807-AB77D8BE0923/wssloc2016-kb4011053-fullfile-x64-glb.exe",
+
+      "checksum": "88EABE0B5ABCCEFE824813B495615E1383F7C06C0B54BC7F4DE1180149E17188",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "August 8, 2017, update for SharePoint Server 2016 (KB4011053)",
+        "help_link": "https://support.microsoft.com/en-us/help/4011053"
+      }
+    }
+    
+  ]
+}

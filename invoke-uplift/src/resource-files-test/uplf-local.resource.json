@@ -1,0 +1,28 @@
+{
+    "resources": [
+      {
+        "id": "uplf-local-file1",
+        "uri": "http://localhost:3005/local-file1.txt",
+  
+        "checksum": "1B4F0E9851971998E732078544C96B36C3D01CEDF7CAA332359D6F1D83567014",
+        "checksum_type": "sha256",
+        "metadata": {
+            "comment": "local testing for invoke-uplift",
+            "help_link": ""
+        }
+      },
+      
+      {
+        "id": "uplf-local-file2",
+        "uri": "http://localhost:3005/local-file2.txt",
+        "file_name": "local-file2-renamed.txt",
+  
+        "checksum": "60303AE22B998861BCE3B28F33EEC1BE758A213C86C93C076DBE9F558C11C752",
+        "checksum_type": "sha256",
+        "metadata": {
+            "comment": "local testing for invoke-uplift",
+            "help_link": ""
+        }
+      }
+    ]
+  }

@@ -1,0 +1,29 @@
+{
+  "resources": [
+
+    {
+      "id": "ms-sharepoint2016-update-2018.10.09-KB4461447",
+      "uri": "https://download.microsoft.com/download/F/6/6/F6678C2C-E7C7-48DA-BF1F-9D5EB41C03E0/sts2016-kb4461447-fullfile-x64-glb.exe",
+
+      "checksum": "2C0C7E31E76C1A4C90DD9887757E9EAA942079D379CD8202A6553E4467D0E68E",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Enterprise Server 2016: October 9, 2018",
+        "help_link": "https://support.microsoft.com/en-us/help/4461447"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-update-2018.10.09-KB4092463",
+      "uri": "https://download.microsoft.com/download/C/5/A/C5A5728E-BBA7-4FFB-B81E-0C6DB0D9CB4D/wssloc2016-kb4092463-fullfile-x64-glb.exe",
+
+      "checksum": "44AA354830FD11FCA376A8BC4E9CA9AE2BC39D5FDB47FF069B974C9E2293DDB0",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "October 9, 2018, update for SharePoint Enterprise Server 2016 (KB4092463)",
+        "help_link": "https://support.microsoft.com/en-us/help/4092463"
+      }
+    }
+    
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "resources": [
+  
+    {
+      "id": "ms-sharepoint2016-update-2018.11.13-KB4461501",
+      "uri": "https://download.microsoft.com/download/4/7/C/47C41202-5616-4A85-AB9B-9700B255820F/sts2016-kb4461501-fullfile-x64-glb.exe",
+
+      "checksum": "47CFB25C3E8165E5E12964CFA3943A26B8F0758A12899A74B69706F35545CB84",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Enterprise Server 2016: November 13, 2018",
+        "help_link": "https://support.microsoft.com/en-us/help/4461501"
+      }
+    }
+    
+  ]
+}

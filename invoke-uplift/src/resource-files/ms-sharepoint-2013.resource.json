@@ -1,0 +1,24 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2013-foundation",
+      "uri": "https://download.microsoft.com/download/6/E/3/6E3A0B03-F782-4493-950B-B106A1854DE1/sharepoint.exe",
+
+      "checksum": "5DCA0F664F1C397455288DA76AEFB5B98A3874CB4FB71AD1BA8AE59790249085",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/evalcenter/evaluate-office-servers"
+      }
+    },
+    {
+      "id": "ms-sharepoint2013-rtm",
+      "uri": "http://download.microsoft.com/download/3/D/7/3D713F30-C316-49B8-9CC0-E1BFC34B63A0/SharePointServer_x64_en-us.img",
+
+      "checksum": "648D38F76CC745E6D870D8221ED3C0BB8F76725C00FF0BC5835CECEF72C05DE8",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/evalcenter/evaluate-office-servers"
+      }
+    }
+  ]
+}

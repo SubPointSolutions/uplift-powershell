@@ -1,0 +1,24 @@
+{
+  "resources": [
+    {
+      "id": "jetbrains-resharper-ultimate-2018.3.1",
+      "uri": "https://download-cf.jetbrains.com/resharper/ReSharperUltimate.2018.3.1/JetBrains.ReSharperUltimate.2018.3.1.exe",
+
+      "checksum": "F7F1415555290AF402E0E66D5B451FFB4A09F0D45425F2287F78D36ADE48DA0B",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.jetbrains.com/resharper/"
+      }
+    },
+    {
+      "id": "jetbrains-resharper-ultimate-2018.1.2",
+      "uri": "https://download-cf.jetbrains.com/resharper/JetBrains.ReSharperUltimate.2018.1.2.exe",
+
+      "checksum": "5E1135E8ECA8D9ACF1E52F0818B19E913E013D68FE2A8CDF46C366E0DD478B55",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.jetbrains.com/resharper/"
+      }
+    }
+  ]
+}

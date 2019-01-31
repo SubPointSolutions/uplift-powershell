@@ -1,0 +1,29 @@
+{
+  "resources": [
+
+    {
+      "id": "ms-sharepoint2016-update-2018.08.14-KB4032256",
+      "uri": "https://download.microsoft.com/download/4/D/5/4D51E797-35F0-4F8E-9EAF-9B6325BA45FD/sts2016-kb4032256-fullfile-x64-glb.exe",
+
+      "checksum": "6163D7A433ED4CE9A1F06DEEEDBF7D98F202FEBDDE39ABE9C96406495A2121CA",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Enterprise Server 2016: August 14, 2018",
+        "help_link": "https://support.microsoft.com/en-us/help/4032256"
+      }
+    },
+    
+    {
+      "id": "ms-sharepoint2016-update-2018.08.14-KB4022231",
+      "uri": "https://download.microsoft.com/download/5/E/A/5EADC4E3-A66B-4C2F-96E5-CA744ABE945E/wssloc2016-kb4022231-fullfile-x64-glb.exe",
+
+      "checksum": "9C4049C3CB6B92F7F1FACE51ECCD93458260B68BE94E4FE4FEAD0C4F593D5CFA",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "August 14, 2018, update for SharePoint Enterprise Server 2016 (KB4022231)",
+        "help_link": "https://support.microsoft.com/en-us/help/4022231"
+      }
+    }
+    
+  ]
+}

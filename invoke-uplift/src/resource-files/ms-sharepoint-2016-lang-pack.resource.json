@@ -1,0 +1,213 @@
+{
+  "resources": [{
+      "id": "ms-sharepoint2016-lang-pack-ar-sa",
+      "uri": "https://download.microsoft.com/download/6/B/8/6B8F0067-800E-43F6-8B4F-D2C18A188654/serverlanguagepack.exe",
+
+      "checksum": "1F20EB5176E5C70979021302B84B784137D5D8C4EB1ACD5ABAF668D9FAA197C0",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-lang-pack-cs-cz",
+      "uri": "https://download.microsoft.com/download/D/2/7/D27C63AC-DF54-45D4-8DB3-267E93BA28C3/serverlanguagepack.exe",
+
+      "checksum": "5B5DB0FA0034FCB57975C4316746C4E1AC877CDCE9D7606FB42EB2A1208F2230",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-lang-pack-da-dk",
+      "uri": "https://download.microsoft.com/download/E/A/5/EA599F2F-93A1-4311-B189-3F35870D886B/serverlanguagepack.exe",
+
+      "checksum": "19FE177D3F0A334455C8B98CE34C9711B0D68E2A7AA4DF6397BB6A10B074D4C2",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-lang-pack-en-us",
+      "uri": "https://download.microsoft.com/download/9/F/8/9F86F455-3912-4873-A891-8C007CDBB66A/serverlanguagepack.exe",
+
+      "checksum": "71FB2316B21E976DBA5DEAA7760016BECA13BB4F0E121DABF5393B205B72AE98",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-lang-pack-de-de",
+      "uri": "https://download.microsoft.com/download/6/6/C/66C2575A-E8B0-461E-A7A7-48C7100EAF7F/serverlanguagepack.exe",
+
+      "checksum": "0116C5AAD86BA8CF6FF0C5DB151B558D971F8EB24FC81FD7ABBBC876538950CE",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-lang-pack-fr-fr",
+      "uri": "https://download.microsoft.com/download/9/A/D/9ADBFA1E-C83D-4833-AD35-32970A981A83/serverlanguagepack.exe",
+
+      "checksum": "2DFCA9D811085844D4F4B59D3F1F0A33E8646CAAB8BC4419A41BABA8DED8081B",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-lang-pack-fi-fi",
+      "uri": "https://download.microsoft.com/download/A/6/4/A64BA4CE-F646-400D-963E-BFD5C575EB35/serverlanguagepack.exe",
+
+      "checksum": "0A9331CDD6E12DEDEB1EC099F6ED293B78DE3C307537131F8FFABEE075527709",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-lang-pack-nl-nl",
+      "uri": "https://download.microsoft.com/download/0/1/E/01EE44A5-45FC-4FA5-9A97-BCDCDB483CC2/serverlanguagepack.exe",
+
+      "checksum": "EDCFE3EEF7C7F054F29F72E987117B83411CA154244D9A501EA9F20F246A3756",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-lang-pack-he-il",
+      "uri": "https://download.microsoft.com/download/6/E/5/6E58A30C-AC89-41C1-88A9-8CF31501D28E/serverlanguagepack.exe",
+
+      "checksum": "F7D596BF2609E2429EB01E5FF4BA5A54C28E81F07FE36A66CA76C7BFDA19D578",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-lang-pack-hi-in",
+      "uri": "https://download.microsoft.com/download/4/6/D/46D0EFE6-142A-45EB-B078-3937763E64E4/serverlanguagepack.exe",
+
+      "checksum": "5A8845DAB775C96501C2DBA91C3B6AF76D27335F753940C93DB1C9589D8753E4",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-lang-pack-kk-kz",
+      "uri": "https://download.microsoft.com/download/9/D/6/9D68A9BB-015E-4D77-A797-896BBDA445BD/serverlanguagepack.exe",
+
+      "checksum": "BC06FE9986088DE9D6A8653D2518343CE5403C17071E50DBEA2551D0DCFC9653",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-lang-pack-it-it",
+      "uri": "https://download.microsoft.com/download/8/9/1/891F0DDA-578F-4181-ADDA-F5F71B90CCB2/serverlanguagepack.exe",
+
+      "checksum": "877FB9F6B07B07D97A0FE721E5B29054C19F75C365D6E335C7F7DFC54B8E6CF8",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-lang-pack-lv-lv",
+      "uri": "https://download.microsoft.com/download/D/C/7/DC789F8F-E7A0-4B98-BD16-46210AF153FD/serverlanguagepack.exe",
+
+      "checksum": "5C5B275BF038C8A84ADC1E9524C88A54768EAF633417C97D45B4A44B67CE9107",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-lang-pack-pl-pl",
+      "uri": "https://download.microsoft.com/download/8/1/5/815F32DD-D203-49FE-882B-11AA29A60321/serverlanguagepack.exe",
+
+      "checksum": "0A5E8FB196100D88F8CA427EC8B0F203A6D8EF21D017CD987A9A92F52B41DED5",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-lang-pack-ru-ru",
+      "uri": "https://download.microsoft.com/download/B/8/3/B83B335A-9E02-4F7F-8DE6-1B47F0700579/serverlanguagepack.exe",
+
+      "checksum": "4191CAB78967413CE35EDE398F7A17CD838C1873A32B3966DCE6B4E9A73044C1",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-lang-pack-ro-ro",
+      "uri": "https://download.microsoft.com/download/2/A/6/2A6FAF0D-65C3-4217-AD43-40DBC06437FC/serverlanguagepack.exe",
+
+      "checksum": "97A4517F1BA6B29F0001BDFDF4B4FDA034872399077F07B9ABEE09F16DC747DD",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-lang-pack-es-es",
+      "uri": "https://download.microsoft.com/download/3/A/F/3AF9783E-5CA7-45EA-8CF8-1958D3F5C4FC/serverlanguagepack.exe",
+
+      "checksum": "14DB16C5594A6F8DE625790A1F4ADCDE34451787F60A22F106F51B56FC5C8194",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-lang-pack-sv-se",
+      "uri": "https://download.microsoft.com/download/B/4/F/B4FAAB83-EA58-4400-ACE9-D05EFEAE6427/serverlanguagepack.exe",
+
+      "checksum": "D365B5E853971123F339588FBD254A88EBDDC3707EC75E6002EBB8E299E240BF",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+
+    {
+      "id": "ms-sharepoint2016-lang-pack-uk-ua",
+      "uri": "https://download.microsoft.com/download/5/D/8/5D87B3FC-1438-4F2B-85EE-398F485A836A/serverlanguagepack.exe",
+
+      "checksum": "1E678D9700A4F88F1FECD00AE3139EEB0761300B83B7E2B89D205236659633DB",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    }
+
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2016-update-2017.06.13-KB3203432",
+      "uri": "https://download.microsoft.com/download/E/E/4/EE4C0711-C9C5-48FF-8DCF-9FCC151A1125/sts2016-kb3203432-fullfile-x64-glb.exe",
+
+      "checksum": "BA03B641F0359473BB36464B07AA5A354F02C807C3B404B57D617355CC23C49B",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Server 2016: June 13, 2017",
+        "help_link": "https://support.microsoft.com/en-us/help/3203432"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-update-2017.06.13-KB3203433",
+      "uri": "https://download.microsoft.com/download/2/5/9/259A2087-FF9C-434C-8622-DE17DDDC632D/wssloc2016-kb3203433-fullfile-x64-glb.exe",
+
+      "checksum": "74C9DA994F0A308A5D391350551BFD80D9763B364806E83E08D1BD273A1592D0",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "June 13, 2017, update for SharePoint Server 2016 (KB3203433)",
+        "help_link": "https://support.microsoft.com/en-us/help/3203433"
+      }
+    }
+    
+  ]
+}

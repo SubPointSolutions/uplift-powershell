@@ -750,11 +750,9 @@ function Repair-UpliftMachineKeys {
         $fileName = $file.Name
         if (!$fileName.EndsWith($machGUID))
             {
-                cp "$machineKeyFolder\$fileName" "$machineKeyFolder\$fileName.OLD"
+                Copy-Item "$machineKeyFolder\$fileName" "$machineKeyFolder\$fileName.OLD"
                 Rename-Item "$machineKeyFolder\$fileName" "$key1$machGUID"
                 break
-
-
             }
     }
 
@@ -767,7 +765,7 @@ function Repair-UpliftMachineKeys {
         $fileName = $file.Name
         if (!$fileName.EndsWith($machGUID))
             {
-                cp "$machineKeyFolder\$fileName" "$machineKeyFolder\$fileName.OLD"
+                Copy-Item "$machineKeyFolder\$fileName" "$machineKeyFolder\$fileName.OLD"
                 Rename-Item "$machineKeyFolder\$fileName" "$key2$machGUID"
                 break
 

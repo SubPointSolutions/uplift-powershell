@@ -114,8 +114,8 @@ function Get-ResourceContainer($resource, $dstDir, $force = $false) {
         StagingDirPath  = (Join-Path -Path $resourceDir -ChildPath "download-staging")
         StagingFilePath = (Join-Path -Path $resourceDir -ChildPath "download-staging" -AdditionalChildPath $resourceFileName)
 
-        CacheDirPath    = (Join-Path -Path $resourceDir -ChildPath "download-cache")
-        CacheFilePath   = (Join-Path -Path $resourceDir -ChildPath "download-cache" -AdditionalChildPath $resourceFileName)
+        CacheDirPath    = (Join-Path -Path $resourceDir -ChildPath "cache")
+        CacheFilePath   = (Join-Path -Path $resourceDir -ChildPath "cache" -AdditionalChildPath $resourceFileName)
 
         ResourceDirPath = $resourceDir
         DestinationPath = $dstDir
@@ -171,7 +171,7 @@ function Invoke-ResourceFolderDownload($resourceContainer, $src, $dst) {
     Write-DebugMessage " -dst: $dst"
 
     # download
-    $preferredTool = Get-CommandOptionValue @("-t", "-tool") $null "wget"
+    $preferredTool = Get-CommandOptionValue @("-t", "-tool") $null $null
     Invoke-DownloadFile `
         $src `
         $dst `

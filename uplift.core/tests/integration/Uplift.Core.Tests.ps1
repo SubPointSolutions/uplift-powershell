@@ -7,12 +7,13 @@ $srcPath    =  Resolve-Path "$dirPath/../../src"
     
 $skipSourceInclude = $True
 
-Describe 'uplift.core.integration' {
-    Context "Cdefault" {
-        It 'can import module' {
-            Import-Module Uplift.Core
-        }
-    }
-}
+Write-Host "PSHome: $PSHome"
+Write-Host "Is64BitProcess: $([Environment]::Is64BitProcess)"
+
+Write-Host "Listing installed modules:"
+Get-InstalledModule
+
+Write-Host "Importing module: Uplift.Core"
+Import-Module Uplift.Core 
 
 . $srcPath/../tests/unit/Uplift.Core.Tests.ps1

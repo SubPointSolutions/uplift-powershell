@@ -50,7 +50,12 @@ task UnitTest {
     Write-Build Green " [~] Unit testing..."
     
     exec {
-        pwsh -c 'Invoke-Pester ./tests/unit* -EnableExit'
+        if($null -ne $script:PS6 ) {
+            pwsh -c 'Invoke-Pester ./tests/unit* -EnableExit'
+        } else {
+            Write-Build Green " [~] Using PowerShell"
+            powershell -c 'Invoke-Pester ./tests/unit* -EnableExit'
+        }
     }
 }
 
@@ -60,7 +65,13 @@ task IntegrationTest {
     Write-Build Green " [~] Integration testing..."
     
     exec {
-        pwsh -c 'Invoke-Pester ./tests/integration* -EnableExit'
+        if($null -ne $script:PS6 ) {
+            Write-Build Green " [~] Using PS6"
+            pwsh -c 'Invoke-Pester ./tests/integration* -EnableExit'
+        } else {
+            Write-Build Green " [~] Using PowerShell"
+            powershell -c 'Invoke-Pester ./tests/integration* -EnableExit'
+        }
     }
 }
 
@@ -94,8 +105,24 @@ task VersionModule {
     # It seems to map to .NET Version object, so no -alpha/-beta tags
     # $script:Version = "0.1.0-alpha$stamp" 
 
-    $script:Version = "0.1.$stamp" 
-    
+    if($null -ne $env:APPVEYOR_REPO_BRANCH) {
+        Write-Build Green " [~] Running under APPVEYOR branch: $($env:APPVEYOR_REPO_BRANCH)"
+
+        if($env:APPVEYOR_REPO_BRANCH -ine "beta" -and $env:APPVEYOR_REPO_BRANCH -ine "master") {
+            Write-Build Green " skipping APPVEYOR versioning for branch: $($env:APPVEYOR_REPO_BRANCH)"
+        } else {
+            Write-Build Green " using APPVEYOR versioning for branch: $($env:APPVEYOR_REPO_BRANCH)"
+
+            ## 1902.build-no
+            $stamp = Get-Date -f "yyMM"
+            $buildNumber = $env:APPVEYOR_BUILD_NUMBER;
+
+            $script:Version = "0.2.$stamp.$buildNumber"
+        }
+    } else {
+        $script:Version = "0.1.$stamp"
+    }
+
     if($null -ne $buildVersion ) {
         Write-Build Yello " [+] Using version from params: $buildVersion"
         $script:Version = $buildVersion
@@ -141,19 +168,19 @@ task BuildModule {
 
 # Synopsis: Installes a PowerShell module
 task InstallModule {
-    
+   
     Write-Build Green "[~] ensuring repository: $devRepositoryName"
     New-UpliftPSRepository $devRepositoryName `
         $moduleRepositoryFolder `
         $moduleRepositoryFolder 
- 
+
     Write-Build Green " [+] Fetching repo: $devRepositoryName"
     Get-PSRepository $devRepositoryName
 
     Write-Build Green " [~] Find-Module -Name $moduleName"
     Find-Module  -Name $moduleName -Repository $devRepositoryName 
 
-    Write-Build Green " [~] Install-Module -Name $moduleName -Force"
+    Write-Build Green " [~] Install-Module -Name $moduleName -Repository $devRepositoryName -Force"
     Install-Module -Name $moduleName -Repository $devRepositoryName -Force
 
     Write-Build Green " [~] Get-InstalledModule -Name $moduleName"
@@ -189,6 +216,27 @@ task ValidateInstalledModule {
 # Synopsis: Publishes module to the giving repository
 task PublishModule {
     
+    if($null -ne $env:APPVEYOR_REPO_BRANCH) {
+        Write-Build Green " [~] Running under APPVEYOR branch: $($env:APPVEYOR_REPO_BRANCH)"
+
+        if($env:APPVEYOR_REPO_BRANCH -ine "dev" -and $env:APPVEYOR_REPO_BRANCH -ine "beta" -and $env:APPVEYOR_REPO_BRANCH -ine "master") {
+            Write-Build Green " skipping publishing for branch: $($env:APPVEYOR_REPO_BRANCH)"
+            return;
+        }
+
+        $repoNameEnvName = ("SPS_REPO_NAME_" + $env:APPVEYOR_REPO_BRANCH)
+        $repoSrcEnvName  = ("SPS_REPO_SRC_"  + $env:APPVEYOR_REPO_BRANCH)
+        $repoPushEnvName = ("SPS_REPO_PUSH_" + $env:APPVEYOR_REPO_BRANCH)
+        $repoKeyEnvName  = ("SPS_REPO_KEY_"  + $env:APPVEYOR_REPO_BRANCH)
+
+        $publishRepoName             = (get-item env:$repoNameEnvName).Value;
+
+        $publishRepoSourceLocation   = (get-item env:$repoSrcEnvName).Value;
+        $publishRepoPublishLocation  = (get-item env:$repoPushEnvName).Value;
+
+        $publishRepoNuGetApiKey      = (get-item env:$repoKeyEnvName).Value;
+    }
+
     Confirm-Variable "publishRepoName" $publishRepoName "publishRepoName" 
     
     Confirm-Variable "publishRepoSourceLocation" $publishRepoSourceLocation  "publishRepoSourceLocation"
@@ -219,6 +267,11 @@ task PublishModule {
 
     Write-Build Green "Result: $result"
     Write-Build Green "Completed!"
+}
+
+# Synopsis: Executes Appveyor specific setup
+task AppveyorPrepare {
+    npm install http-server -g
 }
 
 # Synopsis: Runs PSScriptAnalyzer 
@@ -252,3 +305,6 @@ task QA AnalyzeModule, DefaultBuild, IntegrationTest
 
 # Synopsis: Default module publishing task
 task ReleaseModule AnalyzeModule, DefaultBuild, IntegrationTest, PublishModule
+
+task Appveyor AppveyorPrepare, 
+    ReleaseModule

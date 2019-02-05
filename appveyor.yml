@@ -1,0 +1,7 @@
+test: off
+
+build_script: 
+  - ps: Install-Module -Name InvokeBuild -Force
+  - ps: pwsh -c Install-Module -Name InvokeBuild -Force
+  - ps: cd $env:APPVEYOR_BUILD_FOLDER/invoke-uplift; pwsh -c invoke-build Appveyor
+  - ps: cd $env:APPVEYOR_BUILD_FOLDER/uplift.core; powershell -c invoke-build Appveyor

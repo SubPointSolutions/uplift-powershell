@@ -131,7 +131,16 @@ function Invoke-DownloadResourceVS17Dist ($resourceContainer, $vsClientPath) {
 
         Write-InfoMessage "[~] ensuring vs layour folder"
         $vsClientPath     = $resourceContainer.CacheFilePath
-        $layoutFolderPath = Join-Path -Path $resourceContainer.CacheDirPath -ChildPath "vs17-layout"
+        $layoutFolderPath = Join-Path -Path $resourceContainer.CacheDirPath -ChildPath "vs17"
+
+        if($layoutFolderPath.Length -gt 80) {
+
+            $help = "error 5007 when trying to install Visual Studio 2017 15.5.7 from offline layout folder - https://developercommunity.visualstudio.com/content/problem/292951/error-5007-when-trying-to-install-visual-studio-20.html"
+            $err = "Layout folder for VS17 is greater than 80 chars! - $help"
+
+            Write-ErrorMessage $err
+            throw $err
+        }
 
         New-Folder $layoutFolderPath
 

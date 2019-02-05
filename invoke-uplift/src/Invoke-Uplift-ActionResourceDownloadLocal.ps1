@@ -35,7 +35,7 @@ function Get-LocalResourceContainer($resourceId, $dstDir, $force = $false) {
 
         Metadata = $null
 
-        CacheDirPath    = (Join-Path -Path $resourceDir -ChildPath "download-cache")
+        CacheDirPath    = (Join-Path -Path $resourceDir -ChildPath "cache")
 
         LocalRepositoryPath = $dstDir
         ResourceDirPath     = $resourceDir
@@ -132,7 +132,7 @@ function Invoke-LocalStagingDownload($resourceContainer) {
     Write-InfoMessage "[~] checking if /download-staging is OK"
     $result =  Confirm-LocalFileValidity $resourceContainer.StagingFilePath
 
-    $preferredTool = Get-CommandOptionValue @("-t", "-tool") $null "wget"
+    $preferredTool = Get-CommandOptionValue @("-t", "-tool") $null $null
 
     if($result -eq $False) {
         Write-InfoMessage "[~] downloading files..."

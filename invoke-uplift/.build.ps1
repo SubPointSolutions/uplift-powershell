@@ -20,6 +20,8 @@ $moduleName = "InvokeUplift"
 . "$dirPath/../_shared/.build-helpers.ps1"
 . "$dirPath/../_shared/.build.ps1"
 
+$script:PS6 = $true;
+
 task PrepareResourceFiles -After PrepareModule {
 
     New-Item "$moduleFolder/$moduleName/resource-files" -ItemType directory -Force | Out-Null

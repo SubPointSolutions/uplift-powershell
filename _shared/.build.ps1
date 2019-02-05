@@ -104,6 +104,8 @@ task VersionModule {
     # PowerShell does not allow string value in the Version
     # It seems to map to .NET Version object, so no -alpha/-beta tags
     # $script:Version = "0.1.0-alpha$stamp" 
+    
+    $script:Version = "0.1.$stamp"
 
     if($null -ne $env:APPVEYOR_REPO_BRANCH) {
         Write-Build Green " [~] Running under APPVEYOR branch: $($env:APPVEYOR_REPO_BRANCH)"
@@ -119,9 +121,7 @@ task VersionModule {
 
             $script:Version = "0.2.$stamp.$buildNumber"
         }
-    } else {
-        $script:Version = "0.1.$stamp"
-    }
+    } 
 
     if($null -ne $buildVersion ) {
         Write-Build Yello " [+] Using version from params: $buildVersion"

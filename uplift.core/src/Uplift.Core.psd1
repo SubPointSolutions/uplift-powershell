@@ -127,10 +127,10 @@
 			)
 
 			#A URL to the license for this module.
-			LicenseUri = 'https://github.com/SubPointSolutions/invoke-uplift'
+			LicenseUri = 'https://github.com/SubPointSolutions/uplift-powershell'
 
 			#A URL to the main website for this project.
-			ProjectUri = 'https://github.com/SubPointSolutions/invoke-uplift'
+			ProjectUri = 'https://github.com/SubPointSolutions/uplift-powershell'
 
 			#A URL to an icon representing this module.
 			IconUri = ''

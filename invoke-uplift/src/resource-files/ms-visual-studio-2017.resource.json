@@ -44,7 +44,8 @@
         "--add Microsoft.VisualStudio.Workload.NetCoreTools",
         "--add Microsoft.VisualStudio.Workload.NetWeb",
         "--add Microsoft.VisualStudio.Workload.Node",
-        "--add Microsoft.VisualStudio.Workload.VisualStudioExtension"
+        "--add Microsoft.VisualStudio.Workload.VisualStudioExtension",
+        "--add Microsoft.VisualStudio.Workload.Azure"
       ]
     }
   ]

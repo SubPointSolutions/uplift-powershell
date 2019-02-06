@@ -24,6 +24,12 @@ function Write-UpliftMessage {
     if($level -eq "ERROR")   { $messageColor = "Red" }
     if($level -eq "WARN")    { $messageColor = "Yellow" }
 
+    if($ENV:UPLF_LOG_LEVEL -ne "DEBUG") {
+        if($level -eq "DEBUG" -or  $level -eq "VERBOSE") {
+            return;
+        }
+    }
+
     $level = $level.PadRight(7)
 
     # use [environment]::UserDomainName / [environment]::UserName

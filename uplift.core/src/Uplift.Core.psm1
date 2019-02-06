@@ -37,4 +37,8 @@ Export-ModuleMember `
     Install-UpliftPSModule, `
     Install-UpliftPS6Module, `
     `
-    Repair-UpliftIISApplicationHostFile
+    Repair-UpliftIISApplicationHostFile, `
+    `
+    New-UpliftTrackEvent, `
+    New-UpliftTrackException, `
+    New-UpliftAppInsighsProperties

@@ -1,6 +1,11 @@
 ﻿
 $ErrorActionPreference = "Stop"
 
+# appinsight helpers
+$hereFolder = $PSScriptRoot
+
+. "$hereFolder/Uplift.AppInsights.ps1"
+
 function Write-UpliftMessage {
     [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSAvoidUsingWriteHost", "", Scope="Function")]
 
@@ -162,42 +167,103 @@ function Start-UpliftDSCConfiguration {
     & $Name -ConfigurationData $Config -OutputPath $dscConfigFolder | Out-Null
 
     Write-UpliftMessage "Starting configuration: $Name"
-    if($null -ne $ENV:UPLF_DSC_VERBOSE) {
-        Start-DscConfiguration -Path $dscConfigFolder -Force -Wait -Verbose
-    } else {
-        Start-DscConfiguration -Path $dscConfigFolder -Force -Wait
-    }
 
     $result = $null
+    $inDesiredState = $null
+    $elapsedMilliseconds = $null
 
-    if($skipDscCheck -eq $false) {
+    $dscStopwatch = [System.Diagnostics.Stopwatch]::StartNew()
+    $dscException = $null
 
-        Write-UpliftMessage "Testing configuration: $Name"
-        $result = Test-DscConfiguration -Path $dscConfigFolder
+    $dscConfigId  = (New-Guid).ToString()
 
-        if($ExpectInDesiredState -eq $true) {
-            Write-UpliftMessage "Expecting DSC [$Name] in a desired state"
+    try {
 
-            if($result.InDesiredState -ne $true) {
-                $message = "[~] DSC: $Name - is NOT in a desired state: $result"
-                Write-UpliftMessage $message
+        if($null -ne $ENV:UPLF_DSC_VERBOSE) {
+            Start-DscConfiguration -Path $dscConfigFolder -Force -Wait -Verbose
+        } else {
+            Start-DscConfiguration -Path $dscConfigFolder -Force -Wait
+        }
 
-                if ($null -ne $result.ResourcesNotInDesiredState) {
-                    foreach($resource in $result.ResourcesNotInDesiredState) {
-                        Write-UpliftMessage $resource
+        $dscStopwatch.Stop()
+        $elapsedMilliseconds = $dscStopwatch.ElapsedMilliseconds
+
+        Write-UpliftMessage "Completed in: $elapsedMilliseconds"
+
+        if($skipDscCheck -eq $false) {
+
+            Write-UpliftMessage "Testing configuration: $Name"
+            $result = Test-DscConfiguration -Path $dscConfigFolder
+
+            $inDesiredState = $result.InDesiredState
+
+            if($ExpectInDesiredState -eq $true) {
+                Write-UpliftMessage "Expecting DSC [$Name] in a desired state"
+
+                if($result.InDesiredState -ne $true) {
+                    $message = "[~] DSC: $Name - is NOT in a desired state: $result"
+                    Write-UpliftMessage $message
+
+                    if ($null -ne $result.ResourcesNotInDesiredState) {
+                        foreach($resource in $result.ResourcesNotInDesiredState) {
+                            Write-UpliftMessage $resource
+                        }
                     }
-                }
 
-                throw $message
+                    throw $message
+                } else {
+                    $message = "[+] DSC: $Name is in a desired state"
+                    Write-UpliftMessage $message
+                }
             } else {
-                $message = "[+] DSC: $Name is in a desired state"
-                Write-UpliftMessage $message
+                Write-UpliftMessage "[+] No check for DSC [$Name] is done. Skipping."
             }
         } else {
-            Write-UpliftMessage "[+] No check for DSC [$Name] is done. Skipping."
+            Write-UpliftMessage "[+] Skipping testing configuration: $Name"
         }
-    } else {
-        Write-UpliftMessage "[+] Skipping testing configuration: $Name"
+    } catch {
+        Write-UpliftErrorMessage $_
+        $dscException = $_
+    } finally {
+
+        if($dscStopwatch.IsRunning -eq $true) {
+            $dscStopwatch.Stop()
+            $elapsedMilliseconds = $dscStopwatch.ElapsedMilliseconds
+        }
+
+        try {
+            Confirm-UpliftUpliftAppInsightClient
+
+            $success = $false
+
+            if($ExpectInDesiredState -eq $True) {
+                $success = ($inDesiredState -eq $True)
+            } else {
+                $success = ($null -eq $dscException)
+            }
+
+            $eventProps = New-UpliftAppInsighsProperties @{
+                "dsc_name"    = $Name.Name
+                "dsc_expect"  = $ExpectInDesiredState
+                "dsc_state"   = $inDesiredState
+                "dsc_elapsed" = $elapsedMilliseconds
+                "dsc_success" = $success
+                "dsc_config_id" = $dscConfigId
+            }
+
+            if($null -ne $dscException) {
+                $eventProps.Add("dsc_error", $dscException.ToString())
+            }
+
+            New-UpliftTrackEvent "uplift-core.dsc" $eventProps
+
+            if($null -ne $dscException) {
+                New-UpliftTrackException $dscException.Exception $eventProps $null
+            }
+        } catch {
+            Write-UpliftWarnMessage "[!] Cannot use AppInsight, please report this error or use UPLF_NO_APPINSIGHT env variable to disable it."
+            Write-UpliftWarnMessage "[!] $_"
+        }
     }
 
     return  $result
@@ -637,7 +703,6 @@ function Install-UpliftPSModule() {
         # TODO
     }
 }
-
 
 function Repair-UpliftIISApplicationHostFile {
     # https://forums.iis.net/t/1160389.aspx

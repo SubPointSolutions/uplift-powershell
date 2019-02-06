@@ -19,3 +19,9 @@ $moduleName = "Uplift.Core"
 
 . "$dirPath/../_shared/.build-helpers.ps1"
 . "$dirPath/../_shared/.build.ps1"
+
+task PrepareResourceFiles -After PrepareModule {
+
+    Copy-Item "$dirPath/src/Uplift.AppInsights.ps1" "$moduleFolder/$moduleName/"
+
+}

@@ -116,7 +116,7 @@ task VersionModule {
             Write-Build Green " using APPVEYOR versioning for branch: $($env:APPVEYOR_REPO_BRANCH)"
 
             ## 1902.build-no
-            $stamp = Get-Date -f "yyMM"
+            $stamp = [System.DateTime]::UtcNow.ToString("yyMM")
             $buildNumber = $env:APPVEYOR_BUILD_NUMBER;
 
             $script:Version = "0.2.$stamp.$buildNumber"

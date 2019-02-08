@@ -529,7 +529,11 @@ function Install-UpliftPSModule {
 
     while ( ($attempt -le $maxAttempt) -and (-not $success) ) {
 
+        $oldProgressPreference = $progressPreference
+
         try {
+            $progressPreference = 'silentlyContinue'
+
             Write-UpliftMessage "`t[$attempt/$maxAttempt] ensuring package: $name $version"
             $existinModule = $null
 
@@ -548,9 +552,9 @@ function Install-UpliftPSModule {
                 Write-UpliftMessage "`t`tpackage does not exist, installing: $name $version"
 
                 if ([System.String]::IsNullOrEmpty($version) -eq $true) {
-                    Install-Module -Name $name -Force;
+                    Install-Module -Name $name -Force -SkipPublisherCheck
                 } else {
-                    Install-Module -Name $name -RequiredVersion $version -Force;
+                    Install-Module -Name $name -RequiredVersion $version -Force -SkipPublisherCheck
                 }
             }
 
@@ -563,6 +567,8 @@ function Install-UpliftPSModule {
             Write-UpliftMessage "`t[$attempt/$maxAttempt] error was: $exception"
 
             $attempt = $attempt + 1
+        } finally {
+            $progressPreference = $oldProgressPreference
         }
     }
 

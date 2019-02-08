@@ -687,80 +687,80 @@ function Install-UpliftPS6Module() {
     Install-UpliftPSModule $moduleName $version $repository $True
 }
 
-function Install-UpliftPSModule() {
-    [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSShouldProcess", "", Scope = "Function")]
-    [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSUseShouldProcessForStateChangingFunctions", "", Scope = "Function")]
-    [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSAvoidUsingWriteHost", "", Scope = "Function")]
+# function Install-UpliftPSModule() {
+#     [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSShouldProcess", "", Scope = "Function")]
+#     [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSUseShouldProcessForStateChangingFunctions", "", Scope = "Function")]
+#     [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSAvoidUsingWriteHost", "", Scope = "Function")]
 
-    param(
-        $moduleName,
-        $version,
-        $repository,
-        $usePS6 = $false
-    )
+#     param(
+#         $moduleName,
+#         $version,
+#         $repository,
+#         $usePS6 = $false
+#     )
 
-    if( [String]::IsNullOrEmpty($version) -eq $True) {
-        $version = $null
-    }
+#     if( [String]::IsNullOrEmpty($version) -eq $True) {
+#         $version = $null
+#     }
 
-    Write-UpliftMessage "Installing module: $moduleName version: $version, repository: $repository"
+#     Write-UpliftMessage "Installing module: $moduleName version: $version, repository: $repository"
 
-    Write-UpliftMessage "Looking for the latest module $moduleName"
-    $moduleDefinition = Find-Module -Name $moduleName `
-        | Select-Object Version, Repository `
-        | Sort-Object Version -Descending `
-        | Select-Object -First 1
+#     Write-UpliftMessage "Looking for the latest module $moduleName"
+#     $moduleDefinition = Find-Module -Name $moduleName `
+#         | Select-Object Version, Repository `
+#         | Sort-Object Version -Descending `
+#         | Select-Object -First 1
 
-    Write-UpliftMessage "Found latest module"
-    Write-UpliftMessage $moduleDefinition
-    Write-UpliftMessage " - version   : $($moduleDefinition.Version)"
-    Write-UpliftMessage " - repository: $($moduleDefinition.Repository)"
+#     Write-UpliftMessage "Found latest module"
+#     Write-UpliftMessage $moduleDefinition
+#     Write-UpliftMessage " - version   : $($moduleDefinition.Version)"
+#     Write-UpliftMessage " - repository: $($moduleDefinition.Repository)"
 
-    if([String]::IsNullOrEmpty($version) -eq $True) {
+#     if([String]::IsNullOrEmpty($version) -eq $True) {
 
-        if($null -eq $moduleDefinition) {
-            throw "Failed to install module $moduleName - repo/version were not provided, and cannot find latest in any repo"
-        }
+#         if($null -eq $moduleDefinition) {
+#             throw "Failed to install module $moduleName - repo/version were not provided, and cannot find latest in any repo"
+#         }
 
-        $version = $moduleDefinition.Version
+#         $version = $moduleDefinition.Version
 
-        if([String]::IsNullOrEmpty($repository) -eq $True) {
-            $repository = $moduleDefinition.Repository
-        }
+#         if([String]::IsNullOrEmpty($repository) -eq $True) {
+#             $repository = $moduleDefinition.Repository
+#         }
 
-        Write-UpliftMessage "Installing latest ($version) $moduleName version: $version, repository: $repository"
+#         Write-UpliftMessage "Installing latest ($version) $moduleName version: $version, repository: $repository"
 
-        if($usePS6 -eq $True) {
-            pwsh -c "Install-Package $moduleName -Source $repository -RequiredVersion $version -Force -SkipPublisherCheck"
-            Confirm-UpliftExitCode $LASTEXITCODE "Cannot install PS6 module: $moduleName, version: $version repository: $repository"
-        } else {
-            Install-Package $moduleName -Source $repository -RequiredVersion $version -Force -SkipPublisherCheck
-        }
-    }
-    else {
-        if([String]::IsNullOrEmpty($repository) -eq $True) {
-            $repository = $moduleDefinition.Repository
-        }
+#         if($usePS6 -eq $True) {
+#             pwsh -c "Install-Package $moduleName -Source $repository -RequiredVersion $version -Force -SkipPublisherCheck"
+#             Confirm-UpliftExitCode $LASTEXITCODE "Cannot install PS6 module: $moduleName, version: $version repository: $repository"
+#         } else {
+#             Install-Package $moduleName -Source $repository -RequiredVersion $version -Force -SkipPublisherCheck
+#         }
+#     }
+#     else {
+#         if([String]::IsNullOrEmpty($repository) -eq $True) {
+#             $repository = $moduleDefinition.Repository
+#         }
 
-        Write-UpliftMessage "Installing specified version $moduleName version: $version, repository: $repository"
+#         Write-UpliftMessage "Installing specified version $moduleName version: $version, repository: $repository"
 
-        if($usePS6 -eq $True) {
-            pwsh -c "Install-Package $moduleName -Source $repository -Force  -RequiredVersion $version -SkipPublisherCheck"
-            Confirm-UpliftExitCode $LASTEXITCODE "Cannot install PS6 module: $moduleName, version: $version repository: $repository"
-        } else {
-            Install-Package $moduleName -Source $repository -Force  -RequiredVersion $version -SkipPublisherCheck
-        }
-    }
+#         if($usePS6 -eq $True) {
+#             pwsh -c "Install-Package $moduleName -Source $repository -Force  -RequiredVersion $version -SkipPublisherCheck"
+#             Confirm-UpliftExitCode $LASTEXITCODE "Cannot install PS6 module: $moduleName, version: $version repository: $repository"
+#         } else {
+#             Install-Package $moduleName -Source $repository -Force  -RequiredVersion $version -SkipPublisherCheck
+#         }
+#     }
 
-    Write-UpliftMessage "Checking installed module: $moduleName"
+#     Write-UpliftMessage "Checking installed module: $moduleName"
 
-    if($usePS6 -eq $True) {
-        pwsh -c "Get-InstalledModule $moduleName"
-        Confirm-UpliftExitCode $LASTEXITCODE "Cannot find installed PS6 module: $moduleName"
-    } else {
-        # TODO
-    }
-}
+#     if($usePS6 -eq $True) {
+#         pwsh -c "Get-InstalledModule $moduleName"
+#         Confirm-UpliftExitCode $LASTEXITCODE "Cannot find installed PS6 module: $moduleName"
+#     } else {
+#         # TODO
+#     }
+# }
 
 function Repair-UpliftIISApplicationHostFile {
     # https://forums.iis.net/t/1160389.aspx

@@ -88,8 +88,8 @@ task PrepareModule {
 
 # Synopsis: Versions package with giving or timestamped value
 task VersionModule {
-    $dateStamp = Get-Date -f "yyyyMMdd"
-    $timeStamp = Get-Date -f "HHmmss"
+    $dateStamp = [System.DateTime]::UtcNow.ToString("yyyyMMdd")
+    $timeStamp = [System.DateTime]::UtcNow.ToString("HHmmss")
 
     $stamp = "$dateStamp.$timeStamp"
 

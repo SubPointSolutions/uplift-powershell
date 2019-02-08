@@ -41,4 +41,6 @@ Export-ModuleMember `
     `
     New-UpliftTrackEvent, `
     New-UpliftTrackException, `
-    New-UpliftAppInsighsProperties
+    New-UpliftAppInsighsProperties, `
+    `
+    Get-UpliftDscConfigurationStatus

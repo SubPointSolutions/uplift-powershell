@@ -125,6 +125,24 @@ function New-UpliftDSCConfigurationData {
     }
 }
 
+function Get-UpliftDscConfigurationStatus() {
+    $status = Get-DscConfigurationStatus
+
+
+    Write-UpliftInfoMessage "ResourcesInDesiredState"
+    foreach($resource in $status.ResourcesInDesiredState) {
+        Write-UpliftInfoMessage "[+] $($resource.ResourceId)"
+    }
+
+    Write-UpliftInfoMessage ""
+
+    Write-UpliftInfoMessage "ResourcesNotInDesiredState"
+    foreach($resource in $status.ResourcesNotInDesiredState) {
+        Write-UpliftInfoMessage "[!] $($resource.ResourceId)"
+        Write-UpliftInfoMessage $resource.Error
+    }
+}
+
 function Start-UpliftDSCConfiguration {
     [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSShouldProcess", "", Scope="Function")]
     [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSUseShouldProcessForStateChangingFunctions", "", Scope="Function")]
@@ -216,10 +234,14 @@ function Start-UpliftDSCConfiguration {
                         }
                     }
 
+                    Get-UpliftDscConfigurationStatus
+
                     throw $message
                 } else {
                     $message = "[+] DSC: $Name is in a desired state"
                     Write-UpliftMessage $message
+
+                    Get-UpliftDscConfigurationStatus
                 }
             } else {
                 Write-UpliftMessage "[+] No check for DSC [$Name] is done. Skipping."
@@ -494,6 +516,64 @@ function Find-UpliftFileInPath {
     return $exeFile.FullName
 }
 
+function Install-UpliftPSModule {
+
+    Param(
+        $name,
+        $version
+    )
+
+    $maxAttempt = 5
+    $attempt = 1
+    $success = $false
+
+    while ( ($attempt -le $maxAttempt) -and (-not $success) ) {
+
+        try {
+            Write-UpliftMessage "`t[$attempt/$maxAttempt] ensuring package: $name $version"
+            $existinModule = $null
+
+            if( [String]::IsNullOrEmpty($version) -eq $True) {
+                Write-UpliftMessage "`tchecking if package exists: $name $version"
+                $existinModule = Get-Module -ListAvailable | Where-Object { $_.Name -eq $name }
+            } else {
+                Write-UpliftMessage "`tchecking if package exists: $name $version"
+                $existinModule = Get-Module -ListAvailable | Where-Object { $_.Name -eq $name -and $_.Version -eq $version}
+            }
+
+            if( $null -ne $existinModule) {
+                Write-UpliftMessage "`t`tpackage exists, nothing to do: $name $version"
+            }
+            else {
+                Write-UpliftMessage "`t`tpackage does not exist, installing: $name $version"
+
+                if ([System.String]::IsNullOrEmpty($version) -eq $true) {
+                    Install-Module -Name $name -Force;
+                } else {
+                    Install-Module -Name $name -RequiredVersion $version -Force;
+                }
+            }
+
+            Write-UpliftMessage "`t[$attempt/$maxAttempt] finished ensuring package: $name $version"
+            $success = $true
+        } catch {
+            $exception = $_.Exception
+
+            Write-UpliftMessage "`t[$attempt/$maxAttempt] coudn't install package: $name $version"
+            Write-UpliftMessage "`t[$attempt/$maxAttempt] error was: $exception"
+
+            $attempt = $attempt + 1
+        }
+    }
+
+    if($success -eq $false) {
+        $errorMessage = "`t[$attempt/$maxAttempt] coudn't install package: $name $version"
+
+        Write-UpliftMessage $errorMessage
+        throw $errorMessage
+    }
+}
+
 function Install-UpliftPSModules {
 
     Param(
@@ -503,51 +583,17 @@ function Install-UpliftPSModules {
 
     foreach($package in $packages ) {
 
-        $maxAttempt = 5
-        $attempt = 0
-        $success = $false
-
         $name = $package["Id"]
         $version = $package["Version"]
 
-        while ( ($attempt -le $maxAttempt) -and (-not $success) ) {
+        if($version -is [System.Object[]]) {
 
-            try {
-                Write-UpliftMessage "`t[$attempt/$maxAttempt] installing package: $name $version"
-
-                Write-UpliftMessage "`tchecking is package exists: $name $version"
-                $existingModule = Get-Module -ListAvailable -Name $name
-
-                if($existingModule) {
-                    Write-UpliftMessage "`t`tpackage exists, nothing to do: $name $version"
-                }
-                else {
-                    Write-UpliftMessage "`t`tpackage does not exist, installing: $name $version"
-
-                    if ([System.String]::IsNullOrEmpty($version) -eq $true) {
-                        Install-Module -Name $name -Force;
-                    } else {
-                        Install-Module -Name $name -RequiredVersion $version -Force;
-                    }
-                }
-
-                Write-UpliftMessage "`t[$attempt/$maxAttempt] finished installing package: $name $version"
-                $success = $true
-            } catch {
-                $exception = $_.Exception
-
-                Write-UpliftMessage "`t[$attempt/$maxAttempt] coudn't install package: $name $version"
-                Write-UpliftMessage "`t[$attempt/$maxAttempt] error was: $exception"
-
-                $attempt = $attempt + 1
+            foreach($versionId in $version) {
+                Install-UpliftPSModule $name $versionId
             }
-        }
 
-        if($success -eq $false) {
-            $errorMessage = "`t[$attempt/$maxAttempt] coudn't install package: $name $version"
-
-            Write-UpliftMessage $errorMessage
-            throw $errorMessage
+        } else {
+            Install-UpliftPSModule $name $version
         }
     }
 }

@@ -200,4 +200,11 @@ Describe 'uplift.core' {
         }
     }
 
+    Context "Get-UpliftDscConfigurationStatus" {
+        It 'should exist' {
+            Get-Command "Get-UpliftDscConfigurationStatus" `
+                | Should Not Be $null
+        }
+    }
+    
 }

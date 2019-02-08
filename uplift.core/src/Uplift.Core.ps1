@@ -731,10 +731,10 @@ function Install-UpliftPSModule() {
         Write-UpliftMessage "Installing latest ($version) $moduleName version: $version, repository: $repository"
 
         if($usePS6 -eq $True) {
-            pwsh -c "Install-Package $moduleName -Source $repository -RequiredVersion $version -Force"
+            pwsh -c "Install-Package $moduleName -Source $repository -RequiredVersion $version -Force -SkipPublisherCheck"
             Confirm-UpliftExitCode $LASTEXITCODE "Cannot install PS6 module: $moduleName, version: $version repository: $repository"
         } else {
-            Install-Package $moduleName -Source $repository -RequiredVersion $version -Force
+            Install-Package $moduleName -Source $repository -RequiredVersion $version -Force -SkipPublisherCheck
         }
     }
     else {
@@ -745,10 +745,10 @@ function Install-UpliftPSModule() {
         Write-UpliftMessage "Installing specified version $moduleName version: $version, repository: $repository"
 
         if($usePS6 -eq $True) {
-            pwsh -c "Install-Package $moduleName -Source $repository -Force  -RequiredVersion $version"
+            pwsh -c "Install-Package $moduleName -Source $repository -Force  -RequiredVersion $version -SkipPublisherCheck"
             Confirm-UpliftExitCode $LASTEXITCODE "Cannot install PS6 module: $moduleName, version: $version repository: $repository"
         } else {
-            Install-Package $moduleName -Source $repository -Force  -RequiredVersion $version
+            Install-Package $moduleName -Source $repository -Force  -RequiredVersion $version -SkipPublisherCheck
         }
     }
 

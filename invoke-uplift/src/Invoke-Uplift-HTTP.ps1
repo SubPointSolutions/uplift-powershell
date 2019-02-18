@@ -181,12 +181,16 @@ function Invoke-DownloadFile($src, $dst, $preferredTool = $null) {
             if( $tools.wget.IsAvailable -eq $True) {
                 Invoke-DownloadFileAsWget $tools.wget $src $dst
                 return
+            } else {
+                Write-DebugMessage "wget is not here, fallback: wget -> curl -> InvokeWebRequest"
             }
 
             # is curl available?
             if( $tools.curl.IsAvailable -eq $True) {
                 Invoke-DownloadFileAsCurl $tools.curl $src $dst
                 return
+            } else {
+                Write-DebugMessage "curl is not here, fallback: wget -> curl -> InvokeWebRequest"
             }
 
             # default is  Invoke-WebRequest

@@ -179,5 +179,32 @@ Describe 'uplift.core' {
         }
     }
 
+    Context "New-UpliftTrackEvent" {
+        It 'should exist' {
+            Get-Command "New-UpliftTrackEvent" `
+                | Should Not Be $null
+        }
+    }
 
+    Context "New-UpliftTrackException" {
+        It 'should exist' {
+            Get-Command "New-UpliftTrackException" `
+                | Should Not Be $null
+        }
+    }
+
+    Context "New-UpliftAppInsighsProperties" {
+        It 'should exist' {
+            Get-Command "New-UpliftAppInsighsProperties" `
+                | Should Not Be $null
+        }
+    }
+
+    Context "Get-UpliftDscConfigurationStatus" {
+        It 'should exist' {
+            Get-Command "Get-UpliftDscConfigurationStatus" `
+                | Should Not Be $null
+        }
+    }
+    
 }

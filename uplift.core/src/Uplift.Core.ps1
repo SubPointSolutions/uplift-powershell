@@ -1,6 +1,11 @@
 ﻿
 $ErrorActionPreference = "Stop"
 
+# appinsight helpers
+$hereFolder = $PSScriptRoot
+
+. "$hereFolder/Uplift.AppInsights.ps1"
+
 function Write-UpliftMessage {
     [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSAvoidUsingWriteHost", "", Scope="Function")]
 
@@ -18,6 +23,12 @@ function Write-UpliftMessage {
     if($level -eq "DEBUG")   { $messageColor = "DarkGray" }
     if($level -eq "ERROR")   { $messageColor = "Red" }
     if($level -eq "WARN")    { $messageColor = "Yellow" }
+
+    if($ENV:UPLF_LOG_LEVEL -ne "DEBUG") {
+        if($level -eq "DEBUG" -or  $level -eq "VERBOSE") {
+            return;
+        }
+    }
 
     $level = $level.PadRight(7)
 
@@ -114,6 +125,24 @@ function New-UpliftDSCConfigurationData {
     }
 }
 
+function Get-UpliftDscConfigurationStatus() {
+    $status = Get-DscConfigurationStatus
+
+
+    Write-UpliftInfoMessage "ResourcesInDesiredState"
+    foreach($resource in $status.ResourcesInDesiredState) {
+        Write-UpliftInfoMessage "[+] $($resource.ResourceId)"
+    }
+
+    Write-UpliftInfoMessage ""
+
+    Write-UpliftInfoMessage "ResourcesNotInDesiredState"
+    foreach($resource in $status.ResourcesNotInDesiredState) {
+        Write-UpliftInfoMessage "[!] $($resource.ResourceId)"
+        Write-UpliftInfoMessage $resource.Error
+    }
+}
+
 function Start-UpliftDSCConfiguration {
     [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSShouldProcess", "", Scope="Function")]
     [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSUseShouldProcessForStateChangingFunctions", "", Scope="Function")]
@@ -162,42 +191,107 @@ function Start-UpliftDSCConfiguration {
     & $Name -ConfigurationData $Config -OutputPath $dscConfigFolder | Out-Null
 
     Write-UpliftMessage "Starting configuration: $Name"
-    if($null -ne $ENV:UPLF_DSC_VERBOSE) {
-        Start-DscConfiguration -Path $dscConfigFolder -Force -Wait -Verbose
-    } else {
-        Start-DscConfiguration -Path $dscConfigFolder -Force -Wait
-    }
 
     $result = $null
+    $inDesiredState = $null
+    $elapsedMilliseconds = $null
 
-    if($skipDscCheck -eq $false) {
+    $dscStopwatch = [System.Diagnostics.Stopwatch]::StartNew()
+    $dscException = $null
 
-        Write-UpliftMessage "Testing configuration: $Name"
-        $result = Test-DscConfiguration -Path $dscConfigFolder
+    $dscConfigId  = (New-Guid).ToString()
 
-        if($ExpectInDesiredState -eq $true) {
-            Write-UpliftMessage "Expecting DSC [$Name] in a desired state"
+    try {
 
-            if($result.InDesiredState -ne $true) {
-                $message = "[~] DSC: $Name - is NOT in a desired state: $result"
-                Write-UpliftMessage $message
+        if($null -ne $ENV:UPLF_DSC_VERBOSE) {
+            Start-DscConfiguration -Path $dscConfigFolder -Force -Wait -Verbose
+        } else {
+            Start-DscConfiguration -Path $dscConfigFolder -Force -Wait
+        }
 
-                if ($null -ne $result.ResourcesNotInDesiredState) {
-                    foreach($resource in $result.ResourcesNotInDesiredState) {
-                        Write-UpliftMessage $resource
+        $dscStopwatch.Stop()
+        $elapsedMilliseconds = $dscStopwatch.ElapsedMilliseconds
+
+        Write-UpliftMessage "Completed in: $elapsedMilliseconds"
+
+        if($skipDscCheck -eq $false) {
+
+            Write-UpliftMessage "Testing configuration: $Name"
+            $result = Test-DscConfiguration -Path $dscConfigFolder
+
+            $inDesiredState = $result.InDesiredState
+
+            if($ExpectInDesiredState -eq $true) {
+                Write-UpliftMessage "Expecting DSC [$Name] in a desired state"
+
+                if($result.InDesiredState -ne $true) {
+                    $message = "[~] DSC: $Name - is NOT in a desired state: $result"
+                    Write-UpliftMessage $message
+
+                    if ($null -ne $result.ResourcesNotInDesiredState) {
+                        foreach($resource in $result.ResourcesNotInDesiredState) {
+                            Write-UpliftMessage $resource
+                        }
                     }
-                }
 
-                throw $message
+                    Get-UpliftDscConfigurationStatus
+
+                    throw $message
+                } else {
+                    $message = "[+] DSC: $Name is in a desired state"
+                    Write-UpliftMessage $message
+
+                    Get-UpliftDscConfigurationStatus
+                }
             } else {
-                $message = "[+] DSC: $Name is in a desired state"
-                Write-UpliftMessage $message
+                Write-UpliftMessage "[+] No check for DSC [$Name] is done. Skipping."
             }
         } else {
-            Write-UpliftMessage "[+] No check for DSC [$Name] is done. Skipping."
+            Write-UpliftMessage "[+] Skipping testing configuration: $Name"
         }
-    } else {
-        Write-UpliftMessage "[+] Skipping testing configuration: $Name"
+    } catch {
+        Write-UpliftErrorMessage $_
+        $dscException = $_
+    } finally {
+
+        if($dscStopwatch.IsRunning -eq $true) {
+            $dscStopwatch.Stop()
+            $elapsedMilliseconds = $dscStopwatch.ElapsedMilliseconds
+        }
+
+        try {
+            Confirm-UpliftUpliftAppInsightClient
+
+            $success = $false
+
+            if($ExpectInDesiredState -eq $True) {
+                $success = ($inDesiredState -eq $True)
+            } else {
+                $success = ($null -eq $dscException)
+            }
+
+            $eventProps = New-UpliftAppInsighsProperties @{
+                "dsc_name"    = $Name.Name
+                "dsc_expect"  = $ExpectInDesiredState
+                "dsc_state"   = $inDesiredState
+                "dsc_elapsed" = $elapsedMilliseconds
+                "dsc_success" = $success
+                "dsc_config_id" = $dscConfigId
+            }
+
+            if($null -ne $dscException) {
+                $eventProps.Add("dsc_error", $dscException.ToString())
+            }
+
+            New-UpliftTrackEvent "uplift-core.dsc" $eventProps
+
+            if($null -ne $dscException) {
+                New-UpliftTrackException $dscException.Exception $eventProps $null
+            }
+        } catch {
+            Write-UpliftWarnMessage "[!] Cannot use AppInsight, please report this error or use UPLF_NO_APPINSIGHT env variable to disable it."
+            Write-UpliftWarnMessage "[!] $_"
+        }
     }
 
     return  $result
@@ -422,6 +516,104 @@ function Find-UpliftFileInPath {
     return $exeFile.FullName
 }
 
+function Install-UpliftPSModule {
+
+    Param(
+        $name,
+        $version,
+        $repository = "PSGallery",
+        $usePS6 = $False
+    )
+
+    if( [String]::IsNullOrEmpty($version) -eq $True) {
+        $version = $null
+
+        Write-UpliftMessage "Looking for the latest module $name"
+
+        $moduleDefinition = Find-Module -Name $name `
+            | Select-Object Version, Repository `
+            | Sort-Object Version -Descending `
+            | Select-Object -First 1
+
+        Write-UpliftMessage "Found latest module"
+        Write-UpliftMessage $moduleDefinition
+        Write-UpliftMessage " - version   : $($moduleDefinition.Version)"
+        Write-UpliftMessage " - repository: $($moduleDefinition.Repository)"
+
+        if($null -eq $moduleDefinition) {
+            throw "Failed to install module $name - repo/version were not provided, and cannot find latest in any repo"
+        }
+
+        $version = $moduleDefinition.Version
+
+        if([String]::IsNullOrEmpty($repository) -eq $True) {
+            $repository = $moduleDefinition.Repository
+        }
+
+        Write-UpliftMessage "Installing latest ($version) $name version: $version, repository: $repository"
+    }
+
+    $maxAttempt = 5
+    $attempt = 1
+    $success = $false
+
+    while ( ($attempt -le $maxAttempt) -and (-not $success) ) {
+
+        $oldProgressPreference = $progressPreference
+
+        try {
+            $progressPreference = 'silentlyContinue'
+
+            Write-UpliftMessage "`t[$attempt/$maxAttempt] ensuring package: $name $version"
+            $moduleExists = $null
+
+            # does module exist locally?
+            if( [String]::IsNullOrEmpty($version) -eq $True) {
+                Write-UpliftMessage "`tchecking if package exists: $name $version"
+                $moduleExists = Get-Module -ListAvailable | Where-Object { $_.Name -eq $name }
+            } else {
+                Write-UpliftMessage "`tchecking if package exists: $name $version"
+                $moduleExists = Get-Module -ListAvailable | Where-Object { $_.Name -eq $name -and $_.Version -eq $version}
+            }
+
+            if( $null -ne $moduleExists) {
+                Write-UpliftMessage "`t`tpackage exists, nothing to do: $name $version"
+            }
+            else {
+                if($usePS6 -eq $True) {
+                    Write-UpliftMessage "`t`tpackage does not exist (PS6), installing: $name $version"
+
+                    pwsh -c "Install-Package $name -Source $repository -RequiredVersion $version -Force -SkipPublisherCheck"
+                    Confirm-UpliftExitCode $LASTEXITCODE "Cannot install PS6 module: $name, version: $version repository: $repository"
+                } else {
+                    Write-UpliftMessage "`t`tpackage does not exist (PS), installing: $name $version"
+
+                    Install-Package $name -Source $repository -RequiredVersion $version -Force -SkipPublisherCheck
+                }
+            }
+
+            Write-UpliftMessage "`t[$attempt/$maxAttempt] finished ensuring package: $name $version"
+            $success = $true
+        } catch {
+            $exception = $_.Exception
+
+            Write-UpliftMessage "`t[$attempt/$maxAttempt] coudn't install package: $name $version"
+            Write-UpliftMessage "`t[$attempt/$maxAttempt] error was: $exception"
+
+            $attempt = $attempt + 1
+        } finally {
+            $progressPreference = $oldProgressPreference
+        }
+    }
+
+    if($success -eq $false) {
+        $errorMessage = "`t[$attempt/$maxAttempt] coudn't install package: $name $version"
+
+        Write-UpliftMessage $errorMessage
+        throw $errorMessage
+    }
+}
+
 function Install-UpliftPSModules {
 
     Param(
@@ -431,51 +623,17 @@ function Install-UpliftPSModules {
 
     foreach($package in $packages ) {
 
-        $maxAttempt = 5
-        $attempt = 0
-        $success = $false
-
         $name = $package["Id"]
         $version = $package["Version"]
 
-        while ( ($attempt -le $maxAttempt) -and (-not $success) ) {
+        if($version -is [System.Object[]]) {
 
-            try {
-                Write-UpliftMessage "`t[$attempt/$maxAttempt] installing package: $name $version"
-
-                Write-UpliftMessage "`tchecking is package exists: $name $version"
-                $existingModule = Get-Module -ListAvailable -Name $name
-
-                if($existingModule) {
-                    Write-UpliftMessage "`t`tpackage exists, nothing to do: $name $version"
-                }
-                else {
-                    Write-UpliftMessage "`t`tpackage does not exist, installing: $name $version"
-
-                    if ([System.String]::IsNullOrEmpty($version) -eq $true) {
-                        Install-Module -Name $name -Force;
-                    } else {
-                        Install-Module -Name $name -RequiredVersion $version -Force;
-                    }
-                }
-
-                Write-UpliftMessage "`t[$attempt/$maxAttempt] finished installing package: $name $version"
-                $success = $true
-            } catch {
-                $exception = $_.Exception
-
-                Write-UpliftMessage "`t[$attempt/$maxAttempt] coudn't install package: $name $version"
-                Write-UpliftMessage "`t[$attempt/$maxAttempt] error was: $exception"
-
-                $attempt = $attempt + 1
+            foreach($versionId in $version) {
+                Install-UpliftPSModule $name $versionId
             }
-        }
 
-        if($success -eq $false) {
-            $errorMessage = "`t[$attempt/$maxAttempt] coudn't install package: $name $version"
-
-            Write-UpliftMessage $errorMessage
-            throw $errorMessage
+        } else {
+            Install-UpliftPSModule $name $version
         }
     }
 }
@@ -562,82 +720,6 @@ function Install-UpliftPS6Module() {
 
     Install-UpliftPSModule $moduleName $version $repository $True
 }
-
-function Install-UpliftPSModule() {
-    [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSShouldProcess", "", Scope = "Function")]
-    [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSUseShouldProcessForStateChangingFunctions", "", Scope = "Function")]
-    [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSAvoidUsingWriteHost", "", Scope = "Function")]
-
-    param(
-        $moduleName,
-        $version,
-        $repository,
-        $usePS6 = $false
-    )
-
-    if( [String]::IsNullOrEmpty($version) -eq $True) {
-        $version = $null
-    }
-
-    Write-UpliftMessage "Installing module: $moduleName version: $version, repository: $repository"
-
-    Write-UpliftMessage "Looking for the latest module $moduleName"
-    $moduleDefinition = Find-Module -Name $moduleName `
-        | Select-Object Version, Repository `
-        | Sort-Object Version -Descending `
-        | Select-Object -First 1
-
-    Write-UpliftMessage "Found latest module"
-    Write-UpliftMessage $moduleDefinition
-    Write-UpliftMessage " - version   : $($moduleDefinition.Version)"
-    Write-UpliftMessage " - repository: $($moduleDefinition.Repository)"
-
-    if([String]::IsNullOrEmpty($version) -eq $True) {
-
-        if($null -eq $moduleDefinition) {
-            throw "Failed to install module $moduleName - repo/version were not provided, and cannot find latest in any repo"
-        }
-
-        $version = $moduleDefinition.Version
-
-        if([String]::IsNullOrEmpty($repository) -eq $True) {
-            $repository = $moduleDefinition.Repository
-        }
-
-        Write-UpliftMessage "Installing latest ($version) $moduleName version: $version, repository: $repository"
-
-        if($usePS6 -eq $True) {
-            pwsh -c "Install-Package $moduleName -Source $repository -RequiredVersion $version -Force"
-            Confirm-UpliftExitCode $LASTEXITCODE "Cannot install PS6 module: $moduleName, version: $version repository: $repository"
-        } else {
-            Install-Package $moduleName -Source $repository -RequiredVersion $version -Force
-        }
-    }
-    else {
-        if([String]::IsNullOrEmpty($repository) -eq $True) {
-            $repository = $moduleDefinition.Repository
-        }
-
-        Write-UpliftMessage "Installing specified version $moduleName version: $version, repository: $repository"
-
-        if($usePS6 -eq $True) {
-            pwsh -c "Install-Package $moduleName -Source $repository -Force  -RequiredVersion $version"
-            Confirm-UpliftExitCode $LASTEXITCODE "Cannot install PS6 module: $moduleName, version: $version repository: $repository"
-        } else {
-            Install-Package $moduleName -Source $repository -Force  -RequiredVersion $version
-        }
-    }
-
-    Write-UpliftMessage "Checking installed module: $moduleName"
-
-    if($usePS6 -eq $True) {
-        pwsh -c "Get-InstalledModule $moduleName"
-        Confirm-UpliftExitCode $LASTEXITCODE "Cannot find installed PS6 module: $moduleName"
-    } else {
-        # TODO
-    }
-}
-
 
 function Repair-UpliftIISApplicationHostFile {
     # https://forums.iis.net/t/1160389.aspx
@@ -750,11 +832,9 @@ function Repair-UpliftMachineKeys {
         $fileName = $file.Name
         if (!$fileName.EndsWith($machGUID))
             {
-                cp "$machineKeyFolder\$fileName" "$machineKeyFolder\$fileName.OLD"
+                Copy-Item "$machineKeyFolder\$fileName" "$machineKeyFolder\$fileName.OLD"
                 Rename-Item "$machineKeyFolder\$fileName" "$key1$machGUID"
                 break
-
-
             }
     }
 
@@ -767,7 +847,7 @@ function Repair-UpliftMachineKeys {
         $fileName = $file.Name
         if (!$fileName.EndsWith($machGUID))
             {
-                cp "$machineKeyFolder\$fileName" "$machineKeyFolder\$fileName.OLD"
+                Copy-Item "$machineKeyFolder\$fileName" "$machineKeyFolder\$fileName.OLD"
                 Rename-Item "$machineKeyFolder\$fileName" "$key2$machGUID"
                 break
 

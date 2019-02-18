@@ -1,9 +1,0 @@
-{
-  "resources": [{
-    "id": "ms-dynamics-crm2016-server",
-    "uri": "https://download.microsoft.com/download/3/4/F/34FB8C80-F245-41E7-AFE2-6388005A702B/CRM2016-Server-ENU-amd64.exe",
-
-    "checksum": "79E622360A1AC25777FA64425643212E5F5215F10CFB7BB9B1A91C856A13949B",
-    "checksum_type": "sha256"
-  }]
-}

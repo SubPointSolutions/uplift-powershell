@@ -1,0 +1,31 @@
+{
+  "resources": [
+  
+    {
+      "id": "ms-dynamics-crm90-lang-pack-sv",
+      "uri": "https://download.microsoft.com/download/F/6/C/F6CF6065-49EC-47C4-92C8-0F74CDD8184D/CRM9.0-Mui-SVE-amd64.exe",
+
+      "checksum": "E65A78572532036F1635624AA4214A7E0CEAAD47458F80F78391EA4A5BB84286",
+      "checksum_type": "sha256",
+      
+      "metadata": {
+          "identifyingNumber": "0C524DC1-141D-0090-8121-88490F4D5549",
+          "languageCode": "1053"
+      }
+    },
+
+    {
+      "id": "ms-dynamics-crm90-lang-pack-ru",
+      "uri": "https://download.microsoft.com/download/B/1/4/B1465E5C-099D-4F1E-A0F4-672069110B91/CRM9.0-Mui-RUS-amd64.exe",
+
+      "checksum": "789E73680B901A9467532B53FAD4DC8C8E93BB70F93372DDA17AD997E76A4501",
+      "checksum_type": "sha256",
+      
+      "metadata": {
+          "identifyingNumber": "0C524DC1-1419-0090-8121-88490F4D5549",
+          "languageCode": "1049"
+      }
+    }
+
+  ]
+}

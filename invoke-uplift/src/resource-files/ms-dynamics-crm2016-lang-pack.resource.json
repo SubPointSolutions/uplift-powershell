@@ -1,0 +1,31 @@
+{
+  "resources": [
+  
+    {
+      "id": "ms-dynamics-crm2016-server-lang-pack-sv",
+      "uri": "https://download.microsoft.com/download/1/F/7/1F7CBA49-5C7B-492A-982A-8D26B9608399/CRM2016-Mui-SVE-amd64.exe",
+
+      "checksum": "6E6291E25C676D862435A61E6BBD7408DDB382CB8B35514E9D3AD490D666BF08",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "identifyingNumber": "0C524DC1-141D-0080-8121-88490F4D5549",
+        "languageCode": "1053"
+     }
+    },
+
+    {
+      "id": "ms-dynamics-crm2016-server-lang-pack-ru",
+      "uri": " https://download.microsoft.com/download/6/E/0/6E073DDF-613C-49CA-BB93-7BD6579B368C/CRM2016-Mui-RUS-amd64.exe",
+
+      "checksum": "9C1176CFD8AB5CEF109C6A00646B2D1F93BDC8186A02DC2BEA569A560F7CC85D",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "identifyingNumber": "0C524DC1-1419-0080-8121-88490F4D5549",
+        "languageCode": "1049"
+     }
+    }
+  
+  ]
+}

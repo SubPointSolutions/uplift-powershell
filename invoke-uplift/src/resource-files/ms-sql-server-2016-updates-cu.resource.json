@@ -1,0 +1,65 @@
+{
+  "resources": [
+
+    {
+      "id": "ms-sql-server2016-update-cu5-KB4475776",
+      "uri": "http://download.windowsupdate.com/d/msdownload/update/software/updt/2019/01/sqlserver2016-kb4475776-x64_68af970cf5ffea7e549216b20dfa9fab4e2e6e8f.exe",
+
+      "checksum": "3EE999E49E419B82B3D56F5F4E4ABC7D0F9B341E38EE41C233104962B6DF1F01",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Cumulative Update 5 for SQL Server 2016 SP2",
+        "help_link": "https://support.microsoft.com/en-au/help/4475776/cumulative-update-5-for-sql-server-2016-sp2"
+      }
+    },
+
+    {
+      "id": "ms-sql-server2016-update-cu4-KB4464106",
+      "uri": "http://download.windowsupdate.com/d/msdownload/update/software/updt/2018/11/sqlserver2016-kb4464106-x64_b509440d16a05672c3cd43f5fb68a0e2da0acf67.exe",
+
+      "checksum": "9F624D1FD057255DBA2F6BC26EE2705D2823FB897D7CB7389CC9EF248808DC72",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Cumulative Update 4 for SQL Server 2016 SP2",
+        "help_link": "https://support.microsoft.com/en-au/help/4464106/cumulative-update-4-for-sql-server-2016-sp2"
+      }
+    },
+
+    {
+      "id": "ms-sql-server2016-update-cu3-KB4458871",
+      "uri": "http://download.windowsupdate.com/d/msdownload/update/software/updt/2018/09/sqlserver2016-kb4458871-x64_e7227852d34e82e932e3f7a165dec453bb790514.exe",
+
+      "checksum": "13B4BCEC72C461F586BB6AD3491B0308366B638F94947FCD2415855B3A5C3F76",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Cumulative Update 3 for SQL Server 2016 SP2",
+        "help_link": "https://support.microsoft.com/en-au/help/4458871/cumulative-update-3-for-sql-server-2016-sp2"
+      }
+    },
+
+    {
+      "id": "ms-sql-server2016-update-cu2-KB4340355",
+      "uri": "http://download.windowsupdate.com/c/msdownload/update/software/updt/2018/07/sqlserver2016-kb4340355-x64_1318472a9fc0ee77184b8a9c631e600cf787346f.exe",
+
+      "checksum": "B67A0581E10382899BCFAB0E13173F75A8C5B349330C43E254080C83DA206D76",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Cumulative Update 2 for SQL Server 2016 SP2",
+        "help_link": "https://support.microsoft.com/en-au/help/4340355/cumulative-update-2-for-sql-server-2016-sp2"
+      }
+    },
+
+    {
+      "id": "ms-sql-server2016-update-cu1-KB4135048",
+      "uri": "http://download.windowsupdate.com/d/msdownload/update/software/updt/2018/06/sqlserver2016-kb4135048-x64_8d8e041356d58575fce4d249e278794a366f706f.exe",
+
+      "checksum": "CBECED86EC0A87C070780B5EB74CB1CCDA9425F748CCF2E056F2D106BE309B04",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Cumulative Update 1 for SQL Server 2016 SP2",
+        "help_link": "https://support.microsoft.com/en-au/help/4135048/cumulative-update-1-for-sql-server-2016-sp2"
+      }
+    }
+
+  ]
+}

@@ -44,6 +44,9 @@ function Write-LatestMetadata($resourceContainer, $customFileName) {
     $metadata | Add-Member -Name 'file_name' `
         -Type NoteProperty -Force -Value  $fileName
 
+    $metadata | Add-Member -Name 'metadata' `
+        -Type NoteProperty -Force -Value  $resourceContainer.ResourceMetadata
+
     # checksum file always follows name convention:
     #   "file-name.extention" + ".sha256"
     # we should not even expose it here
@@ -99,6 +102,7 @@ function Get-ResourceContainer($resource, $dstDir, $force = $false) {
 
     $container =  New-Object PsObject -Property @{
         Resource   = $resource
+        ResourceMetadata  = $resource.metadata
 
         ResourceId   = $id
         ResourceType = Get-ResourceType $resource

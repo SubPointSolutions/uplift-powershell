@@ -1,0 +1,41 @@
+{
+  "resources": [
+  
+    {
+      "id": "ms-dynamics-crm2016-updates-sp2-u3-en-kb4467675",
+      "uri": "https://download.microsoft.com/download/5/8/4/58423181-E66D-4188-A77E-A7721E95BF1E/CRM2016-Server-KB4467675-ENU-Amd64.exe",
+
+      "checksum": "56916CEE18E306C0C476323B941DAA9EBFFA03B62371802BE69B02C6645449E1",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "mediaFileVersion": "8.2.3.8"
+     }
+    },
+
+    {
+      "id": "ms-dynamics-crm2016-updates-sp2-u3-sv-KB4467675",
+      "uri": "https://download.microsoft.com/download/6/7/0/6700244B-08C0-4F5C-A19B-6DEB89263BB7/CRM2016-Server-KB4467675-SVE-Amd64.exe",
+
+      "checksum": "AAE63EE96BDCAD307EB2B0CD1F6D57C16ABD60C8CB6BD3921AD845E7EE47C3B6",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "mediaFileVersion": "8.2.3.8"
+     }
+    },
+
+    {
+      "id": "ms-dynamics-crm2016-updates-sp2-u3-ru-kb4467675",
+      "uri": "https://download.microsoft.com/download/F/C/A/FCA195F5-8829-495D-B018-D05AC97DD8C7/CRM2016-Server-KB4467675-RUS-Amd64.exe",
+
+      "checksum": "EAD799E745B53257AD74279C18711237F30EE760865B24C77CB395389930C526",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "mediaFileVersion": "8.2.3.8"
+     }
+    }
+  
+  ]
+}

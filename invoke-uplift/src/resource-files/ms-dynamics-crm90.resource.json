@@ -1,0 +1,50 @@
+{
+  "resources": [
+  
+    {
+      "id": "ms-dynamics-crm90-server-en",
+      "uri": "https://download.microsoft.com/download/B/D/0/BD0FA814-9885-422A-BA0E-54CBB98C8A33/CRM9.0-Server-ENU-amd64.exe",
+
+      "checksum": "B255463DCD57905CFCA7B411D0B2BBC9BAD90B2AC2C308B2746BFB7870D9A7AC",
+      "checksum_type": "sha256",
+      
+      "metadata": {
+          "identifyingNumber": "0C524D55-1409-0090-BD7E-530E52560E5",
+          "mediaFileVersion": "9.0.2.3034",
+          "reportingExtensionsIdentifyingNumber": "0C524D71-1409-0090-BFEE-D90853535253",
+          "languageCode": "1033"
+      }
+    },
+
+    {
+      "id": "ms-dynamics-crm90-server-ru",
+      "uri": "https://download.microsoft.com/download/A/7/9/A7989C1C-5B63-4777-9CAB-E7770133A0E6/CRM9.0-Server-RUS-amd64.exe",
+
+      "checksum": "E6FCC4F8A207D6D12C73D558DDE9D10557162B4FCFBB3049EB2F703DBD6EE680",
+      "checksum_type": "sha256",
+      
+      "metadata": {
+          "identifyingNumber": "0C524D55-1419-0090-BD7E-530E52560E52",
+          "mediaFileVersion": "9.0.2.3034",
+          "reportingExtensionsIdentifyingNumber": "0C524D71-1419-0090-BFEE-D90853535253",
+          "languageCode": "1049"
+      }
+    },
+
+    {
+      "id": "ms-dynamics-crm90-server-sv",
+      "uri": "https://download.microsoft.com/download/F/C/0/FC074D65-DD9D-4AAA-BE57-045E8978A80E/CRM9.0-Server-SVE-amd64.exe",
+
+      "checksum": "2F299F36BDA8D9FFE46909DB88C4E350C1962E0C9FE4340B427030B6ABB51102",
+      "checksum_type": "sha256",
+      
+      "metadata": {
+          "identifyingNumber": "0C524D55-141D-0090-BD7E-530E52560E52",
+          "mediaFileVersion": "9.0.2.3034",
+          "reportingExtensionsIdentifyingNumber": "0C524D71-141D-0090-BFEE-D90853535253",
+          "languageCode": "1053"
+      }
+    }
+
+  ]
+}

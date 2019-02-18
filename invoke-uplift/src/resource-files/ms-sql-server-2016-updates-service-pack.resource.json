@@ -1,0 +1,28 @@
+{
+  "resources": [
+
+    {
+      "id": "ms-sql-server2016-update-sp2-KB4052908",
+      "uri": "https://download.microsoft.com/download/9/2/B/92BAD988-00C5-4F68-811E-B7FFBE009B00/SQLServer2016SP2-KB4052908-x64-ENU.exe",
+
+      "checksum": "162B095F602DABB8503E1F648B8FD7158EBA74841F77EFDBAE189E9A3BE50270",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "SQL Server 2016 Service Pack 2 release information",
+        "help_link": "https://support.microsoft.com/en-au/help/4052908/sql-server-2016-service-pack-2-release-information"
+      }
+    },
+
+    {
+      "id": "ms-sql-server2016-update-sp1-KB3182545",
+      "uri": "https://download.microsoft.com/download/3/0/D/30D3ECDD-AC0B-45B5-B8B9-C90E228BD3E5/ENU/SQLServer2016SP1-KB3182545-x64-ENU.exe",
+
+      "checksum": "3D2CF86B9155E6F1D2DA84CC84B9373240D6AB03B9823184B88DC777B5D82AE3",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "SQL Server 2016 Service Pack 1 release information",
+        "help_link": "https://support.microsoft.com/en-au/help/3182545/sql-server-2016-service-pack-1-release-information"
+      }
+    }
+  ]
+}

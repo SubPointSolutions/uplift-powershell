@@ -1,0 +1,27 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2019-update-2019.01.08-KB4461514",
+      "uri": "https://download.microsoft.com/download/4/D/5/4D5AF893-2BE6-4221-AA6A-2756DF9EDB35/wssloc2019-kb4461514-fullfile-x64-glb.exe",
+
+      "checksum": "84DA3F963C167D53F46875B52DA27D325F2E3B0AE93DB5AF3F1F4413A3C402A1",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "January 8, 2019, update for SharePoint Server 2019 Language Pack (KB4461514)",
+        "help_link": "https://support.microsoft.com/en-us/help/4461514"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2019-update-2019.01.08-KB4461634",
+      "uri": "https://download.microsoft.com/download/C/2/D/C2D826D1-A993-4A58-B3F5-E38E01EFA549/sts2019-kb4461634-fullfile-x64-glb.exe",
+
+      "checksum": "FA42F2A6778DD4DF2D29F24B323E63A2C86C8CFEC159BE07981B0A9AD9EB969D",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Server 2019: January 8, 2019",
+        "help_link": "https://support.microsoft.com/en-us/help/4461634"
+      }
+    }
+  ]
+}

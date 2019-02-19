@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2019-rtm",
+      "uri": "https://download.microsoft.com/download/C/B/A/CBA01793-1C8A-4671-BE0D-38C9E5BBD0E9/officeserver.img",
+
+      "checksum": "4266D29ADFE7E5B5F5C6298325721E495361961D5B4978E3A46AE6657E601C5A",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=57462",
+        "enterprise_trial_key": "M692G-8N2JP-GG8B2-2W2P7-YY7J6",
+        "standard_trial_key": "F2DPD-HPNPV-WHKMK-G7C38-2G22J",
+        "project_server_trial_key": "R9946-QXNHR-62JPQ-3H3QC-TMWJT"
+      }
+    }
+  ]
+}

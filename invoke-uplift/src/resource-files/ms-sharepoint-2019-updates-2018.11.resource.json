@@ -1,0 +1,15 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2019-update-2018.11.13-KB4461513",
+      "uri": "https://download.microsoft.com/download/E/1/C/E1CD03D2-DA33-47C9-B2DC-51BEC6EEFCD2/sts2019-kb4461513-fullfile-x64-glb.exe",
+
+      "checksum": "4AECE1D40E85B7513ED423B061C224FC10B08B9F74DC7687000CCDCEC2E3B47B",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Server 2019: November 13, 2018",
+        "help_link": "https://support.microsoft.com/en-us/help/4461513"
+      }
+    }
+  ]
+}

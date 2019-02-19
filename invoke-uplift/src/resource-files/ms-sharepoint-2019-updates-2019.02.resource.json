@@ -1,0 +1,27 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2019-update-2019.02.12-KB4462171",
+      "uri": "https://download.microsoft.com/download/F/2/C/F2C3E0FD-678F-4442-BEE8-BBD8E471419D/sts2019-kb4462171-fullfile-x64-glb.exe",
+
+      "checksum": "DCD279114CDFA42196C3A793A9F09704689A745C21DC566FFA1666A49BA3E0D1",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Server 2019: February 12, 2019",
+        "help_link": "https://support.microsoft.com/en-us/help/4462171"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2019-update-2019.02.12-KB4462170",
+      "uri": "https://download.microsoft.com/download/D/6/A/D6AF937F-1C36-4465-AA70-B06107E07910/wssloc2019-kb4462170-fullfile-x64-glb.exe",
+
+      "checksum": "5A15DF11E361722AFA6E653BE05E147375568C76E00449F2E1DCFC55F1D433F7",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "February 12, 2019, update for SharePoint Server 2019 Language Pack (KB4462170)",
+        "help_link": "https://support.microsoft.com/en-us/help/4462170"
+      }
+    }
+  ]
+}

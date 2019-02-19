@@ -1,0 +1,15 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2019-update-2018.12.11-KB4461548",
+      "uri": "https://download.microsoft.com/download/4/F/6/4F6B5DBE-12C4-4263-8D20-EA8543AC9C91/sts2019-kb4461548-fullfile-x64-glb.exe",
+
+      "checksum": "6424C5827E2CE79E10C135B9ED92E29DD6BB5B26FCE795C6700D2AFB5C96151F",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Server 2019: December 11, 2018",
+        "help_link": "https://support.microsoft.com/en-us/help/4461548/"
+      }
+    }
+  ]
+}

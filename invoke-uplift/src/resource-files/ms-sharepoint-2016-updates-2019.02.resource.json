@@ -1,0 +1,15 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2016-update-2019.02.12-KB4462155",
+      "uri": "https://download.microsoft.com/download/5/B/4/5B43F404-A269-4B2C-83D5-AC64F011A2E5/sts2016-kb4462155-fullfile-x64-glb.exe",
+
+      "checksum": "148CB24E09D60DEB7A3394E3648BEC546CEB7855F296C1A542FE5BED92B2BF98",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Enterprise Server 2016: February 12, 2019",
+        "help_link": "https://support.microsoft.com/en-us/help/4462155"
+      }
+    }
+  ]
+}

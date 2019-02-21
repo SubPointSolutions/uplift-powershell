@@ -110,7 +110,7 @@ task VersionModule {
     if($null -ne $env:APPVEYOR_REPO_BRANCH) {
         Write-Build Green " [~] Running under APPVEYOR branch: $($env:APPVEYOR_REPO_BRANCH)"
 
-        if($env:APPVEYOR_REPO_BRANCH -ine "beta" -and $env:APPVEYOR_REPO_BRANCH -ine "master") {
+        if($env:APPVEYOR_REPO_BRANCH -ine "master") {
             Write-Build Green " skipping APPVEYOR versioning for branch: $($env:APPVEYOR_REPO_BRANCH)"
         } else {
             Write-Build Green " using APPVEYOR versioning for branch: $($env:APPVEYOR_REPO_BRANCH)"

@@ -18,12 +18,18 @@ $srcFolder  = "$dirPath/src"
 # so that not all dotnet things are seen by the env/shell
 
 
-function Confirm-PSModule($name) {
+function Confirm-PSModule($name, $version) {
     $module = Get-InstalledModule $name -ErrorAction SilentlyContinue
 
     if ($null -eq  $module) {
-        Write-Build Green "installing module: $name"
-        Install-Module -Name $name -Force
+        
+        Write-Build Green "installing module: $name, version: $version"
+
+        if([string]::IsNullOrEmpty($version) -eq $False) {
+            Install-Module -Name $name -Force -RequiredVersion $version
+        } else {
+            Module -Name $name -Force
+        }
     }
     else {
         Write-Build Green "module installed: $name"
@@ -33,8 +39,8 @@ function Confirm-PSModule($name) {
 Enter-Build {
     Write-Build Green "Preparing env..."
     
-    Confirm-PSModule "PSScriptAnalyzer"
-    Confirm-PSModule "Pester"
+    Confirm-PSModule "PSScriptAnalyzer" "1.17.1"
+    Confirm-PSModule "Pester" "4.7.1"
 }
 
 # Synopsis: Cleans current build directories

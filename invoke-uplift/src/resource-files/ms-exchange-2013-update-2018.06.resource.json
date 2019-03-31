@@ -1,0 +1,15 @@
+{
+  "resources": [
+    {
+      "id": "ms-exchange2013-update-2018.06.19-KB4099855-cu21",
+      "uri": "https://download.microsoft.com/download/9/4/1/94166586-5D17-414A-97DA-CCD069BC11A2/Exchange2013-x64-cu21.exe",
+
+      "checksum": "F7FBEFA1DA457C58B7F6615B057BB8587A80F4DAEE25004696E205C6A108276E",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=57069",
+        "versions_link": "https://docs.microsoft.com/en-us/exchange/new-features/build-numbers-and-release-dates?view=exchserver-2019"
+      }
+    }
+  ]
+}

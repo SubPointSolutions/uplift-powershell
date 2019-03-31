@@ -1,0 +1,16 @@
+{
+  "resources": [
+    {
+      "id": "ms-exchange2016-rtm",
+      "uri": "https://download.microsoft.com/download/3/9/B/39B8DDA8-509C-4B9E-BCE9-4CD8CDC9A7DA/Exchange2016-x64.exe",
+
+      "checksum": "131520F0F703956643A1887B384F54D4D765BEB882F201C2905A5C7E20410DB5",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=49161",
+        "versions_link": "https://docs.microsoft.com/en-us/exchange/new-features/build-numbers-and-release-dates?view=exchserver-2019",
+        "comment": "Looks like this download not available anymore. Always - We're sorry, this download is no longer available."
+      }
+    }
+  ]
+}

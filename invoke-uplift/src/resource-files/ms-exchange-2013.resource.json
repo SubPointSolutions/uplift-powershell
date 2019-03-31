@@ -1,0 +1,15 @@
+{
+  "resources": [
+    {
+      "id": "ms-exchange2013-rtm",
+      "uri": "http://download.microsoft.com/download/8/1/1/811B7C54-DA45-48AF-A912-0AA2B6FDA02C/Exchange-x64.exe",
+
+      "checksum": "C36BDFA38589B3FE6DF0EFDEAC589F9E0483C02C9B3AA60D67C8963F43D6D2E6",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/evalcenter/evaluate-exchange-server-2013",
+        "versions_link": "https://docs.microsoft.com/en-us/exchange/new-features/build-numbers-and-release-dates?view=exchserver-2019"
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "resources": [
+    {
+      "id": "ms-exchange2016-update-2018.10.16-KB4134118-cu11",
+      "uri": "https://download.microsoft.com/download/6/6/F/66F70200-E2E8-4E73-88F9-A1F6E3E04650/ExchangeServer2016-x64-cu11.iso",
+
+      "checksum": "B7EE419A8B1DF3774C98843F7D15253AE4A5E4FEBF761093E306A8EFBA5C3CF8",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=57388",
+        "versions_link": "https://docs.microsoft.com/en-us/exchange/new-features/build-numbers-and-release-dates?view=exchserver-2019"
+      }
+    }
+  ]
+}

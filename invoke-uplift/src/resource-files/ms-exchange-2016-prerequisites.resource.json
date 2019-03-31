@@ -1,0 +1,25 @@
+{
+  "resources": [
+    {
+      "id": "ms-exchange2016-prerequisites-ucma4",
+      "uri": "https://download.microsoft.com/download/2/C/4/2C47A5C1-A1F3-4843-B9FE-84C0032C61EC/UcmaRuntimeSetup.exe",
+
+      "checksum": "0EFA33E079FFB62A8CFD76AC16C775FFAF9E1144BE6B675745B6A77CFFCBB63A",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=34992"
+      }
+    },
+
+    {
+      "id": "ms-exchange2016-prerequisites-kb3206632",
+      "uri": "http://download.windowsupdate.com/d/msdownload/update/software/secu/2016/12/windows10.0-kb3206632-x64_b2e20b7e1aa65288007de21e88cd21c3ffb05110.msu",
+
+      "checksum": "7339A55CC57C2AE8F068D91BCC5F95685216B835DFE0571817B4819B240DB90A",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.catalog.update.microsoft.com/Search.aspx?q=kb3206632"
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "resources": [
+    {
+      "id": "ms-exchange2016-update-2019.02.12-KB4471392-cu12",
+      "uri": "https://download.microsoft.com/download/2/5/8/258D30CF-CA4C-433A-A618-FB7E6BCC4EEE/ExchangeServer2016-x64-cu12.iso",
+
+      "checksum": "9F295F77C4CDD738C0F8DE8CCBF2D32FE49CDA7502692C9B87F1609E19E41AD3",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=57827",
+        "versions_link": "https://docs.microsoft.com/en-us/exchange/new-features/build-numbers-and-release-dates?view=exchserver-2019"
+      }
+    }
+  ]
+}

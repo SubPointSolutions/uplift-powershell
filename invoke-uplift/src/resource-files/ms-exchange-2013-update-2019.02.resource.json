@@ -1,0 +1,15 @@
+{
+  "resources": [
+    {
+      "id": "ms-exchange2013-update-2019.02.12-KB4345836-cu22",
+      "uri": "https://download.microsoft.com/download/7/9/8/7982ED00-C0F5-44BB-8B40-768951AE4CC7/Exchange2013-x64-cu22.exe",
+
+      "checksum": "A91D853A5A449391DD4436F09B5F1686FEBEC769279375F886CA252ADE75C872",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=57826",
+        "versions_link": "https://docs.microsoft.com/en-us/exchange/new-features/build-numbers-and-release-dates?view=exchserver-2019"
+      }
+    }
+  ]
+}

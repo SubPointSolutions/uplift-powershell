@@ -1,0 +1,27 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2019-update-2019.04.09-4464518",
+      "uri": "https://download.microsoft.com/download/2/1/F/21F5F73E-82B5-4800-A97F-91BAF66ADA63/sts2019-kb4464518-fullfile-x64-glb.exe",
+
+      "checksum": "7CBE097EDE4240EED64EE72DD72E338915CF8B19F3B7F95B382495F46BDF6133",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Server 2019: April 9, 2019",
+        "help_link": "https://support.microsoft.com/en-us/help/4464518"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2019-update-2019.04.09-KB4462221",
+      "uri": "https://download.microsoft.com/download/F/1/5/F15D04DD-6A78-4BFB-8E36-060870824D93/wssloc2019-kb4462221-fullfile-x64-glb.exe",
+
+      "checksum": "30DA464E8A1BD13D7907A205C79A19FA3EB6C2C0F797EF3E82DE06C250584223",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "April 9, 2019, update for SharePoint Server 2019 Language Pack (KB4462221)",
+        "help_link": "https://support.microsoft.com/en-us/help/4462221"
+      }
+    }
+  ]
+}

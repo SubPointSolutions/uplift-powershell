@@ -1,0 +1,15 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2016-update-2019.03.12-KB4462211",
+      "uri": "https://download.microsoft.com/download/8/7/F/87FCF7FA-2D9F-4000-B782-17656D79AC4B/sts2016-kb4462211-fullfile-x64-glb.exe",
+
+      "checksum": "BCB577C8B10CE7C9725F4191A0A82B6F904C758E59B8E3C640531531A8BF155C",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Enterprise Server 2016: March 12, 2019",
+        "help_link": "https://support.microsoft.com/en-us/help/4462211"
+      }
+    }
+  ]
+}

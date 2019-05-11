@@ -183,11 +183,19 @@ Describe 'invoke-uplift' {
     }
 
     Context "resource validate-uri" {  
-        It 'validates uri' {
+        It 'validates local uri' {
             Invoke-TheUplifter42 @(
                 "resource",
                 "validate-uri",
                 "uplf-local-*"
+                (Get-Debug)
+            ) | Should Be 0
+        }
+
+        It 'validates all uri' {
+            Invoke-TheUplifter42 @(
+                "resource",
+                "validate-uri",
                 (Get-Debug)
             ) | Should Be 0
         }

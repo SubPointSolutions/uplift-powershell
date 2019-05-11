@@ -1,0 +1,27 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2016-update-2019.04.09-KB4461507",
+      "uri": "https://download.microsoft.com/download/0/D/E/0DEA1C2B-E3BD-4364-B3CA-03972312C695/wssloc2016-kb4461507-fullfile-x64-glb.exe",
+
+      "checksum": "10142D572442E962334C76125D548E67BB0AF07DEAC29010144A3BDAB5E08197",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "April 9, 2019, update for SharePoint Enterprise Server 2016 (KB4461507)",
+        "help_link": "https://support.microsoft.com/en-us/help/4461507"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2016-update-2019.04.09-KB4464510",
+      "uri": "https://download.microsoft.com/download/0/6/F/06F49FE9-4873-4C57-A24C-32BB3989AD63/sts2016-kb4464510-fullfile-x64-glb.exe",
+
+      "checksum": "332CE26A5D22564D1DCD55E24D8A8F8311181259ACFE59349B5F463DBBAC01F5",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Enterprise Server 2016: April 9, 2019",
+        "help_link": "https://support.microsoft.com/en-us/help/4464510"
+      }
+    }
+  ]
+}

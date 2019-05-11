@@ -1,0 +1,15 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2019-update-2019.03.12-KB4462199",
+      "uri": "https://download.microsoft.com/download/6/C/2/6C261226-E3B1-47AC-B3CC-1286AE232422/sts2019-kb4462199-fullfile-x64-glb.exe",
+
+      "checksum": "FAF95F4A30627D176EC24E4B6AE7A817C21611C87FB59DCFA252059DC0FDB549",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Server 2019: March 12, 2019",
+        "help_link": "https://support.microsoft.com/en-us/help/4462199"
+      }
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "resources": [{
+      "id": "ms-sharepoint2019-lang-pack-ar-sa",
+      "uri": "https://download.microsoft.com/download/C/6/E/C6EF8F98-0C74-4513-8B14-D7198B079DB8/serverlanguagepack.exe",
+
+      "checksum": "A3F4D2E5A077BC9071B0B8718CAEDDBD8B07C51B974EBE23A501925F038D0F39",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=57463"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2019-lang-pack-cs-cz",
+      "uri": "https://download.microsoft.com/download/7/A/1/7A19FD50-00AD-4719-A866-A53293F7BF22/serverlanguagepack.exe",
+
+      "checksum": "BC29D8E690855E5DDD7CCB73DE0FCFC29C09919F298627718F09A797BD16A88C",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=57463"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2019-lang-pack-da-dk",
+      "uri": "https://download.microsoft.com/download/E/8/E/E8E46EFE-7063-435E-93B7-E111EBD6AFC3/serverlanguagepack.exe",
+
+      "checksum": "880110AD2DB1B3A49CD813DFC02ADB4D217BC0E390873D6EE121A65AEDB7A0A4",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2019-lang-pack-en-us",
+      "uri": "https://download.microsoft.com/download/2/5/0/250CF23F-12A3-4C43-89C7-CF9C84C6A488/serverlanguagepack.exe",
+
+      "checksum": "21A5FB667E00EBA1BC8E1370B4F08F5DF733FCF850D1B1AA19658A5A50F39994",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2019-lang-pack-de-de",
+      "uri": "https://download.microsoft.com/download/D/2/7/D272C058-6B37-4FE3-8D17-3D66E9D94322/serverlanguagepack.exe",
+
+      "checksum": "4E3BF03DFD608E8090917D7164275FC437C7C482FC2CA4B6A8DA9D9A3A7869EE",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2019-lang-pack-fr-fr",
+      "uri": "https://download.microsoft.com/download/8/3/1/831576DC-5443-4DD5-A2C2-0AE8E6D2E2FB/serverlanguagepack.exe",
+
+      "checksum": "6813BBDEE4F0E75211A480458EE7807EB4C8E09DBA1011AE5BB81D35DDBC37BE",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2019-lang-pack-fi-fi",
+      "uri": "https://download.microsoft.com/download/C/0/4/C045D36A-26F3-46AB-9E02-0BF82857A6B0/serverlanguagepack.exe",
+
+      "checksum": "BD42B4B13F9A0A84833973AC0194F587966F73A0129E46CBA1B6BAE60FABA4C0",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2019-lang-pack-nl-nl",
+      "uri": "https://download.microsoft.com/download/3/1/6/3163ABD7-33D9-45E2-AC41-0072423B4630/serverlanguagepack.exe",
+
+      "checksum": "683DCA824193F783247FAB6D7F2B47B75FDF813661DAF92229EC91013878F79A",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2019-lang-pack-he-il",
+      "uri": "https://download.microsoft.com/download/B/6/9/B6916C5C-899B-4CA0-8198-998A71E5989D/serverlanguagepack.exe",
+
+      "checksum": "870DEA5201CEB5FD9BBB3C65730F5554D87E1897314A76DE8B1EC4950019C122",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2019-lang-pack-hi-in",
+      "uri": "https://download.microsoft.com/download/2/B/E/2BE645B3-5ECB-4609-9C2C-437ACFA2D8D6/serverlanguagepack.exe",
+
+      "checksum": "E9A9DC74B77F8AE34BBB6BF0B7203906078A9F29FA0F131D4ABFC7BDD46AB890",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2019-lang-pack-kk-kz",
+      "uri": "https://download.microsoft.com/download/5/4/C/54CE5A58-1C80-4531-83D2-DB5E5A68AF0D/serverlanguagepack.exe",
+
+      "checksum": "D26A316AF383FA668920CA2E4C21C5E9FC93B1A3CE2E3A7F6A60DDF1CADD723F",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2019-lang-pack-it-it",
+      "uri": "https://download.microsoft.com/download/C/A/7/CA7208E6-ECF4-41AE-95CD-F5B426CE4E0A/serverlanguagepack.exe",
+
+      "checksum": "4F35AE689727054DF9B604AF74A1D4ABB0D3BEE1833573DB4B6C1BE6AC0FDC61",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2019-lang-pack-lv-lv",
+      "uri": "https://download.microsoft.com/download/7/A/0/7A068433-08E7-4845-800E-68D83E7A6F2F/serverlanguagepack.exe",
+
+      "checksum": "AFFFD8B7CA55A21F32C2F6E50E01069E4BDC073156942B747E38BB4077FD1ADF",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2019-lang-pack-pl-pl",
+      "uri": "https://download.microsoft.com/download/5/4/C/54CE5A58-1C80-4531-83D2-DB5E5A68AF0D/serverlanguagepack.exe",
+
+      "checksum": "D26A316AF383FA668920CA2E4C21C5E9FC93B1A3CE2E3A7F6A60DDF1CADD723F",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2019-lang-pack-ru-ru",
+      "uri": "https://download.microsoft.com/download/2/D/2/2D26D459-E94F-4EAE-AD85-83FE1E4E359F/serverlanguagepack.exe",
+
+      "checksum": "CE9BFC1776C32DC47EC955584611277A9E34E1A85CC039229AE15EBBC5DA8370",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2019-lang-pack-ro-ro",
+      "uri": "https://download.microsoft.com/download/2/0/C/20C58BCA-7058-4DB5-B0B7-88746BF17114/serverlanguagepack.exe",
+
+      "checksum": "A264FF41C5FA07791F2DECD1BFD738D246DAD5DFD285164CD57601016264E6F1",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2019-lang-pack-es-es",
+      "uri": "https://download.microsoft.com/download/2/D/D/2DD5500B-2B38-4B82-8768-6DE961B12CFB/serverlanguagepack.exe",
+
+      "checksum": "E2154B5961E71003095AEB51E161ED4C834231F07849669B4734C69A95709D87",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2019-lang-pack-sv-se",
+      "uri": "https://download.microsoft.com/download/9/9/A/99A220D2-5FD0-4F48-9E29-F4C94287D1BA/serverlanguagepack.exe",
+
+      "checksum": "5B53C3F1D81CD455D2F20265DF03685B634D20ABE991308C19FE2C1CD68E50A5",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    },
+
+
+    {
+      "id": "ms-sharepoint2019-lang-pack-uk-ua",
+      "uri": "https://download.microsoft.com/download/A/2/B/A2BEE02A-75D3-4688-97AC-89FE9455A57F/serverlanguagepack.exe",
+
+      "checksum": "AC0445600A659691B4B331E9A1379956BE8924D5B6FD7C767DA64EEDCC862CF1",
+      "checksum_type": "sha256",
+      "metadata": {
+        "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+      }
+    }
+
+  ]
+}

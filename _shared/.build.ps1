@@ -277,7 +277,9 @@ task PublishModule {
 
 # Synopsis: Executes Appveyor specific setup
 task AppveyorPrepare {
-    npm install http-server -g
+    # avoid npm warning whic fails Appveyor build
+    # npm WARN deprecated ecstatic@3.3.1: https://github.com/jfhbrook/node-ecstatic/issues/259
+    npm install http-server -g --loglevel=error
 }
 
 # Synopsis: Runs PSScriptAnalyzer 

@@ -1,0 +1,52 @@
+{
+    "resources": [
+  
+      {
+        "id": "ms-visualstudio-2019.ent-installer",
+        "uri": "https://aka.ms/vs/16/release/vs_enterprise.exe",
+        "file_name": "vs_enterprise.exe",
+  
+        "checksum": "2D96DFB06846FB5FC4A7B59EB02C5DA6AEFD3E852D6116647AA1680968D4A666",
+        "checksum_type": "sha256",
+  
+        "metadata": {
+          "comment": "Implements - Create a network installation of Visual Studio 2017",
+          "help_link": "https://docs.microsoft.com/en-us/visualstudio/install/create-a-network-installation-of-visual-studio?view=vs-2017"
+        }
+      },
+  
+      {
+        "id": "ms-visualstudio-2019.ent-dist-office-dev",
+        "uri": "https://aka.ms/vs/16/release/vs_enterprise.exe",
+        "file_name": "vs_enterprise.exe",
+        
+        "checksum": "2D96DFB06846FB5FC4A7B59EB02C5DA6AEFD3E852D6116647AA1680968D4A666",
+        "checksum_type": "sha256",
+  
+        "metadata": {
+          "comment": "Implements - Create a network installation of Visual Studio 2017",
+          "help_link": "https://docs.microsoft.com/en-us/visualstudio/install/create-a-network-installation-of-visual-studio?view=vs-2017"
+        },
+  
+        "type": "uplift/ms-visualstudio-2017-dist",
+        "vs17_file_name": "vs17-ent-dist-office-dev.zip",
+        
+        "vs17_options": [
+          "--includeRecommended",
+  
+          "--lang en-US",
+          "--quiet",
+          "--wait",
+          "--norestart",
+  
+          "--add Microsoft.VisualStudio.Workload.Office",
+          "--add Microsoft.VisualStudio.Workload.ManagedDesktop",
+          "--add Microsoft.VisualStudio.Workload.NetCoreTools",
+          "--add Microsoft.VisualStudio.Workload.NetWeb",
+          "--add Microsoft.VisualStudio.Workload.Node",
+          "--add Microsoft.VisualStudio.Workload.VisualStudioExtension",
+          "--add Microsoft.VisualStudio.Workload.Azure"
+        ]
+      }
+    ]
+  }

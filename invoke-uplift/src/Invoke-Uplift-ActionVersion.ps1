@@ -7,7 +7,7 @@
 
     $isSilent = Get-CommandOptionValue @("-json", "-silent") $commandOptions
 
-    if($isSilent -eq $False) {
+    if($isSilent -ne $True) {
         Write-RawMessage "uplift v$(Get-UpliftVersion)"
     }
 

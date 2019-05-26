@@ -27,4 +27,5 @@ task PrepareResourceFiles -After PrepareModule {
     New-Item "$moduleFolder/$moduleName/resource-files" -ItemType directory -Force | Out-Null
     Copy-Item "$dirPath/src/resource-files/*" "$moduleFolder/$moduleName/resource-files/"
 
+    Copy-Item "$dirPath/src/Uplift.AppInsights.ps1" "$moduleFolder/$moduleName/"
 }

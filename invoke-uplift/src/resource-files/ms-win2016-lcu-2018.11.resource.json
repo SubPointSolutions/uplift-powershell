@@ -8,7 +8,7 @@
             "checksum_type": "sha256",
             
             "metadata": {
-                "comment": "November 27, 2018—KB4467684 (OS Build 14393.2639)",
+                "comment": "November 27, 2018-KB4467684 (OS Build 14393.2639)",
                 "help_link": "https://support.microsoft.com/en-au/help/4467684/windows-10-update-kb4467684"
             }
         },
@@ -21,7 +21,7 @@
             "checksum_type": "sha256",
             
             "metadata": {
-                "comment": "November 13, 2018—KB4467691 (OS Build 14393.2608)",
+                "comment": "November 13, 2018-KB4467691 (OS Build 14393.2608)",
                 "help_link": "https://support.microsoft.com/en-au/help/4467691/windows-10-update-kb4467691"
             }
         }

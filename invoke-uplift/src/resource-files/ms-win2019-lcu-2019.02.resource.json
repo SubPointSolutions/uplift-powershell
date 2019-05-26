@@ -1,0 +1,16 @@
+{
+    "resources": [
+        {
+            "id": "ms-win2019-lcu-2019.02.12-KB4487044",
+            "uri": "http://download.windowsupdate.com/c/msdownload/update/software/secu/2019/02/windows10.0-kb4487044-x64_6024f9853d489cf4eab66ce2145e91df45183de7.msu",
+
+            "checksum": "C8A971D5EBF56C41B5F0106BC99EE9D6BF196E46D5D726804921A78C54B9AAB5",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "February 12, 2019 - KB4487044 (OS Build 17763.316)",
+                "help_link": "https://support.microsoft.com/en-au/help/4487044"
+            }
+        }
+    ]
+}

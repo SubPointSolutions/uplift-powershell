@@ -1,0 +1,15 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2016-update-2016.05.14-KB4464549",
+      "uri": "https://download.microsoft.com/download/8/2/6/8263BEEA-C581-468C-A60E-9495723A5407/sts2016-kb4464549-fullfile-x64-glb.exe",
+
+      "checksum": "09799222456904B979AF1071E4C1AE0DEFDF25D5EA7CBBBF0A2921442E4E9CB2",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Enterprise Server 2016: May 14, 2019",
+        "help_link": "https://support.microsoft.com/en-us/help/4464549"
+      }
+    }
+  ]
+}

@@ -8,7 +8,7 @@
             "checksum_type": "sha256",
             
             "metadata": {
-                "comment": "December 19, 2018—KB4483229 (OS Build 14393.2670)",
+                "comment": "December 19, 2018-KB4483229 (OS Build 14393.2670)",
                 "help_link": "https://support.microsoft.com/en-au/help/4483229/december192018kb4483229osbuild143932670"
             }
         },
@@ -21,7 +21,7 @@
             "checksum_type": "sha256",
             
             "metadata": {
-                "comment": "December 11, 2018—KB4471321 (OS Build 14393.2665)",
+                "comment": "December 11, 2018-KB4471321 (OS Build 14393.2665)",
                 "help_link": "https://support.microsoft.com/en-au/help/4467684/windows-10-update-kb4467684"
             }
         },
@@ -34,7 +34,7 @@
             "checksum_type": "sha256",
             
             "metadata": {
-                "comment": "December 3, 2018—KB4478877 (OS Build 14393.2641)",
+                "comment": "December 3, 2018-KB4478877 (OS Build 14393.2641)",
                 "help_link": "https://support.microsoft.com/en-au/help/4478877/windows-10-update-kb4478877"
             }
         }

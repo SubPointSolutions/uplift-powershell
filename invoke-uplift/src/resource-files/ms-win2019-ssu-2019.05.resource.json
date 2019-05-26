@@ -1,0 +1,16 @@
+{
+  "resources": [
+    {
+      "id": "ms-win2019-ssu-2019.05.14-KB4499728",
+      "uri": "http://download.windowsupdate.com/d/msdownload/update/software/secu/2019/05/windows10.0-kb4499728-x64_36248692f756ec842e644b8b79fb7e1c0d64085d.msu",
+
+      "checksum": "CA6FF2F84981FFC9477A1DAE6C1A41E07BC22B0878C2E9322B8F9D7D6FD65625",
+      "checksum_type": "sha256",
+      
+      "metadata": {
+        "comment": "Servicing stack update for Windows 10, Version 1809 and Windows Server 2019: May 14, 2019",
+        "help_link": "https://support.microsoft.com/en-au/help/4499728/windows-10-update-kb4499728"
+      }
+    }
+  ]
+}

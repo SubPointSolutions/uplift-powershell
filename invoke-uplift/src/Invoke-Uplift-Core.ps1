@@ -29,13 +29,13 @@ function Invoke-CommandOptionsParse($options) {
 
     # handling option pairs: [-name value] or [-name] only
     for($i = 0; $i -lt $options.Count; $i++) {
-        $option = $options[$i]
+        $option = [string]$options[$i]
 
         if($option.StartsWith("-") -eq $True) {
             $result.Options[$option] = $True
 
-            if( ($i + 1) -lt $options.Count -and ($options[$i + 1].StartsWith("-")) -eq $False) {
-                $result.Options[$option] = $options[$i + 1]
+            if( ($i + 1) -lt $options.Count -and ( ([string]$options[$i + 1]).StartsWith("-")) -eq $False) {
+                $result.Options[$option] = [string]$options[$i + 1]
             }
         }
     }

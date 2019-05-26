@@ -1,0 +1,69 @@
+{
+    "resources": [
+        {
+            "id": "ms-win2019-lcu-2019.05.01-KB4501835",
+            "uri": "http://download.windowsupdate.com/d/msdownload/update/software/updt/2019/04/windows10.0-kb4501835-x64_a8a91185c1cf9b9fefa6e9e07fc3d74c45fb2fee.msu",
+
+            "checksum": "016A36DA05FE931621B8B70537E7B442C3765A83A03F3AEE76C9541F64722994",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "May 1, 2019 - KB4501835 (OS Build 17763.439)",
+                "help_link": "https://support.microsoft.com/en-au/help/4501835"
+            }
+        },
+
+        {
+            "id": "ms-win2019-lcu-2019.05.03-KB4495667",
+            "uri": "http://download.windowsupdate.com/c/msdownload/update/software/updt/2019/05/windows10.0-kb4495667-x64_a0713c961b994da102ee4a300d2f571ec567af20.msu",
+
+            "checksum": "AF94206FE9766836FAA944AD6EE79F65FE53C2AFCABD36AF2DF3D30BDF0450F7",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "May 3, 2019 - KB4495667 (OS Build 17763.475)",
+                "help_link": "https://support.microsoft.com/en-au/help/4495667"
+            }
+        },
+
+        {
+            "id": "ms-win2019-lcu-2019.05.14-KB4494441",
+            "uri": "http://download.windowsupdate.com/c/msdownload/update/software/secu/2019/05/windows10.0-kb4494441-x64_8910e3c3ee2743e9ff1241557a5c447ef853f495.msu",
+
+            "checksum": "4C3A0677A110CB4D069D994445AF7759CB2844D9CDD4C2619DD351B103E817CC",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "May 14, 2019 - KB4494441 (OS Build 17763.503)",
+                "help_link": "https://support.microsoft.com/en-au/help/4494441"
+            }
+        },
+
+        {
+            "id": "ms-win2019-lcu-2019.05.19-KB4505056",
+            "uri": "http://download.windowsupdate.com/d/msdownload/update/software/updt/2019/05/windows10.0-kb4505056-x64_09c6216e684ce667fc0c07cc30e84ef21f04c6f1.msu",
+
+            "checksum": "AC38F2BF4A72A8E85827FEACF15F741677EE663516757462AEC8E85646E73A15",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "May 19, 2019 - KB4505056 (OS Build 17763.504)",
+                "help_link": "https://support.microsoft.com/en-au/help/4505056"
+            }
+        },
+
+        {
+            "id": "ms-win2019-lcu-2019.05.21-KB4497934",
+            "uri": "http://download.windowsupdate.com/d/msdownload/update/software/updt/2019/05/windows10.0-kb4497934-x64_2a3224347811199634033c289ee046f71639611e.msu",
+
+            "checksum": "B19A37B3FC3C8346B8E49B3ABCFED7A3409463453F0E185416C6C3E164B5B6A8",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "May 21, 2019 - KB4497934 (OS Build OS 17763.529)",
+                "help_link": "https://support.microsoft.com/en-au/help/4497934"
+            }
+        }
+        
+    ]
+}

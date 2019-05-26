@@ -11,6 +11,8 @@ $localServerPath = "$srcPath/resource-files-test"
 $upliftPath = Resolve-Path "$srcPath/InvokeUplift.ps1"
 . $upliftPath
 
+$gResourceCount = 211
+
 function Get-TestRepositoryPath() {
     "build-uplift-local-repository"
 }
@@ -26,8 +28,6 @@ function Get-Debug() {
 function Start-LocalWebServer($port, $path) {
     $localServerPort = 3005
     $localServerPath = "$srcPath/resource-files-test"
-
-    $localBuildRepositoryPath = "build-uplift-local-repository"
 
     Write-Host "Starting local http-server"
     Write-Host " -  path: $localServerPath"
@@ -47,19 +47,26 @@ function Start-LocalWebServer($port, $path) {
     Write-Host "Pause 5 sec allowing http-server to start..."
     Start-Sleep 5
 
-    $url = "http://localhost:$port"
-    Write-Host "Checking url: $url"
-    
-    $result = Invoke-WebRequest "$url" `
-        -UseBasicParsing `
-        -DisableKeepAlive `
-        -Method HEAD 
+    #$url = [Uri]"http://localhost:$port"
+    #$url = "http://127.0.0.1:$port"
 
-    if($result.StatusCode -eq 200) {
-        Write-Host  "[+] StatusCode: $($result.StatusCode) for url: $url"
-    } else {
-        throw "[!] StatusCode: $($result.StatusCode), expected 200!"
-    }
+    #Write-Host "Checking url: $url"
+    
+    # $result = Invoke-WebRequest -Uri $url `
+    #     -UseBasicParsing `
+    #     -DisableKeepAlive `
+    #     -Method HEAD 
+
+    #$result = Invoke-WebRequest -Uri $url -Method HEAD 
+    # -UseBasicParsing `
+    # -DisableKeepAlive `
+    # -Method HEAD 
+
+    # if($result.StatusCode -eq 200) {
+    #     Write-Host  "[+] StatusCode: $($result.StatusCode) for url: $url"
+    # } else {
+    #     throw "[!] StatusCode: $($result.StatusCode), expected 200!"
+    # }
 }
 
 Start-LocalWebServer $localServerPort $localServerPath 
@@ -120,6 +127,79 @@ Describe 'invoke-uplift' {
                 "list",
                 "details"
             ) | Should Be 0
+        }
+
+        It 'can list with int parameter - 1' {
+            Invoke-TheUplifter42 @(
+                "resource",
+                "list",
+                2016
+            ) | Should Be 0
+        }
+
+        It 'can list with int parameter - 2' {
+            Invoke-TheUplifter42 @(
+                "resource",
+                "list",
+                2019
+            ) | Should Be 0
+        }
+
+        It 'can list with -json option' {
+
+            $tmpFile = New-TemporaryFile
+            Start-Transcript -Path $tmpFile 
+
+            Invoke-TheUplifter42 @(
+                "resource",
+                "list",
+                "-json"
+            )
+
+            Stop-Transcript 
+
+            $separator = "**********************"
+            $content   = Get-Content $tmpFile -Raw
+
+            $contentParts = $content -split $separator, 0, "simplematch"
+            $jsonContent  = $contentParts[2]
+            
+            $jsonObject   = $jsonContent | ConvertFrom-Json
+            $itemsCount   = $jsonObject.Count
+        
+            # should be a valid json
+            # should be same amount of resources
+            $jsonObject | Should Not Be $null
+            $itemsCount | Should -Be $gResourceCount
+        }
+
+        It 'can list uplf-local-file with -json option' {
+
+            $tmpFile = New-TemporaryFile
+            Start-Transcript -Path $tmpFile 
+
+            Invoke-TheUplifter42 @(
+                "resource",
+                "list",
+                "uplf-local-file"
+                "-json"
+            )
+
+            Stop-Transcript 
+
+            $separator = "**********************"
+            $content   = Get-Content $tmpFile -Raw
+
+            $contentParts = $content -split $separator, 0, "simplematch"
+            $jsonContent  = $contentParts[2]
+            
+            $jsonObject   = $jsonContent | ConvertFrom-Json
+            $itemsCount   = $jsonObject.Count
+        
+            # should be a valid json
+            # should be always 2
+            $jsonObject | Should Not Be $null
+            $itemsCount | Should -Be 2
         }
     }
 

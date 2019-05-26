@@ -1,0 +1,16 @@
+{
+    "resources": [
+        {
+            "id": "ms-win2019-lcu-2018.10.09-KB4464330",
+            "uri": "http://download.windowsupdate.com/d/msdownload/update/software/secu/2018/10/windows10.0-kb4464330-x64_e459c6bc38265737fe126d589993c325125dd35a.msu",
+
+            "checksum": "0D6BE1A1F758D07B40B06FF0D3E47447171C5E3A57D11E681E73ED82BA52EA11",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "October 9, 2018 - KB4464330 (OS Build 17763.55)",
+                "help_link": "https://support.microsoft.com/en-au/help/4464330"
+            }
+        }
+    ]
+}

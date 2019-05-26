@@ -1,0 +1,43 @@
+{
+    "resources": [
+        {
+            "id": "ms-win2019-lcu-2018.12.05-KB4469342",
+            "uri": "http://download.windowsupdate.com/d/msdownload/update/software/updt/2018/12/windows10.0-kb4469342-x64_7290815610ac4c3d657eb5ed6e4e92421fa8c29a.msu",
+
+            "checksum": "8FD7E14C821BA8DC7C7BCB1DFA23651C4660D12FAC8807524C9BC37B7C2965A8",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "December 5, 2018 - KB4469342 (OS Build 17763.168)",
+                "help_link": "https://support.microsoft.com/en-au/help/4469342"
+            }
+        },
+
+        {
+            "id": "ms-win2019-lcu-2018.12.11-KB4471332",
+            "uri": "http://download.windowsupdate.com/d/msdownload/update/software/secu/2018/12/windows10.0-kb4471332-x64_a2bd8ca500cb0d9e358179d1e67ac9e2a3bf43cb.msu",
+
+            "checksum": "012003F112F5CABD53BC075F86CAFE6C79F405DEDF8DC5BD982F482857FCEF89",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "December 11, 2018 - KB4471332 (OS Build 17763.194)",
+                "help_link": "https://support.microsoft.com/en-au/help/4471332"
+            }
+        },
+
+        {
+            "id": "ms-win2019-lcu-2018.12.11-KB4483235",
+            "uri": "http://download.windowsupdate.com/d/msdownload/update/software/secu/2018/12/windows10.0-kb4483235-x64_9d25f46d4a9da7dd295f8a6412a64eca9de4ed82.msu",
+
+            "checksum": "CEC84D1D186AA45B072559EFA83EB2C5BBDFB3774CF714EDDAABC7A2CF343B6C",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "December 19, 2018 - KB4483235 (OS Build 17763.195)",
+                "help_link": "https://support.microsoft.com/en-au/help/4471332"
+            }
+        }
+       
+    ]
+}

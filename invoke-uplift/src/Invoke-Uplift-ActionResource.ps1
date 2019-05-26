@@ -50,7 +50,9 @@ function Get-ResourceFiles() {
     }
 
     Write-DebugMessage " - found files: $($result.Count)"
-    $result = $result | Select-Object -uniq
+    $result = $result `
+        | Select-Object -uniq -ExpandProperty FullName
+
 
     Write-DebugMessage " - uniq files: $($result.Count)"
 

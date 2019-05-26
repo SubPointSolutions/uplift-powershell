@@ -1,0 +1,29 @@
+{
+    "resources": [
+        {
+            "id": "ms-win2019-lcu-2019.03.01-KB4482887",
+            "uri": "http://download.windowsupdate.com/c/msdownload/update/software/updt/2019/02/windows10.0-kb4482887-x64_826158e9ebfcabe08b425bf2cb160cd5bc1401da.msu",
+
+            "checksum": "E837407ECBDE7FDF943A0232A1BE5171DCEFA6E62B6C1BA79DB3A352EACD6BBF",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "March 1, 2019 - KB4482887 (OS Build 17763.348)",
+                "help_link": "https://support.microsoft.com/en-au/help/4482887"
+            }
+        },
+
+        {
+            "id": "ms-win2019-lcu-2019.03.12-KB4489899",
+            "uri": "http://download.windowsupdate.com/c/msdownload/update/software/secu/2019/03/windows10.0-kb4489899-x64_c155ece4afbee219e7dfb83df67a7f2baf7c0d1d.msu",
+
+            "checksum": "8A1F0ED3250CD8B2715185E2C5A8440F46DA6F56C4B4740109C786DF72CDC2BA",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "March 12, 2019 - KB4489899 (OS Build 17763.379)",
+                "help_link": "https://support.microsoft.com/en-au/help/4489899"
+            }
+        }
+    ]
+}

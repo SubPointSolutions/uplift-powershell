@@ -1,0 +1,30 @@
+{
+    "resources": [
+        {
+            "id": "ms-win2019-lcu-2019.04.02-KB4490481",
+            "uri": "http://download.windowsupdate.com/c/msdownload/update/software/updt/2019/03/windows10.0-kb4490481-x64_a07dfdc8de3f0c2f590c950410a8a40522cd07dd.msu",
+
+            "checksum": "F21F432EB237BBA9C0CBBEF3CF78F20713955D5217C1C9296A9BB19891CF4359",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "April 2, 2019 - KB4490481 (OS Build 17763.404)",
+                "help_link": "https://support.microsoft.com/en-au/help/4490481"
+            }
+        },
+
+        {
+            "id": "ms-win2019-lcu-2019.04.09-KB4493509",
+            "uri": "http://download.windowsupdate.com/d/msdownload/update/software/secu/2019/04/windows10.0-kb4493509-x64_ec069505eddfb9175e376b7eea773182d06033f0.msu",
+
+            "checksum": "CE6A04CFD68B0E737EDF80A4016784C6865ABEA769ED6438ED5A25D423E32472",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "April 9, 2019 - KB4493509 (OS Build 17763.437)",
+                "help_link": "https://support.microsoft.com/en-au/help/4493509"
+            }
+        }
+
+    ]
+}

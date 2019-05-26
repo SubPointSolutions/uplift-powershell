@@ -57,9 +57,14 @@ task UnitTest {
     
     exec {
         if($null -ne $script:PS6 ) {
+            Write-Build Green " [~] Using PS6"
+
+            pwsh -c Write-Host $PSVersionTable.PSVersion
             pwsh -c 'Invoke-Pester ./tests/unit* -EnableExit'
         } else {
             Write-Build Green " [~] Using PowerShell"
+
+            powershell -c Write-Host $PSVersionTable.PSVersion
             powershell -c 'Invoke-Pester ./tests/unit* -EnableExit'
         }
     }

@@ -1,0 +1,16 @@
+{
+  "resources": [
+    {
+      "id": "ms-win-10-iso-x64-eval",
+      "uri": "https://software-download.microsoft.com/download/sg/17763.107.101029-1455.rs5_release_svc_refresh_CLIENTENTERPRISEEVAL_OEMRET_x64FRE_en-us.iso",
+
+      "checksum": "0278FC4638741F4A1DC85C39ED7FA76BB15FD582165F6EF036E9A9FB2F029351",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "comment": "Evaluation ISO for Windows 10",
+        "help_link": "https://github.com/chef/bento/blob/master/windows/10.json"
+      }
+    }
+  ]
+}

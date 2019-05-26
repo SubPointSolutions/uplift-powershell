@@ -8,7 +8,7 @@
             "checksum_type": "sha256",
             
             "metadata": {
-                "comment": "August 30, 2018—KB4343884 (OS Build 14393.2457)",
+                "comment": "August 30, 2018-KB4343884 (OS Build 14393.2457)",
                 "help_link": "https://support.microsoft.com/en-au/help/4343884"
             }
         },
@@ -21,7 +21,7 @@
             "checksum_type": "sha256",
             
             "metadata": {
-                "comment": "August 14, 2018—KB4343887 (OS Build 14393.2430)",
+                "comment": "August 14, 2018-KB4343887 (OS Build 14393.2430)",
                 "help_link": "https://support.microsoft.com/en-au/help/4343887"
             }
         }

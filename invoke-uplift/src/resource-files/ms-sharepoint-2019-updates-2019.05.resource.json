@@ -1,0 +1,15 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2019-update-2019.05.14-KB4464556",
+      "uri": "https://download.microsoft.com/download/D/C/7/DC72C809-5FCA-41A6-8CB4-093416FE4AAD/sts2019-kb4464556-fullfile-x64-glb.exe",
+
+      "checksum": "6DD0CF7CAF966AB289462C1576218862E971EB317CF816FE65D8DF0F32D65B9E",
+      "checksum_type": "sha256",
+      "metadata": {
+        "comment": "Description of the security update for SharePoint Server 2019: April 9, 2019",
+        "help_link": "https://support.microsoft.com/en-us/help/4464556"
+      }
+    }
+  ]
+}

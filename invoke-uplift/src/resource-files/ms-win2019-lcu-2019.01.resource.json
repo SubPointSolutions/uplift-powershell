@@ -1,0 +1,16 @@
+{
+    "resources": [
+        {
+            "id": "ms-win2019-lcu-2019.01.08-KB4480116",
+            "uri": "http://download.windowsupdate.com/d/msdownload/update/software/secu/2019/01/windows10.0-kb4480116-x64_4c8672ed7ce1d839421a36c681f9d3f64c31fe37.msu",
+
+            "checksum": "3EA4093ED6C6E1FE12DB70830861C3FC09ECEBA2DD74ADF68A1004D11297DF8C",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "January 8, 2019 - KB4480116 (OS Build 17763.253)",
+                "help_link": "https://support.microsoft.com/en-au/help/4480116"
+            }
+        }
+    ]
+}

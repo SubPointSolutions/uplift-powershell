@@ -21,7 +21,7 @@
             "checksum_type": "sha256",
             
             "metadata": {
-                "comment": "July 24, 2018—KB4338822 (OS Build 14393.2395)",
+                "comment": "July 24, 2018-KB4338822 (OS Build 14393.2395)",
                 "help_link": "https://support.microsoft.com/en-au/help/4338822"
             }
         },
@@ -34,7 +34,7 @@
             "checksum_type": "sha256",
             
             "metadata": {
-                "comment": "July 16, 2018—KB4345418 (OS Build 14393.2368)",
+                "comment": "July 16, 2018-KB4345418 (OS Build 14393.2368)",
                 "help_link": "https://support.microsoft.com/en-au/help/4345418"
             }
         },
@@ -47,7 +47,7 @@
             "checksum_type": "sha256",
             
             "metadata": {
-                "comment": "July 10, 2018—KB4338814 (OS Build 14393.2363)",
+                "comment": "July 10, 2018-KB4338814 (OS Build 14393.2363)",
                 "help_link": "https://support.microsoft.com/en-au/help/4338814"
             }
         }

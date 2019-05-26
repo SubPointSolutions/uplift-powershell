@@ -1,0 +1,29 @@
+{
+    "resources": [
+        {
+            "id": "ms-win2019-lcu-2018.11.13-KB4464455",
+            "uri": "http://download.windowsupdate.com/c/msdownload/update/software/updt/2018/11/windows10.0-kb4464455-x64_f6439c0adc3898868ff0687f0ae985bbeea6997a.msu",
+
+            "checksum": "601F9BE04A3E2D424AA2DA65076267A4EA43F18107524117EBC5638821B9F12C",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "November 13, 2018 - KB4464455 (OS Build 17763.107)",
+                "help_link": "https://support.microsoft.com/en-au/help/4464455"
+            }
+        },
+
+        {
+            "id": "ms-win2019-lcu-2018.11.13-KB4467708",
+            "uri": "http://download.windowsupdate.com/d/msdownload/update/software/secu/2018/11/windows10.0-kb4467708-x64_7727ab0085a8a32730d35272c7f6f0e616bd23ad.msu",
+
+            "checksum": "F688ACD6A88EDB4213E70DAED9BACA10EC09778744178006C21AFA78F106EAB4",
+            "checksum_type": "sha256",
+            
+            "metadata": {
+                "comment": "November 13, 2018—KB4467708 (OS Build 17763.134)",
+                "help_link": "https://support.microsoft.com/en-au/help/4467708"
+            }
+        }
+    ]
+}

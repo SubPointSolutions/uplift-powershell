@@ -8,7 +8,7 @@
             "checksum_type": "sha256",
             
             "metadata": {
-                "comment": "October 18, 2018—KB4462928 (OS Build 14393.2580)",
+                "comment": "October 18, 2018-KB4462928 (OS Build 14393.2580)",
                 "help_link": "https://support.microsoft.com/en-au/help/4462928"
             }
         },
@@ -21,7 +21,7 @@
             "checksum_type": "sha256",
             
             "metadata": {
-                "comment": "October 9, 2018—KB4462917 (OS Build 14393.2551)",
+                "comment": "October 9, 2018-KB4462917 (OS Build 14393.2551)",
                 "help_link": "https://support.microsoft.com/en-au/help/4462917"
             }
         }

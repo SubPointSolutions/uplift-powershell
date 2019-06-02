@@ -1,5 +1,27 @@
 {
     "resources": [
+
+      {
+        "id": "hashicorp-vagrant-2.2.4-win",
+        "uri": "https://releases.hashicorp.com/vagrant/2.2.4/vagrant_2.2.4_x86_64.msi",
+  
+        "checksum": "0C8CF856ED8C794DB2CCEEF96E8CBD5F0096EEAFE851B024FD0DD4B308291026",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.vagrantup.com/downloads.html"
+        }
+      },
+      {
+        "id": "hashicorp-vagrant-2.2.4-osx",
+        "uri": "https://releases.hashicorp.com/vagrant/2.2.4/vagrant_2.2.4_x86_64.dmg",
+  
+        "checksum": "A09A2F0FB3FCBD4CFB41C7812C01605173F64056449C3DBCC513B4211E9C1E8D",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.vagrantup.com/downloads.html"
+        }
+      },
+
       {
         "id": "hashicorp-vagrant-2.2.3-win",
         "uri": "https://releases.hashicorp.com/vagrant/2.2.3/vagrant_2.2.3_x86_64.msi",

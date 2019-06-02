@@ -1,0 +1,16 @@
+{
+  "resources": [
+    {
+      "id": "ms-win2012r2-so-2019.01.08-KB4480964",
+      "uri": "http://download.windowsupdate.com/d/msdownload/update/software/secu/2018/12/windows8.1-kb4480964-x64_8a3797170121c661ab056fe86b1e5341e3be1807.msu",
+
+      "checksum": "6F91562B754B2C5B8F33FE3D14A9AD702AA7E9C309EAAB619A09E85C3447A3BE",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "comment": "January 8, 2019 - KB4480964 (Security-only update)",
+        "help_link": "https://support.microsoft.com/en-au/help/4480964"
+      }
+    }
+  ]
+}

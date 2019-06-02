@@ -1,0 +1,29 @@
+{
+  "resources": [
+    {
+      "id": "ms-win2012r2-mr-2019.05.23-KB4499182",
+      "uri": "http://download.windowsupdate.com/c/msdownload/update/software/updt/2019/05/windows8.1-kb4499182-x64_afa90b9cc03213d5c94f2e6e6be681c4fd1589d9.msu",
+
+      "checksum": "8955097305CEBF8EEAEAC04CBCC016CCCD67140DDECAD274D885461E18331F1A",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "comment": "May 23, 2019 - KB4499182 (Preview of Monthly Rollup)",
+        "help_link": "https://support.microsoft.com/en-au/help/4499182"
+      }
+    },
+
+    {
+      "id": "ms-win2012r2-mr-2019.05.14-KB4499151",
+      "uri": "http://download.windowsupdate.com/d/msdownload/update/software/secu/2019/05/windows8.1-kb4499151-x64_254432cdd26527f8661cfd58c6f5edec00cdd93f.msu",
+
+      "checksum": "AC26B6AB7DF54A9F1E60A9481D9F614643C36B5816E8ACCC9A8F9AA1CCDAE217",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "comment": "May 14, 2019 - KB4499151 (Monthly Rollup)",
+        "help_link": "https://support.microsoft.com/en-au/help/4499151"
+      }
+    }
+  ]
+}

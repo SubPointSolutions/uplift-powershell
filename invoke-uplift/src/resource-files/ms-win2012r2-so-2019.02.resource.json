@@ -1,0 +1,16 @@
+{
+  "resources": [
+    {
+      "id": "ms-win2012r2-so-2019.02.12-KB4487028",
+      "uri": "http://download.windowsupdate.com/c/msdownload/update/software/secu/2019/02/windows8.1-kb4487028-x64_5d7c77eb2a14640a2d9c963e1248eeb918c47dba.msu",
+
+      "checksum": "BF0BF5CCC40B3373A60F15D4E0290FE09CB99962127B8D2F77438C98F0C15AC5",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "comment": "February 12, 2019 - KB4487028 (Security-only update)",
+        "help_link": "https://support.microsoft.com/en-au/help/4487028"
+      }
+    }
+  ]
+}

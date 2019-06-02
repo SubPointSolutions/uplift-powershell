@@ -1,0 +1,16 @@
+{
+  "resources": [
+    {
+      "id": "ms-win2012r2-so-2019.05.14-KB4499165",
+      "uri": "http://download.windowsupdate.com/c/msdownload/update/software/secu/2019/05/windows8.1-kb4499165-x64_9324ba93ee212a0449a69c9ae3a9d993045c4aad.msu",
+
+      "checksum": "AAB63AE85CF93444FECCA9AC6F635D31337874C4D620A8B8C5B6B15F088FD137",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "comment": "May 14, 2019 - KB4499165 (Security-only update)",
+        "help_link": "https://support.microsoft.com/en-au/help/4499165"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "resources": [
+    {
+      "id": "ms-win2012r2-so-2019.03.12-KB4489883",
+      "uri": "http://download.windowsupdate.com/c/msdownload/update/software/secu/2019/03/windows8.1-kb4489883-x64_71710d2a782e9b4ad4542d7f495818cc5859564d.msu",
+
+      "checksum": "A4FA783505745A26B1FDAEF2F06CA768E735C7AEBF921408267E5B2D36F9DE70",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "comment": "March 12, 2019 - KB4489883 (Security-only update)",
+        "help_link": "https://support.microsoft.com/en-au/help/4489883"
+      }
+    }
+  ]
+}

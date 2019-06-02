@@ -1,0 +1,29 @@
+{
+  "resources": [
+    {
+      "id": "ms-win2012r2-mr-2019.02.19-KB4487016",
+      "uri": "http://download.windowsupdate.com/d/msdownload/update/software/updt/2019/02/windows8.1-kb4487016-x64_7d0e6e0c675399f2985c9bb85b8f54d30a62b3bc.msu",
+
+      "checksum": "6552E4D1C2E132212B908B99B6166F6C4BABF836C0A5DB7DA90634225FD2F6F1",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "comment": "February 19, 2019 - KB4487016 (Preview of Monthly Rollup)",
+        "help_link": "https://support.microsoft.com/en-au/help/4487016"
+      }
+    },
+
+    {
+      "id": "ms-win2012r2-mr-2019.02.12-KB4487000",
+      "uri": "http://download.windowsupdate.com/d/msdownload/update/software/secu/2019/02/windows8.1-kb4487000-x64_b8b8a17129c3ca3a6a711cbb30c6bea0e54d9c2f.msu",
+
+      "checksum": "2CEAFB30B538AC2A663BFA8AFA20E95B1F647FDBAC26DACC7342C3380A3F06EB",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "comment": "February 12, 2019 - KB4487000 (Monthly Rollup)",
+        "help_link": "https://support.microsoft.com/en-au/help/4487000"
+      }
+    }
+  ]
+}

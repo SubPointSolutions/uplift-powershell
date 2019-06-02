@@ -1,0 +1,29 @@
+{
+  "resources": [
+    {
+      "id": "ms-win2012r2-mr-2019.03.19-KB4489893",
+      "uri": "http://download.windowsupdate.com/c/msdownload/update/software/updt/2019/03/windows8.1-kb4489893-x64_9b0039e08e57f2e7248865ba299b18094f0dfa04.msu",
+
+      "checksum": "508B13AFD8614BCCACA00F97842CD635C9E42F423F29AE9215126A84EC4945DB",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "comment": "March 19, 2019 - KB4489893 (Preview of Monthly Rollup)",
+        "help_link": "https://support.microsoft.com/en-au/help/4489893"
+      }
+    },
+
+    {
+      "id": "ms-win2012r2-mr-2019.03.12-KB4489881",
+      "uri": "http://download.windowsupdate.com/c/msdownload/update/software/secu/2019/03/windows8.1-kb4489881-x64_266cae96af29dbee65bb1126a756673e092d6177.msu",
+
+      "checksum": "194ECEFD7C9555BBE987FE0E272F190D4EA184BBB50261B1389063A5E4B38724",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "comment": "March 12, 2019 - KB4489881 (Monthly Rollup)",
+        "help_link": "https://support.microsoft.com/en-au/help/4489881"
+      }
+    }
+  ]
+}

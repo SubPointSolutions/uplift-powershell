@@ -1,0 +1,16 @@
+{
+  "resources": [
+    {
+      "id": "ms-win2012r2-so-2019.04.09-KB4493467",
+      "uri": "http://download.windowsupdate.com/c/msdownload/update/software/secu/2019/04/windows8.1-kb4493467-x64_82aff53bb6ef1d4531d4431b8cc69e701cea4a17.msu",
+
+      "checksum": "DCA17ACC15690C01128CB751C971A0ACB96648AFE614928C911EFFA16E1B34B1",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "comment": "April 9, 2019 - KB4493467 (Security-only update)",
+        "help_link": "https://support.microsoft.com/en-au/help/4493467"
+      }
+    }
+  ]
+}

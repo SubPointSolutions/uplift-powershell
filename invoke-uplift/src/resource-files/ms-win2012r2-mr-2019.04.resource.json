@@ -1,0 +1,29 @@
+{
+  "resources": [
+    {
+      "id": "ms-win2012r2-mr-2019.04.23-KB4493443",
+      "uri": "http://download.windowsupdate.com/c/msdownload/update/software/updt/2019/04/windows8.1-kb4493443-x64_a5c122b8882f0e6c73e32056e1703c0ac9f08c5b.msu",
+
+      "checksum": "00B06C6E16729C3ACB8C04FB245243006BAF4CAB3E651B91737F2ABB030C085F",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "comment": "April 25, 2019 - KB4493443 (Preview of Monthly Rollup)",
+        "help_link": "https://support.microsoft.com/en-au/help/4493443"
+      }
+    },
+
+    {
+      "id": "ms-win2012r2-mr-2019.04.09-KB4493446",
+      "uri": "http://download.windowsupdate.com/c/msdownload/update/software/secu/2019/04/windows8.1-kb4493446-x64_24069fa688e368ae183a332bcfb0176c35150598.msu",
+
+      "checksum": "C4A8618F5258AF538ACAE75A8D780A276D04AB6DAB5384A89AEDF8E7985559EE",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "comment": "April 9, 2019 - KB4493446 (Monthly Rollup)",
+        "help_link": "https://support.microsoft.com/en-au/help/4493446"
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "resources": [
+    {
+      "id": "ms-win2012r2-mr-2019.01.15-KB4480969",
+      "uri": "http://download.windowsupdate.com/d/msdownload/update/software/updt/2019/01/windows8.1-kb4480969-x64_1ff5bb323be4313cc8284c400b166f843d02c201.msu",
+
+      "checksum": "0DF7B0CA080BD425DCBF91346FBBB04D2DF09EDC83507611CCF3C2E42626A8D3",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "comment": "January 15, 2019 - KB4480969 (Preview of Monthly Rollup)",
+        "help_link": "https://support.microsoft.com/en-au/help/4480969"
+      }
+    },
+
+    {
+      "id": "ms-win2012r2-mr-2019.01.08-KB4480963",
+      "uri": "http://download.windowsupdate.com/c/msdownload/update/software/secu/2018/12/windows8.1-kb4480963-x64_e603973094e2c31c82847884396d1f0f2a30cdaf.msu",
+
+      "checksum": "552BDC371EC74D3ADB5B5BC1AB6E024E2E3DA75CCE2A0EDB17FCB6C17EDBB1CE",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "comment": "January 8, 2019 - KB4480963 (Monthly Rollup)",
+        "help_link": "https://support.microsoft.com/en-au/help/4480963"
+      }
+    }
+  ]
+}

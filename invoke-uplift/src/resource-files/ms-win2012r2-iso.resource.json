@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "id": "ms-win2012r2-iso-x64-eval",
+      "uri": "http://download.microsoft.com/download/6/2/A/62A76ABB-9990-4EFC-A4FE-C7D698DAEB96/9600.17050.WINBLUE_REFRESH.140317-1640_X64FRE_SERVER_EVAL_EN-US-IR3_SSS_X64FREE_EN-US_DV9.ISO",
+
+      "checksum": "6612B5B1F53E845AACDF96E974BB119A3D9B4DCB5B82E65804AB7E534DC7B4D5",
+      "checksum_type": "sha256",
+
+      "metadata": {
+        "comment": "Windows Server 2012 R2 x64 eval",
+        "help_link": "https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2012-r2"
+      }
+      
+    }
+  ]
+}

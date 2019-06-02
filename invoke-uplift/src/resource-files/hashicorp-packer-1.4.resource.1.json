@@ -1,0 +1,26 @@
+{
+    "resources": [
+      {
+        "id": "hashicorp-packer-1.4.1-win",
+        "uri": "https://releases.hashicorp.com/packer/1.4.1/packer_1.4.1_windows_amd64.zip",
+  
+        "checksum": "78416314AECBC166486FD8A7784523436C5C8673A1788047B14140F43977D72C",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.vagrantup.com/downloads.html"
+        }
+      },
+
+      {
+        "id": "hashicorp-packer-1.4.1-darwin",
+        "uri": "https://releases.hashicorp.com/packer/1.4.1/packer_1.4.1_darwin_amd64.zip",
+  
+        "checksum": "2C5D4A2D0BF9E02DC790FDDAA0A74E8FEDB6DDD74C6F3B85D04536D9D757FE07",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.vagrantup.com/downloads.html"
+        }
+      }
+      
+    ]
+  }

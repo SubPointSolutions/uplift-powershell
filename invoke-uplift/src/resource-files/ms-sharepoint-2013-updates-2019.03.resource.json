@@ -1,0 +1,27 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2013-update-2019.03.12-KB4462219",
+      "uri": "https://download.microsoft.com/download/B/C/8/BC8830FF-0987-4957-83F7-F95B66409792/ubersrv2013-kb4462219-fullfile-x64-glb.exe",
+
+      "checksum": "615738BD59B053156B2534E2C8154E07362EA72940A1E52BE7EAA1C0AB4F5F71",
+      "checksum_type": "sha256",
+      "metadata": {
+        "description": "March 12, 2019, cumulative update for SharePoint Enterprise Server 2013 (KB4462219)",
+        "help_link": "https://support.microsoft.com/en-au/help/4462219"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2013-foundation-update-2019.03.12-KB4462217",
+      "uri": "https://download.microsoft.com/download/3/A/3/3A3D874F-A768-4828-BE77-730AC9D0D2B5/ubersts2013-kb4462217-fullfile-x64-glb.exe",
+
+      "checksum": "305B2B5799FAC25C3DE71998D6B08A91FD5ED5D18BF7C46772CE5DA65E1D0B24",
+      "checksum_type": "sha256",
+      "metadata": {
+        "description": "March 12, 2019, cumulative update for SharePoint Foundation 2013 (KB4462217)",
+        "help_link": "https://support.microsoft.com/en-au/help/4462217"
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2013-update-2014.04.17-KB2880552",
+      "uri": "https://download.microsoft.com/download/7/A/8/7A84E002-6512-4506-A812-CA66FF6766D9/officeserversp2013-kb2880552-fullfile-x64-en-us.exe",
+
+      "checksum": "9B258B10E692895DBF8BFBBF03D344167A45F61829218BC72874E3400672FCAD",
+      "checksum_type": "sha256",
+      "metadata": {
+        "description": "Description of Microsoft SharePoint Foundation 2013 Service Pack 1 (SP1)",
+        "help_link": "https://support.microsoft.com/en-au/help/2880552"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2013-foundation-update-2014.04.17-KB2880551",
+      "uri": "https://download.microsoft.com/download/F/5/0/F50DA481-BAE3-43F1-80C9-A19A9FB29335/sharepointsp2013-kb2880551-fullfile-x64-en-us.exe",
+
+      "checksum": "34C10A74CBE9DE6B6145C6BAA50E4027C1E4004B60532BF16F45429899284848",
+      "checksum_type": "sha256",
+      "metadata": {
+        "description": "Description of Microsoft SharePoint Foundation 2013 Service Pack 1 (SP1)",
+        "help_link": "https://support.microsoft.com/en-au/help/2880551"
+      }
+    }
+  ]
+}

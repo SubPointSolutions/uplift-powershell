@@ -1,0 +1,27 @@
+{
+  "resources": [
+    {
+      "id": "ms-sharepoint2013-update-2019.01.08-KB4461605",
+      "uri": "https://download.microsoft.com/download/6/D/3/6D32C864-F385-4840-A618-CC86AAAB550B/ubersrv2013-kb4461605-fullfile-x64-glb.exe",
+
+      "checksum": "D68C115674227827DAA8353A7D683704EC8D4ED51F0227222448E410655516B4",
+      "checksum_type": "sha256",
+      "metadata": {
+        "description": "January 8, 2019, cumulative update for SharePoint Enterprise Server 2013 (KB4461605)",
+        "help_link": "https://support.microsoft.com/en-au/help/4461605"
+      }
+    },
+
+    {
+      "id": "ms-sharepoint2013-foundation-update-2019.01.08-KB4461603",
+      "uri": "https://download.microsoft.com/download/E/A/A/EAAC2FFE-E7BC-473A-9399-B89C43E81D17/ubersts2013-kb4461603-fullfile-x64-glb.exe",
+
+      "checksum": "299CF20C77B3F07F629707119CD65624FD2D8FE27BCD9C7FE8F07235BEDCBE25",
+      "checksum_type": "sha256",
+      "metadata": {
+        "description": "January 8, 2019, cumulative update for SharePoint Foundation 2013 (KB4461603)",
+        "help_link": "https://support.microsoft.com/en-au/help/4461603"
+      }
+    }
+  ]
+}

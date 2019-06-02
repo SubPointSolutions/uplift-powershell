@@ -11,7 +11,7 @@ $localServerPath = "$srcPath/resource-files-test"
 $upliftPath = Resolve-Path "$srcPath/InvokeUplift.ps1"
 . $upliftPath
 
-$gResourceCount = 241
+$gResourceCount = 260
 
 function Get-TestRepositoryPath() {
     "build-uplift-local-repository"

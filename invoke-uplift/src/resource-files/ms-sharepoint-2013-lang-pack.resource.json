@@ -1,0 +1,213 @@
+{
+    "resources": [{
+        "id": "ms-sharepoint2013-lang-pack-ar-sa",
+        "uri": "https://download.microsoft.com/download/3/2/C/32C97E8A-E1C4-4BC3-B4B5-1E85B2E0A571/serverlanguagepack.img",
+  
+        "checksum": "26BDBFBE2C9C26AD0080CA4C88FC9055BDD92A6C568D9B389C77C62BC6AC162D",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.microsoft.com/en-au/download/details.aspx?id=37140"
+        }
+      },
+  
+      {
+        "id": "ms-sharepoint2013-lang-pack-cs-cz",
+        "uri": "https://download.microsoft.com/download/F/4/E/F4E58045-B977-466D-85EA-0CB058029E8B/serverlanguagepack.img",
+  
+        "checksum": "5443B6302FD313C3F707BD51E303A2A2818698546C3DB0779A5F3FEDB6769ACA",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+        }
+      },
+  
+      {
+        "id": "ms-sharepoint2013-lang-pack-da-dk",
+        "uri": "https://download.microsoft.com/download/F/5/A/F5A6AE89-7340-48F0-B822-C9E3BA41A5DE/serverlanguagepack.img",
+  
+        "checksum": "FA1131B527D93D5381EE0A6F5C716BDBC60F34C9AF4C83FF9D0EFB3B034D20EB",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+        }
+      },
+  
+      {
+        "id": "ms-sharepoint2013-lang-pack-en-us",
+        "uri": "https://download.microsoft.com/download/7/E/C/7EC7E73F-F172-453F-877C-640AF0B82D26/serverlanguagepack.img",
+  
+        "checksum": "9FAEA37D535CEE6D3704C97B006568E5E0736BD7DD6B786E48913245113A4D92",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+        }
+      },
+  
+      {
+        "id": "ms-sharepoint2013-lang-pack-de-de",
+        "uri": "https://download.microsoft.com/download/3/E/5/3E5E17EE-F614-4336-9587-26236A7B0B2A/serverlanguagepack.img",
+  
+        "checksum": "C02183D0CBD81FFC9C83016CC80F72BD1A8EB2B9E9486947A7E8820E3CB3EFA3",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+        }
+      },
+  
+      {
+        "id": "ms-sharepoint2013-lang-pack-fr-fr",
+        "uri": "https://download.microsoft.com/download/7/C/6/7C6EC6E3-E077-4A7F-9981-BE047700E88C/serverlanguagepack.img",
+  
+        "checksum": "3FEE48E1E967CCF7D104CC34FB9C9A6092BC6E67F54CC6F3D864DFF70CA04E92",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+        }
+      },
+  
+      {
+        "id": "ms-sharepoint2013-lang-pack-fi-fi",
+        "uri": "https://download.microsoft.com/download/3/A/3/3A373EA3-0B2C-4263-A43E-1D7CE24203B8/serverlanguagepack.img",
+  
+        "checksum": "0582B10F2175BA098FEFD73EE45BC783A0C15620E3160191EACC89DE9311EC10",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+        }
+      },
+  
+      {
+        "id": "ms-sharepoint2013-lang-pack-nl-nl",
+        "uri": "https://download.microsoft.com/download/8/D/2/8D20657B-3B41-45AB-9B0D-4FAFA51BB8BC/serverlanguagepack.img",
+  
+        "checksum": "E3B52B2C7836E876CF9C34424C79A8ED41DDF5359FA7FCEE3D0F74CA558A2193",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+        }
+      },
+  
+      {
+        "id": "ms-sharepoint2013-lang-pack-he-il",
+        "uri": "https://download.microsoft.com/download/8/A/2/8A2A50AB-71C3-41DC-9FD1-D43D299F774F/serverlanguagepack.img",
+  
+        "checksum": "FD1D0541765CC78E70965A3F17389278E0A7B5A6463E3C98F9E49FE694ADC2A1",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+        }
+      },
+  
+      {
+        "id": "ms-sharepoint2013-lang-pack-hi-in",
+        "uri": "https://download.microsoft.com/download/7/F/B/7FBA6A64-6A6F-4EAB-A771-2E8D183AFE98/serverlanguagepack.img",
+  
+        "checksum": "006B07FA7D9372CA48DFDDD074317F325741185753A965F730DBE84EE70739E4",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+        }
+      },
+  
+      {
+        "id": "ms-sharepoint2013-lang-pack-kk-kz",
+        "uri": "https://download.microsoft.com/download/0/D/1/0D1FD1A6-9104-4E57-A531-DDD26EE82E8F/serverlanguagepack.img",
+  
+        "checksum": "EB749F9402F1BD3DE734CA5CF36181AA581412EDFC5720CDC04A9F5FCAD5380A",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+        }
+      },
+  
+      {
+        "id": "ms-sharepoint2013-lang-pack-it-it",
+        "uri": "https://download.microsoft.com/download/A/6/8/A6809C29-566D-4BFF-BC35-AE5CC520B89D/serverlanguagepack.img",
+  
+        "checksum": "18205F56CE325967EB7E1CC6032D71248D763AF0044CB8D033403B65A1881BCF",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+        }
+      },
+  
+      {
+        "id": "ms-sharepoint2013-lang-pack-lv-lv",
+        "uri": "https://download.microsoft.com/download/A/5/6/A56DA37D-556A-4F56-B7D6-784C46AE76BD/serverlanguagepack.img",
+  
+        "checksum": "7C9AD9DAB17C06A4E43EE5B5350DC0DECF4FA0538DEEF107EE47186FF40F9F52",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+        }
+      },
+  
+      {
+        "id": "ms-sharepoint2013-lang-pack-pl-pl",
+        "uri": "https://download.microsoft.com/download/3/3/3/3331D355-BBAA-4D86-A2AD-FEC7D45261FC/serverlanguagepack.img",
+  
+        "checksum": "FE32F580829F50290F54E2EA4A19926901A1DA26647B121F6CC6C6FEA97A33BC",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+        }
+      },
+  
+      {
+        "id": "ms-sharepoint2013-lang-pack-ru-ru",
+        "uri": "https://download.microsoft.com/download/D/C/D/DCD385DA-5FDB-4EB2-8988-D0439EE2E473/serverlanguagepack.img",
+  
+        "checksum": "94A4E60910755A053D1B3A59A7D1C572CBF4B218FFA112AC6453B0E006499D79",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+        }
+      },
+  
+      {
+        "id": "ms-sharepoint2013-lang-pack-ro-ro",
+        "uri": "https://download.microsoft.com/download/3/8/7/387A62B6-1337-4184-8170-D0FE4022FB95/serverlanguagepack.img",
+  
+        "checksum": "0947A8E0C7B4F5B9CA7854A6A74845C0863C430275E7F856690C8827BCF8EAD9",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+        }
+      },
+  
+      {
+        "id": "ms-sharepoint2013-lang-pack-es-es",
+        "uri": "https://download.microsoft.com/download/2/F/A/2FA13301-EE74-489A-B1E2-83B50CE0E642/serverlanguagepack.img",
+  
+        "checksum": "9ECF8D3A6172A3468B6962CD17D057DCC23887196B7F78F4705E1D75DA6368D8",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+        }
+      },
+  
+      {
+        "id": "ms-sharepoint2013-lang-pack-sv-se",
+        "uri": "https://download.microsoft.com/download/8/3/A/83A25F77-218F-4D81-8AC5-8B3C99ACBF11/serverlanguagepack.img",
+  
+        "checksum": "2A11402E107BCFA39124AE71E050C836252D5B3DEDB542DC34E88653BD9B8189",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+        }
+      },
+  
+  
+      {
+        "id": "ms-sharepoint2013-lang-pack-uk-ua",
+        "uri": "https://download.microsoft.com/download/F/B/1/FB18DA8C-D51A-4FE6-8F8C-1D68B1C384D1/serverlanguagepack.img",
+  
+        "checksum": "41D4016B3120CA5A46F7984BFF3C0D019BC29FC31C3444E9956E8F23C59FB999",
+        "checksum_type": "sha256",
+        "metadata": {
+          "help_link": "https://www.microsoft.com/en-us/download/details.aspx?id=51492"
+        }
+      }
+  
+    ]
+  }
